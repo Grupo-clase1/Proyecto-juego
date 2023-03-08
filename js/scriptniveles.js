@@ -1,8 +1,10 @@
 class Nivel {
+       //Atributos
     constructor(numero, velocidad) {
       this.numero = numero;
       this.velocidad = velocidad;
     }
+     //Aqui meteriamos los métodos que queremos aplicar
   }
 
 var nivel1 = new Nivel(1, 10);
