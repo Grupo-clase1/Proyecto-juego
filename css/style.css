@@ -33,5 +33,6 @@ input:hover{
 }
 
 input:active{
-   top: 2px;
+    position: relative;
+    top: 2px;
 }
