@@ -12,12 +12,12 @@ var nivel2 = new Nivel(2, 15);
 var nivel3 = new Nivel(3, 20);
 
 // Cuando la rana llegue al final del nivel 1, cambia al nivel 2
-if (rana.llegaAlFinal(nivel1)) {
+if (Pepe.llegaAlFinal(nivel1)) {
   mostrarNivel(nivel2);
 }
 
 // Cuando la rana llegue al final del nivel 2, cambia al nivel 3
-if (rana.llegaAlFinal(nivel2)) {
+if (Pepe.llegaAlFinal(nivel2)) {
   mostrarNivel(nivel3);
 }
 
