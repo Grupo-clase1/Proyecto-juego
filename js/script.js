@@ -5,3 +5,8 @@ function jugar(){
 
     menuDiv.style.visibility='hidden';
 }
+
+function salir(){
+
+   window.close();
+}
