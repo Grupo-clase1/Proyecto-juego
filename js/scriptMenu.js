@@ -7,7 +7,7 @@ function jugar(){
     menuDiv.style.visibility='hidden';
     pantalla.hidden=false
     var backgrounds = [
-        'url(https://imagen.research.google/main_gallery_images/a-brain-riding-a-rocketship.jpg)',
+        'url(https://imagen.research.google/main_gallery_images/a-brain-riding-a-rocketship.jpg)', 
         'url(https://www.adslzone.net/app/uploads-adslzone.net/2019/04/borrar-fondo-imagen.jpg)',
         'url(https://cdn.pixabay.com/photo/2017/10/17/16/10/fantasy-2861107_1280.jpg)',
     ];
