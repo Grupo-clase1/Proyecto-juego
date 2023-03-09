@@ -28,7 +28,7 @@ class Rana {
         //no estoy seguro de que pueda leer la variable
         if(this.contadorSalto = undefined){
             return
-        }else if(this.contadorSalto<1e3){
+        }else if(this.contadorSalto<1e3){//1e3  Es como decir 1*10³
             this.contadorSalto++;
             this.velocidad = 5
             setTimeout(bucle, 50)
