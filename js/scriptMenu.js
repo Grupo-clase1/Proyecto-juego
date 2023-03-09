@@ -21,7 +21,7 @@ function jugar(){
             clearInterval(intervalo); 
         } else {
             inicioBackground = (inicioBackground + 1) % backgrounds.length;
-            document.body.style.backgroundImage = backgrounds[inicioBackground];
+            document.getElementById('pantalla').style.backgroundImage = backgrounds[inicioBackground];
         }
     }
 }
