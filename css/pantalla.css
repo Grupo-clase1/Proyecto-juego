@@ -19,6 +19,8 @@
     width: 98%;
     margin: 0 auto;
     position: absolute;
+      background-size: cover;
+      background-position: center;
 }
 .carrilSuperior{
     /* background-color: blue; */
