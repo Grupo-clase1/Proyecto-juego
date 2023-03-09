@@ -1,5 +1,5 @@
 .rana{   
-    background-color: red;
+    background-color: green;
     height: 70px;
     width: 70px;
     min-width: 30px;
@@ -8,12 +8,35 @@
     top: 50%;
     right: 87%;
     transform: translate(-50%, -50%);
+    background-image: url('media/bombilla-encendida.png');
     
 }
 
 .pantalla{
-    background-color: blue;
-    height: 700px;
-    width: 1500px;
+    height: 98%;
+    width: 98%;
     margin: 0 auto;
+    position: absolute;
+
+}
+
+.carrilsuperior{
+    background-color: blue;
+    border: solid 1px;
+    height: 33%;
+    width: 100%;
+}
+
+.carrilmedio{
+    background-color: yellow;
+    border: solid 1px;
+    height: 33%;
+    width: 100%;
+}
+
+.carrilinferior{
+    background-color: red;
+    border: solid 1px;
+    height: 33%;
+    width: 100%;
 }
