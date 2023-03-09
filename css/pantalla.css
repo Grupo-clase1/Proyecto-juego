@@ -12,8 +12,8 @@
 }
 
 .pantalla{
-    height: 700px;
-    width: 1500px;
+    height: 100%;
+    width: 100%;
     margin: 0 auto;
     position: absolute;
 
