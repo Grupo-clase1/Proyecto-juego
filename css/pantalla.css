@@ -1,0 +1,19 @@
+.rana{   
+    background-color: red;
+    height: 70px;
+    width: 70px;
+    min-width: 30px;
+    min-height: 30px;
+    position: absolute;
+    top: 50%;
+    right: 87%;
+    transform: translate(-50%, -50%);
+    
+}
+
+.pantalla{
+    background-color: blue;
+    height: 700px;
+    width: 1500px;
+    margin: 0 auto;
+}
