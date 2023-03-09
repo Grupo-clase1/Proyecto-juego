@@ -2,8 +2,10 @@ var menuDiv
 
 function jugar(){
     var menuDiv = document.getElementById('menuDiv');
+    var pantalla = document.getElementById('pantalla');
 
     menuDiv.style.visibility='hidden';
+    pantalla.hidden=false
 }
 
 function ajustes(){
@@ -18,3 +20,4 @@ function salir(){
 
    window.close();
 }
+
