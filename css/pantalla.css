@@ -19,25 +19,23 @@
     width: 98%;
     margin: 0 auto;
     position: absolute;
-
 }
-
 .carrilSuperior{
-    background-color: blue;
+    /* background-color: blue; */
     border: solid 1px;
     height: 33%;
     width: 100%;
 }
 
 .carrilMedio{
-    background-color: yellow;
+    /* background-color: yellow; */
     border: solid 1px;
     height: 33%;
     width: 100%;
 }
 
 .carrilInferior{
-    background-color: red;
+    /* background-color: red; */
     border: solid 1px;
     height: 33%;
     width: 100%;
