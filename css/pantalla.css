@@ -1,5 +1,5 @@
 .rana{   
-    background-color: red;
+    background-color: green;
     height: 70px;
     width: 70px;
     min-width: 30px;
@@ -16,4 +16,25 @@
     height: 700px;
     width: 1500px;
     margin: 0 auto;
+}
+
+.carrilsuperior{
+    background-color: blue;
+    border: solid 1px;
+    height: 33%;
+    width: 100%;
+}
+
+.carrilmedio{
+    background-color: yellow;
+    border: solid 1px;
+    height: 33%;
+    width: 100%;
+}
+
+.carrilinferior{
+    background-color: red;
+    border: solid 1px;
+    height: 33%;
+    width: 100%;
 }
