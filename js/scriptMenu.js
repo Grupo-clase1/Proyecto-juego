@@ -7,9 +7,9 @@ function jugar(){
     menuDiv.style.visibility='hidden';//Ponemos en hidden el DivMenu y se pone en visible la pantalla
     pantalla.hidden=false
     var backgrounds = [// Se crea un array de los bg que se van a utilizar
-        'url(https://imagen.research.google/main_gallery_images/a-brain-riding-a-rocketship.jpg)', 
-        'url(https://www.adslzone.net/app/uploads-adslzone.net/2019/04/borrar-fondo-imagen.jpg)',
-        'url(https://cdn.pixabay.com/photo/2017/10/17/16/10/fantasy-2861107_1280.jpg)',
+        'url(media/fondo1.jpg)', 
+        'url(media/fondo2.gif)',
+        'url(media/fondo3.jpg)',
     ];
 
     var inicioBackground = -1; 
