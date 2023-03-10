@@ -7,6 +7,9 @@
      top: 39%;
     /* left: 8%; */
     /* transform: translate(-50%, -50%);     */
+
+    /* He puesto esto para generar el efecto de cambio de carril (Iván) */
+    transition: 0.5s;
 }
 
 .imagen{

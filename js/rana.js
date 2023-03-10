@@ -52,12 +52,12 @@ document.addEventListener("keydown", function(event) {
     if (event.key === "w" || event.key === "W") {
       if (Pepe.carril < 3) { // Si la rana no está en el carril 3
         Pepe.carril++; // Aumentar la propiedad "carril"
-        console.log(Pepe.carril)
+        // console.log(Pepe.carril)
       }
     } else if (event.key === "s" || event.key === "S") {
       if (Pepe.carril > 1) { // Si la rana no está en el carril 1
         Pepe.carril--; // Disminuir la propiedad "carril"
-        console.log(Pepe.carril)
+        // console.log(Pepe.carril)
       }
     }
   });
