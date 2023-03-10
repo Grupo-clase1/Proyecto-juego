@@ -2,6 +2,10 @@ var menuDiv;
 var pantalla;
 
 function jugar(){
+
+    //ejecuta el bucle para "animar" la nave
+    animacion()
+
     menuDiv = document.getElementById('menuDiv');
     pantalla = document.getElementById('pantalla');
 
