@@ -39,7 +39,7 @@ class Rana {
 
 }
 
-let Pepe = new Rana('Pepe','5%','33%','./media/ovni1p.png','./media/ovni1.gif','./media/muerto.png');
+let Pepe = new Rana('Pepe','5%','33%','./media/ovni1p.png','./media/ovni1.gif','./media/muerto.gif');
  //Creamos el objeto con los parametros que queremos meterle
 
 
