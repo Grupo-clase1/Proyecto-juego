@@ -16,16 +16,16 @@ class Rana {
     actualizarPosicion(){
 
         switch (this.carril) {
-            case 1:
-                this.positionY = "25%"
+            case 3:
+                this.positionY = "0%"
                 break;
 
             case 2:
-                this.positionY = "50%"
+                this.positionY = "33%"
                 break;
 
-            case 3:
-                this.positionY = "75%"
+            case 1:
+                this.positionY = "66%"
                 break;
         
             default:
@@ -39,7 +39,7 @@ class Rana {
 
 }
 
-let Pepe = new Rana('Pepe','5%','50%','./media/ovni1p.png','./media/ovni1.gif','./media/muerto.png');
+let Pepe = new Rana('Pepe','5%','33%','./media/ovni1p.png','./media/ovni1.gif','./media/muerto.png');
  //Creamos el objeto con los parametros que queremos meterle
 
 
@@ -52,11 +52,21 @@ document.addEventListener("keydown", function(event) {
     if (event.key === "w" || event.key === "W") {
       if (Pepe.carril < 3) { // Si la rana no está en el carril 3
         Pepe.carril++; // Aumentar la propiedad "carril"
+        console.log(Pepe.carril)
       }
     } else if (event.key === "s" || event.key === "S") {
       if (Pepe.carril > 1) { // Si la rana no está en el carril 1
         Pepe.carril--; // Disminuir la propiedad "carril"
+        console.log(Pepe.carril)
       }
     }
   });
-  
+
+  function animacion(){
+
+    document.getElementById("rana").style.top=Pepe.positionY
+    
+    Pepe.actualizarPosicion()
+
+    setTimeout(animacion, 50)
+  }
