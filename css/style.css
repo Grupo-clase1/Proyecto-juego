@@ -4,7 +4,8 @@
 }
 
 html {
-    cursor: url("../media/cursor1.png"), auto;
+    cursor: url("../media/cursor1.png"), default;
+    height: 100vh;
   }
 
 body {
