@@ -7,17 +7,37 @@
     <title>Videojueguito</title>
 
     <link rel="stylesheet" href="css/style.css">    
-    <script type="text/javaScript" src="js/script.js"></script>
+    <link rel="stylesheet" href="css/pantalla.css">    
+    <script type="text/javaScript" src="js/rana.js"></script>
+    <script type="text/javaScript" src="js/scriptMenu.js"></script>
+    <script type="text/javaScript" src="js/scriptniveles.js"></script>
+    <script type="text/javaScript" src="js/cambioPantalla.js"></script>
+
+  
 </head>
 <body>
-   
+    <div id="inAjustes" class="inAjustes" hidden>
+        <input type="button" value="Back" id="back" class="backBoton" onclick="back()">
+    </div>
     <div id="menuDiv" class="menuPrincipal">
+        <h1>SCRUUUUUUM!!</h1>
         <input type="button" value="Jugar" id="jugar" class="juegaBoton" onclick="jugar()">
         <br>
         <input type="button" value="Ajustes" id="ajustes" class="ajustesBoton" onclick="ajustes()">
         <br>
         <input type="button" value="Salir" id="salir" class="salinBoton" onclick="salir()">
     </div>
+
+    
+    <div id="pantalla" style="background-image: url(media/fondo.jpg);" class="pantalla" hidden> 
+        <div class="carrilSuperior"></div>
+        <div class="carrilMedio"></div>
+        <div id="rana" class="rana"><img class="imagen" src="./media/ovni1p.png"></div>
+        <div class="carrilInferior"></div>
+    </div>
+
+
+    
     
 </body>
 </html>

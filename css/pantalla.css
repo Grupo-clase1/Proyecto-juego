@@ -1,0 +1,49 @@
+.rana{   
+    height: 30%; 
+     /* width: 400px; */
+    /* min-width: 30px;*/
+    /* min-height: 30px;  */
+    position: absolute;
+     top: 39%;
+    /* left: 8%; */
+    /* transform: translate(-50%, -50%);     */
+
+    /* He puesto esto para generar el efecto de cambio de carril (Iván) */
+    transition: 0.5s;
+}
+
+.imagen{
+    height: 100%;
+    width: 100%;
+}
+
+.pantalla{
+    height: 80%;
+    width: 80%;
+    margin: 0 auto; /*hay que cambiar el marign*/
+    position: absolute;
+      background-size: cover;
+      background-position: center;
+
+    border: solid white 20px;
+}
+.carrilSuperior{
+    /* background-color: blue; */
+    border: solid 1px;
+    height: 33%;
+    width: 100%;
+}
+
+.carrilMedio{
+    /* background-color: yellow; */
+    border: solid 1px;
+    height: 33%;
+    width: 100%;
+}
+
+.carrilInferior{
+    /* background-color: red; */
+    border: solid 1px;
+    height: 33%;
+    width: 100%;
+}
