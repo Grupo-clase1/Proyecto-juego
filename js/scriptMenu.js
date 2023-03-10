@@ -2,17 +2,12 @@ var menuDiv;
 var pantalla;
 
 function jugar(){
-<<<<<<< HEAD
 
     //ejecuta el bucle para "animar" la nave
     animacion()
 
-    var menuDiv = document.getElementById('menuDiv');
-    var pantalla = document.getElementById('pantalla');
-=======
     menuDiv = document.getElementById('menuDiv');
     pantalla = document.getElementById('pantalla');
->>>>>>> d88bb321d5c0e1c11e2dd2c66aaebb7f8e4895b6
 
     menuDiv.style.visibility='hidden';//Ponemos en hidden el DivMenu y se pone en visible la pantalla
     pantalla.hidden=false
