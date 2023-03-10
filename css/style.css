@@ -1,4 +1,15 @@
+@font-face {
+    font-family: fuente1;
+    src: url(../media/fuente1.ttf);
+}
+
+html{
+    cursor: url(../media/cursor1.png) auto;
+}
+
 body {
+
+    
     /*background-image: ;*/
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -11,13 +22,23 @@ body {
 
     /* fondo de pantalla */
     background-image: url(../media/fondoF.webp);
+
+    font-family: fuente1;
   }
 
  h1{
 
     /* hay que meter fuente rollo pixel art */
-    color: aliceblue;
-    font-size: 10vh;
+    color: rgba(233, 223, 233, 0);
+    user-select: none;
+    font-size: 120px;
+
+    -webkit-text-stroke: 1px aliceblue;
+
+    background-image: url(../media/textura1.png);
+    background-position: 40%;
+    background-repeat: repeat;
+    -webkit-background-clip: text;
 
   }
 
@@ -34,15 +55,25 @@ body {
 }
 
 input{
+
     width: 300px;
     height: 100px;
-    font-size: 25px;
+    font-size: 50px;
     /*font-family: ;*/
+
+    background-image: url(../media/textura1.png);
+    background-position: 24%;
+    border-color: aliceblue;
+    color: aliceblue;
+    font-family: fuente1;
+
 }
 
 input:hover{
     cursor: pointer;
-    box-shadow: rgba(182, 87, 87, 0.519) 2px 2px 10px 10px;
+    /* box-shadow: rgba(241, 236, 236, 0.048) 2px 2px 10px 10px; */
+    scale: 1.1;
+
 }
 
 input:active{
