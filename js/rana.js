@@ -39,6 +39,7 @@ class Rana {
 
 }
 
+<<<<<<< Updated upstream
 let Pepe = new Rana('Pepe','5%','33%','./media/ovni1p.png','./media/ovni1.gif','./media/muerto.png');
  //Creamos el objeto con los parametros que queremos meterle
 
@@ -70,3 +71,13 @@ document.addEventListener("keydown", function(event) {
 
     setTimeout(animacion, 50)
   }
+=======
+    let Pepe = new Rana('Pepe','postionX','positionY','imagenParado','imagenMovimiento','imagenMuerto'); //Creamos el objeto con los parametros que queremos meterle
+    
+    
+    
+    
+    
+    
+    //Aquí ejecutariamos los metodos que hemos creado arriba
+>>>>>>> Stashed changes
