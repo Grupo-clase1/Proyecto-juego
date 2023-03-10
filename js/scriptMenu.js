@@ -28,15 +28,22 @@ function jugar(){
 }
 
 function ajustes(){
-    var texto='';
-    document.write('<div id="inAjustes" class="inAjustes"></div>')
+    var inAjustes = document.getElementById('inAjustes');
+    menuDiv = document.getElementById('menuDiv');
 
-    texto+='hola caracola';
-    document.getElementById('inAjustes').innerHTML=texto
+    menuDiv.style.visibility='hidden';
+    inAjustes.hidden=false;
 }
 
 function salir(){
 
    window.close();
+}
+
+function back(){
+    var inAjustes = document.getElementById('inAjustes');
+
+    inAjustes.hidden=true;
+    menuDiv.style='hidden=false';
 }
 
