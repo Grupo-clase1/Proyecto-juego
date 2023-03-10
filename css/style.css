@@ -13,6 +13,14 @@ body {
     background-image: url(../media/fondoF.webp);
   }
 
+ h1{
+
+    /* hay que meter fuente rollo pixel art */
+    color: aliceblue;
+    font-size: 10vh;
+
+  }
+
 #menuDiv{
     width: 100%;
     height: 100%;

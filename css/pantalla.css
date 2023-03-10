@@ -24,6 +24,8 @@
     position: absolute;
       background-size: cover;
       background-position: center;
+
+    border: solid white 20px;
 }
 .carrilSuperior{
     /* background-color: blue; */
