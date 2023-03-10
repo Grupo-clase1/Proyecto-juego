@@ -1,8 +1,9 @@
-var menuDiv 
+var menuDiv;
+var pantalla;
 
 function jugar(){
-    var menuDiv = document.getElementById('menuDiv');
-    var pantalla = document.getElementById('pantalla');
+    menuDiv = document.getElementById('menuDiv');
+    pantalla = document.getElementById('pantalla');
 
     menuDiv.style.visibility='hidden';//Ponemos en hidden el DivMenu y se pone en visible la pantalla
     pantalla.hidden=false
