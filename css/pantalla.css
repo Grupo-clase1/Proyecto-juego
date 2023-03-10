@@ -15,9 +15,9 @@
 }
 
 .pantalla{
-    height: 98%;
-    width: 98%;
-    margin: 0 auto;
+    height: 80%;
+    width: 80%;
+    margin: 0 auto; /*hay que cambiar el marign*/
     position: absolute;
       background-size: cover;
       background-position: center;
