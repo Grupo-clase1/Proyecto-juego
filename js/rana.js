@@ -62,11 +62,3 @@ document.addEventListener("keydown", function(event) {
     }
   });
 
-  function animacion(){
-
-    document.getElementById("rana").style.top=Pepe.positionY
-    
-    Pepe.actualizarPosicion()
-
-    setTimeout(animacion, 50)
-  }

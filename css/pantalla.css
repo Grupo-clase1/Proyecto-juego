@@ -23,7 +23,8 @@
     margin: 0 auto; /*hay que cambiar el marign*/
     position: absolute;
       background-size: cover;
-      background-position: center;
+      background-position: 20%;
+      background-repeat: repeat-x;
 
     border: solid white 20px;
 }
