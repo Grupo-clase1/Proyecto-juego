@@ -24,6 +24,7 @@ body {
     background-image: url(../media/fondoF.webp);
 
     font-family: fuente1;
+    overflow: hidden;
   }
 
  h1{

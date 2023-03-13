@@ -1,7 +1,7 @@
-class Rana {
+class nave {
     //Atributos
     constructor(nombre,postionX,positionY,imagenParado,imagenMovimiento,imagenMuerto) {
-      //Creamos el constructor del objeto Rana
+      //Creamos el constructor del objeto nave
         this.nombre = nombre;
         this.positionX = postionX;
         this.positionY = positionY;
@@ -39,7 +39,7 @@ class Rana {
 
 }
 
-let Pepe = new Rana('Pepe','5%','33%','./media/ovni1p.png','./media/ovni1.gif','./media/muerto.gif');
+let Pepe = new nave('Pepe','5%','33%','./media/ovni1p.png','./media/ovni1.gif','./media/muerto.gif');
  //Creamos el objeto con los parametros que queremos meterle
 
 
