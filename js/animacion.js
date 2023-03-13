@@ -10,14 +10,13 @@ function animacion(){
     setTimeout(animacion, 50)
   }
 
-var posicion=20
+  //Movimiento del fondo, se mueve 10% cada 100ms
+var posicion=5 
 function moverFondo(){
     fondos = document.getElementById('pantalla');
 
-    identificador=setInterval(() => {
-        posicion += 10;
-        fondos.style.backgroundPosition=posicion+'%'
-    }, 100);
+        posicion -= 20;
+        fondos.style.backgroundPosition=posicion+'px'
 
     // setInterval(() => {
     //     clearInterval(identificador);
