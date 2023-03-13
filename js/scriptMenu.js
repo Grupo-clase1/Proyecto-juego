@@ -3,6 +3,11 @@ var pantalla;
 
 function jugar(){
 
+    //reproducir la música del juego y ponerla a la mitad de volumen
+    document.getElementById("musicaJuego").volume = 0.5;
+    document.getElementById("musicaJuego").play();
+    document.getElementById("musicaJuego").loop=true;
+
     //ejecuta el bucle para "animar" la nave
     animacion()
 
