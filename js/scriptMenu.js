@@ -13,7 +13,7 @@ function jugar(){
     pantalla.hidden=false
     var backgrounds = [// Se crea un array de los bg que se van a utilizar
         'url(media/fondo1.jpg)', 
-        'url(media/fondo2.gif)',
+        'url(media/fondo2.jpg)',
         'url(media/fondo3.jpg)',
     ];
 
