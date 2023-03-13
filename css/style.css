@@ -27,7 +27,6 @@ body {
   }
 
  h1{
-
     /* hay que meter fuente rollo pixel art */
     color: rgba(233, 223, 233, 0);
     user-select: none;
@@ -39,7 +38,6 @@ body {
     background-position: 40%;
     background-repeat: repeat;
     -webkit-background-clip: text;
-
   }
 
 #menuDiv{
@@ -56,18 +54,15 @@ body {
 
 
 input{
-
     width: 300px;
     height: 100px;
     font-size: 50px;
     /*font-family: ;*/
-
     background-image: url(../media/textura1.png);
     background-position: 24%;
     border-color: aliceblue;
     color: aliceblue;
     font-family: fuente1;
-
 }
 
 input:hover{
@@ -75,7 +70,6 @@ input:hover{
     /* box-shadow: rgba(241, 236, 236, 0.048) 2px 2px 10px 10px; */
     scale: 1.1;
     cursor: url("../media/cursor2.png"), auto;
-
 }
 
 input:active{
