@@ -1,5 +1,5 @@
 .rana{   
-    height: 20%; 
+    height: 30%; 
      /* width: 400px; */
     /* min-width: 30px;*/
     /* min-height: 30px;  */
@@ -7,6 +7,9 @@
      top: 39%;
     /* left: 8%; */
     /* transform: translate(-50%, -50%);     */
+
+    /* He puesto esto para generar el efecto de cambio de carril (Iván) */
+    transition: 0.5s;
 }
 
 .imagen{
@@ -15,12 +18,18 @@
 }
 
 .pantalla{
-    height: 98%;
-    width: 98%;
-    margin: 0 auto;
+    height: 80%;
+    width: 80%;
+    margin: 0 auto; /*hay que cambiar el marign*/
     position: absolute;
       background-size: cover;
-      background-position: center;
+      background-position: 20%;
+      background-repeat: repeat-x;
+
+    border: solid white 20px;
+
+    transition: 0.2s;
+
 }
 .carrilSuperior{
     /* background-color: blue; */

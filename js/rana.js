@@ -1,7 +1,7 @@
-class Rana {
+class nave {
     //Atributos
     constructor(nombre,postionX,positionY,imagenParado,imagenMovimiento,imagenMuerto) {
-      //Creamos el constructor del objeto Rana
+      //Creamos el constructor del objeto nave
         this.nombre = nombre;
         this.positionX = postionX;
         this.positionY = positionY;
@@ -39,7 +39,7 @@ class Rana {
 
 }
 
-let Pepe = new Rana('Pepe','5%','33%','./media/ovni1p.png','./media/ovni1.gif','./media/muerto.png');
+let Pepe = new nave('Pepe','5%','33%','./media/ovni1p.png','./media/ovni1.gif','./media/muerto.gif');
  //Creamos el objeto con los parametros que queremos meterle
 
 
@@ -52,21 +52,13 @@ document.addEventListener("keydown", function(event) {
     if (event.key === "w" || event.key === "W") {
       if (Pepe.carril < 3) { // Si la rana no está en el carril 3
         Pepe.carril++; // Aumentar la propiedad "carril"
-        console.log(Pepe.carril)
+        // console.log(Pepe.carril)
       }
     } else if (event.key === "s" || event.key === "S") {
       if (Pepe.carril > 1) { // Si la rana no está en el carril 1
         Pepe.carril--; // Disminuir la propiedad "carril"
-        console.log(Pepe.carril)
+        // console.log(Pepe.carril)
       }
     }
   });
 
-  function animacion(){
-
-    document.getElementById("rana").style.top=Pepe.positionY
-    
-    Pepe.actualizarPosicion()
-
-    setTimeout(animacion, 50)
-  }
