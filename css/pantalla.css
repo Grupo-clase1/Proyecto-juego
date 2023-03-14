@@ -4,12 +4,12 @@ user-select: none;
 }
 
 .rana{   
-    height: 30%; 
+    height: 20%; 
      /* width: 400px; */
     /* min-width: 30px;*/
     /* min-height: 30px;  */
     position: absolute;
-     top: 39%;
+     top: 45%;
     /* left: 8%; */
     /* transform: translate(-50%, -50%);     */
 
@@ -20,6 +20,9 @@ user-select: none;
 .imagen{
     height: 100%;
     width: 100%;
+    
+    /* para que no aparezca para seleccionar las imagenes y tal */
+    pointer-events: none;
 }
 
 
@@ -62,22 +65,31 @@ user-select: none;
 }
 
 .carrilSuperior{
-    /* background-color: blue; */
     border: solid 1px;
-    height: 33%;
+    height: 20%;
     width: 100%;
 }
 
 .carrilMedio{
-    /* background-color: yellow; */
     border: solid 1px;
-    height: 33%;
+    height: 20%;
     width: 100%;
 }
 
 .carrilInferior{
-    /* background-color: red; */
     border: solid 1px;
-    height: 33%;
+    height: 20%;
+    width: 100%;
+}
+
+.carrilInferior2{
+    border: solid 1px;
+    height: 20%;
+    width: 100%;
+}
+
+.carrilInferior3{
+    border: solid 1px;
+    height: 20%;
     width: 100%;
 }

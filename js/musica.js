@@ -10,7 +10,7 @@ document.addEventListener('mousemove', function() {
   });
 
 
-  function iniciarMusicaJuego(){
+function iniciarMusicaJuego(){
 
     //con esto evito que se solapen las dos canciones, "desactivando" la reproduccion de la del menú
     musicaMenuActiva=false
@@ -24,4 +24,15 @@ document.addEventListener('mousemove', function() {
     musicaJuego.loop=true;
     
 
-  }
+}
+
+function efectoDeSonido(){
+
+    var SonidoClick = document.getElementById("click")
+    
+    //reproducir la música del juego y ponerla a la mitad de volumen
+    SonidoClick.volume = 0.5;
+    SonidoClick.play();
+    SonidoClick.loop=false;
+
+}
