@@ -21,9 +21,9 @@ function jugar(){
     menuSup.style.visibility='visible'
 
     var backgrounds = [// Se crea un array de los bg que se van a utilizar
-        'url(media/fondo1.jpg)', 
-        'url(media/fondo2.jpg)',
-        'url(media/fondo3.jpg)',
+        'url('+nivel1.fondo+')', 
+        'url('+nivel2.fondo+')',
+        'url('+nivel3.fondo+')',
     ];
 
     var inicioBackground = -1; 
@@ -34,12 +34,12 @@ function jugar(){
         if (inicioBackground == 2) {
             clearInterval(intervalo); 
         } else {
+            Pepe.animacionOvni()
             inicioBackground = (inicioBackground + 1) % backgrounds.length;
             document.getElementById('pantalla').style.backgroundImage = backgrounds[inicioBackground];
         }
     }
 
-    Pepe.animacionOvni();
 
 }
 
