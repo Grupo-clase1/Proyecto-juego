@@ -26,3 +26,15 @@ function mostrarNivel(nivel) {
   // Código para mostrar el nivel en la pantalla
 }
   
+
+function animacionOvni(){
+    var ovni = document.getElementById('rana');
+
+    setInterval(() => {
+      ovni.classList.add('animacion');
+      setTimeout(() => {
+        ovni.classList.remove('animacion');
+      }, 1000); 
+    }, 5000);
+
+}
