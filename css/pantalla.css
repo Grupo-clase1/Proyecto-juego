@@ -1,3 +1,8 @@
+/* para que no aparezca para seleccionar las imagenes y tal */
+html{
+    pointer-events: none;
+}
+
 .rana{   
     height: 30%; 
      /* width: 400px; */
