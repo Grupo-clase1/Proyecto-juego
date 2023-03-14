@@ -44,6 +44,7 @@ user-select: none;
     background-color: transparent;
     background-image: url(../media/tienda.png);
     background-size: cover;
+    border: none;
 }
 
 #ajustesBoton{
@@ -53,12 +54,36 @@ user-select: none;
     background-color: transparent;
     background-image: url(../media/ajustes.png);
     background-size: cover;
+    border: none;
 }
 
 .tituloNivel{
-    background-color: aliceblue;
-    width: 80px;
-    height: 50px;
+    color:aliceblue;
+    font-size: 28px;
+    width: 15%;
+    height: 30%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+#vidas{
+    width: 100%;
+    height: auto;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-content: center;
+    gap: 5%
+}
+
+.tituloNivel img{
+    width: 20%;
+    height: auto;
+    gap: 10%;
 }
 
 .pantalla{
@@ -71,7 +96,7 @@ user-select: none;
     border: solid white 8px;
     transition: 0.2s;
     visibility: hidden;
-    top: 10%
+    top: 12%
 }
 
 .carrilSuperior{
