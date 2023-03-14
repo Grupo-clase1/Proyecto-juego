@@ -58,7 +58,8 @@ user-select: none;
 }
 
 .tituloNivel{
-    background-color: aliceblue;
+    color:aliceblue;
+    font-size: 28px;
     width: 15%;
     height: 30%;
     position: relative;
