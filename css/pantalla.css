@@ -42,7 +42,14 @@ user-select: none;
     width: 15%; 
     font-size: 16px;
     border: solid white 2px;
-    /*background-image: ;*/
+}
+
+#tiendaBoton{
+    background-image: url(../media/tienda.png);
+}
+
+#ajustesBonton{
+    background-image: url(../media/ajustes.png);
 }
 
 .tituloNivel{
