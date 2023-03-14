@@ -8,9 +8,9 @@ class Nivel {
      //Aqui meteriamos los métodos que queremos aplicar
 }
 
-var nivel1 = new Nivel(1, 10, "../media/fondo1.jpg");
-var nivel2 = new Nivel(2, 15, "../media/fondo2.jpg");
-var nivel3 = new Nivel(3, 20, "../media/fondo3.jpg");
+var nivel1 = new Nivel(1, 10, "media/fondo1.jpg");
+var nivel2 = new Nivel(2, 15, "media/fondo2.jpg");
+var nivel3 = new Nivel(3, 20, "media/fondo3.jpg");
 
 // Cuando la rana llegue al final del nivel 1, cambia al nivel 2
 if (Pepe.llegaAlFinal(nivel1)) {
