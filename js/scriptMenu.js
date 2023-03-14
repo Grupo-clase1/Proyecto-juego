@@ -1,5 +1,6 @@
 var menuDiv;
 var pantalla;
+var menuSup;
 
 
 function jugar(){
@@ -13,9 +14,12 @@ function jugar(){
 
     menuDiv = document.getElementById('menuDiv');
     pantalla = document.getElementById('pantalla');
+    menuSup = document.getElementById('menuSup');
 
     menuDiv.style.visibility='hidden';//Ponemos en hidden el DivMenu y se pone en visible la pantalla
-    pantalla.hidden=false
+    pantalla.style.visibility='visible'
+    menuSup.style.visibility='visible'
+
     var backgrounds = [// Se crea un array de los bg que se van a utilizar
         'url(media/fondo1.jpg)', 
         'url(media/fondo2.jpg)',
