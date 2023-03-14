@@ -51,12 +51,12 @@ class nave {
  
       var ovni = document.getElementById(this.id)
 
-      setInterval(() => {
+      // setInterval(() => {
         ovni.classList.add('animacion');
         setTimeout(() => {
           ovni.classList.remove('animacion');
         }, 1000); 
-      }, 5000);
+      // }, 5000);
       
   }
 }
