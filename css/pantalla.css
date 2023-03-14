@@ -63,7 +63,7 @@ html {
     visibility: hidden;
     top: 10%
 }
-
+/*pantalla de pausa, capa negra transparente con letras y su animación*/
 #pantallaPausa {
     height: 80%;
     width: 80%;

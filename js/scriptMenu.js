@@ -1,10 +1,10 @@
 var menuDiv;
 var pantalla;
 var menuSup;
-
+//funcion para que aparezca la pantalla pausada primero, con todo parado
 function jugar1() {
     menuDiv = document.getElementById('menuDiv');
-    pantallaPause = document.getElementById('pantallaPausa');
+    pantallaPausa = document.getElementById('pantallaPausa');
     menuDiv.style.visibility = 'hidden';
     pantallaPausa.hidden = false;
 }
@@ -24,7 +24,7 @@ function jugar() {
     pantallaPausa = document.getElementById('pantallaPausa');
 
     pantallaPausa.style.visibility = 'hidden';//Ponemos en hidden el DivMenu y se pone en visible la pantalla
-    pantalla.style.visibility = 'visible'
+    pantalla.hidden = false;
     menuSup.style.visibility = 'visible'
 
     var backgrounds = [// Se crea un array de los bg que se van a utilizar
@@ -46,6 +46,14 @@ function jugar() {
         }
     }
 }
+
+
+
+document.addEventListener('keydown', function(event) {  
+     if (event.key === 32) {   
+       jugar();
+     }
+   });
 
 function ajustes() {
 
