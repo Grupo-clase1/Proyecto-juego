@@ -30,8 +30,13 @@
         <input type="button" value="Salir" id="salir" class="salinBoton" onclick="salir()">
     </div>
 
-    
-    <div id="pantalla" style="background-image: url(media/fondo.jpg);" class="pantalla" hidden> 
+     <div id="menuSup" class="menuSuperior">
+        <input type="button" value="Tienda" id="tienda" class="tiendaBoton" onclick="tienda()">
+        <div class="tituloNivel">Nivel 1</div>
+        <input type="button" value="Ajustes" id="ajustes" class="ajustesBoton" onclick="ajustes()">
+     </div>
+
+    <div id="pantalla" style="background-image: url(media/fondo.jpg);" class="pantalla"> 
         <div class="carrilSuperior"></div>
         <div class="carrilMedio"></div>
         <div id="rana" class="rana"><img class="imagen" src="./media/ovni1p.png"></div>
@@ -39,6 +44,7 @@
         <div class="carrilInferior2"></div>
         <div class="carrilInferior3"></div>
     </div>
+
 
     <audio src="music/musicaMenu.wav" id="musicaMenu" loop></audio>
     <audio src="music/musicaJuego.mp3" id="musicaJuego"></audio>
