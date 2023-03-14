@@ -105,3 +105,13 @@ user-select: none;
     height: 20%;
     width: 100%;
 }
+
+@keyframes avance {
+    0% { left:8%;}
+    100% { left: 100%; height: 5%;}
+} 
+.animacion{
+    animation-name: avance; 
+    animation-duration: 1s;
+    /* animation-delay: 4s; */
+}
