@@ -1,6 +1,6 @@
 /* para que no aparezca para seleccionar las imagenes y tal */
 html{
-    pointer-events: none;
+user-select: none;
 }
 
 .rana{   
