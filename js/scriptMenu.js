@@ -4,6 +4,8 @@ var pantalla;
 
 function jugar(){
 
+    efectoDeSonido()
+
     iniciarMusicaJuego()
 
     //ejecuta el bucle para "animar" la nave
@@ -35,6 +37,9 @@ function jugar(){
 }
 
 function ajustes(){
+
+    efectoDeSonido()
+
     var inAjustes = document.getElementById('inAjustes');
     menuDiv = document.getElementById('menuDiv');
 
@@ -44,10 +49,15 @@ function ajustes(){
 
 function salir(){
 
-   window.close();
+    efectoDeSonido()
+
+    window.close();
 }
 
 function back(){
+
+    efectoDeSonido()
+
     var inAjustes = document.getElementById('inAjustes');
 
     inAjustes.hidden=true;
