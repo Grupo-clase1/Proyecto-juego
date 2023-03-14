@@ -38,9 +38,8 @@ user-select: none;
 
 
 #tiendaBoton{
-    height: 25%;
-    width: 6%; 
-    font-size: 16px;
+    width: 60px;
+    height: 60px;
     background-color: transparent;
     background-image: url(../media/tienda.png);
     background-size: cover;
@@ -48,9 +47,8 @@ user-select: none;
 }
 
 #ajustesBoton{
-    height: 25%;
-    width: 6%; 
-    font-size: 16px;
+    width: 60px;
+    height: 60px; 
     background-color: transparent;
     background-image: url(../media/ajustes.png);
     background-size: cover;
@@ -59,9 +57,9 @@ user-select: none;
 
 .tituloNivel{
     color:aliceblue;
-    font-size: 28px;
-    width: 15%;
-    height: 30%;
+    font-size: 170%;
+    width: 130px;
+    height: 60px;
     position: relative;
     display: flex;
     justify-content: center;
@@ -81,8 +79,8 @@ user-select: none;
 }
 
 .tituloNivel img{
-    width: 20%;
-    height: auto;
+    width: 26px;
+    height: 26px;
     gap: 10%;
 }
 
@@ -96,7 +94,7 @@ user-select: none;
     border: solid white 8px;
     transition: 0.2s;
     visibility: hidden;
-    top: 12%
+    top: 16%
 }
 
 .carrilSuperior{
