@@ -42,13 +42,14 @@ user-select: none;
     width: 15%; 
     font-size: 16px;
     border: solid white 2px;
+    background-color: transparent;
 }
 
-#tiendaBoton{
+#tienda{
     background-image: url(../media/tienda.png);
 }
 
-#ajustesBonton{
+#ajustes{
     background-image: url(../media/ajustes.png);
 }
 
