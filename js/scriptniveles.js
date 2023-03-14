@@ -27,14 +27,4 @@ function mostrarNivel(nivel) {
 }
   
 
-function animacionOvni(){
-    var ovni = document.getElementById('rana');
 
-    setInterval(() => {
-      ovni.classList.add('animacion');
-      setTimeout(() => {
-        ovni.classList.remove('animacion');
-      }, 1000); 
-    }, 5000);
-
-}

@@ -39,7 +39,7 @@ function jugar(){
         }
     }
 
-    animacionOvni();
+    Pepe.animacionOvni();
 
 }
 

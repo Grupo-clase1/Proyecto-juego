@@ -1,6 +1,6 @@
 class nave {
     //Atributos
-    constructor(nombre,postionX,positionY,imagenParado,imagenMovimiento,imagenMuerto) {
+    constructor(nombre,postionX,positionY,imagenParado,imagenMovimiento,imagenMuerto, id) {
       //Creamos el constructor del objeto nave
         this.nombre = nombre;
         this.positionX = postionX;
@@ -8,6 +8,7 @@ class nave {
         this.imagenParado = imagenParado;
         this.imagenMovimiento = imagenMovimiento;
         this.imagenMuerto = imagenMuerto;
+        this.id = id
 
         // carril en el que está
         this.carril = 3;
@@ -45,9 +46,22 @@ class nave {
 
     // metodo para cambiar de carril
 
+
+    animacionOvni(){
+ 
+      var ovni = document.getElementById(this.id)
+
+      setInterval(() => {
+        ovni.classList.add('animacion');
+        setTimeout(() => {
+          ovni.classList.remove('animacion');
+        }, 1000); 
+      }, 5000);
+      
+  }
 }
 
-let Pepe = new nave('Pepe','5%','33%','./media/ovni1p.png','./media/ovni1.gif','./media/muerto.gif');
+let Pepe = new nave('Pepe','5%','33%','./media/ovni1p.png','./media/ovni1.gif','./media/muerto.gif', "rana");
  //Creamos el objeto con los parametros que queremos meterle
 
 
