@@ -45,6 +45,9 @@ function jugar() {
             document.getElementById('pantalla').style.backgroundImage = backgrounds[inicioBackground];
         }
     }
+
+    animacionOvni();
+
 }
 
 
