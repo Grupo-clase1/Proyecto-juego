@@ -1,42 +1,23 @@
-class ObstaculoHorizontal {
-    constructor(posicionX, posicionY, longitud, velocidad, imagen) {
-      this.posicionX = posicionX;
-      this.posicionY = posicionY;
-      this.longitud = longitud;
-      this.velocidad = velocidad;
-      this.imagen = imagen;
-    }
-  
-    mover() {
-      this.posicionX -= this.velocidad;
-    }
+class Obstaculo {
+  constructor(carril, imagen) {
+    this.carril = carril;
+    this.imagen = imagen;
+    this.posicionX = 0;
+    this.posicionY = -100; // posición inicial fuera de la pantalla
+    this.velocidad = 5; // velocidad del obstáculo
   }
-  
-  class ObstaculoVertical {
-    constructor(posicionX, posicionY, longitud, velocidad, imagen) {
-      this.posicionX = posicionX;
-      this.posicionY = posicionY;
-      this.longitud = longitud;
-      this.velocidad = velocidad;
-      this.imagen = imagen;
-    }
-  
-    mover() {
-      this.posicionY += this.velocidad;
-    }
+
+  // Método para actualizar la posición del obstáculo
+  actualizar() {
+    this.posicionY += this.velocidad;
   }
-  
-  const nivel1Obstaculos = [
-    new ObstaculoHorizontal(800, 400, 100, 5, "obstaculo1.png"),
-    new ObstaculoHorizontal(1000, 200, 200, 7, "obstaculo2.png"),
-    new ObstaculoVertical(500, 0, 100, 3, "obstaculo3.png"),
-    new ObstaculoVertical(700, -100, 150, 4, "obstaculo4.png"),
-  ];
-  
-  const nivel2Obstaculos = [
-    new ObstaculoHorizontal(800, 400, 150, 7, "obstaculo1.png"),
-    new ObstaculoHorizontal(1000, 200, 250, 9, "obstaculo2.png"),
-    new ObstaculoVertical(500, 0, 200, 4, "obstaculo3.png"),
-    new ObstaculoVertical(700, -100, 250, 5, "obstaculo4.png"),
-  ];
-    
+
+  // Método para dibujar el obstáculo en el canvas
+  dibujar(contexto) {
+    const ancho = 50; // ancho del obstáculo en píxeles
+    const alto = 50; // alto del obstáculo en píxeles
+    const x = this.carril * ancho; // posición en el eje X según el carril
+    const y = this.posicionY; // posición en el eje Y según la velocidad
+    contexto.drawImage(this.imagen, x, y, ancho, alto);
+  }
+}
