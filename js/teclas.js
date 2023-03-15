@@ -21,7 +21,6 @@ document.addEventListener("keydown", function(event) {
         pausa=false;
         jugar()
       }else{
-        // NO FUCIONA TODAVÍA
         pausa=true;
         jugar1()
       }
