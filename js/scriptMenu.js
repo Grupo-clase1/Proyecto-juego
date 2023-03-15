@@ -25,7 +25,7 @@ function jugar(){
     menuSup = document.getElementById('menuSup');
 
     menuDiv.style.visibility='hidden';//Ponemos en hidden el DivMenu y se pone en visible la pantalla
-    pantalla.style.visibility='visible'
+    pantalla.hidden = false;
     menuSup.style.visibility='visible'
     pantallaPausa.style.visibility = 'hidden';
 
