@@ -3,6 +3,12 @@ var pantalla;
 var menuSup;
 var activarOvni
 
+function jugar1() {
+    menuDiv = document.getElementById('menuDiv');
+    pantallaPausa = document.getElementById('pantallaPausa');
+    menuDiv.style.visibility = 'hidden';
+    pantallaPausa.hidden = false;
+  }
 
 function jugar(){
 
@@ -13,6 +19,7 @@ function jugar(){
     //ejecuta el bucle para "animar" la nave
     animacion()
 
+    pantallaPausa = document.getElementById('pantallaPausa');
     menuDiv = document.getElementById('menuDiv');
     pantalla = document.getElementById('pantalla');
     menuSup = document.getElementById('menuSup');
@@ -20,6 +27,7 @@ function jugar(){
     menuDiv.style.visibility='hidden';//Ponemos en hidden el DivMenu y se pone en visible la pantalla
     pantalla.style.visibility='visible'
     menuSup.style.visibility='visible'
+    pantallaPausa.style.visibility = 'hidden';
 
     var backgrounds = [// Se crea un array de los bg que se van a utilizar
         'url('+nivel1.fondo+')', 
