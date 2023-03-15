@@ -184,9 +184,25 @@ user-select: none;
     /* animation-delay: 4s; */
 }
 
-#divTienda{
-    width: 800px;
-    height: 400px;
-    background-color: aliceblue;
-    z-index: 1;
-}
+ #divTienda {
+    height: 80%;
+    width: 80%;
+    margin: 0 auto;
+    position: absolute;
+    background-color: rgba(4, 4, 4, 0.581);
+    top: 18%;
+    z-index: 1; 
+  }
+
+  .dentroTienda{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5%;
+  }
+  
+  .skin{
+    height: 25%;
+  }
