@@ -7,4 +7,10 @@ function tienda() {
     pausa=true;
   }
   
-  
+function ajustesSup() {
+  let botonAjustes = document.getElementById('ajustesBoton');
+  let divAjustes = document.getElementById('divAjustes');
+
+  divAjustes.hidden=false;
+  pausa=true;
+}

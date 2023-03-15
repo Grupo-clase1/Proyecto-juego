@@ -11,7 +11,6 @@ document.addEventListener('mousemove', function() {
 
 
 function iniciarMusicaJuego(){
-
     //con esto evito que se solapen las dos canciones, "desactivando" la reproduccion de la del menú
     musicaMenuActiva=false
     var musicaJuego = document.getElementById("musicaJuego")
@@ -22,17 +21,24 @@ function iniciarMusicaJuego(){
     musicaJuego.volume = 0.40;
     musicaJuego.play();
     musicaJuego.loop=true;
-    
+}
 
+function pausarMusicaJuego(){
+    //con esto evito que se solapen las dos canciones, "desactivando" la reproduccion de la del menú
+    musicaMenuActiva=false
+    var musicaJuego = document.getElementById("musicaJuego")
+    
+    document.getElementById("musicaMenu").pause()
+    
+    //pausar la música del juego
+    musicaJuego.pause();
 }
 
 function efectoDeSonido(){
-
     var SonidoClick = document.getElementById("click")
-    
+
     //reproducir la música del juego y ponerla a la mitad de volumen
     SonidoClick.volume = 0.25;
     SonidoClick.play();
     SonidoClick.loop=false;
-
 }
