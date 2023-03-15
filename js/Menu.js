@@ -11,6 +11,7 @@ function jugar1() {
     pantallaPausa = document.getElementById('pantallaPausa');
     menuDiv.style.visibility = 'hidden';
     pantallaPausa.hidden = false;
+    imagenOvni.src="./media/ovni1p.png"
   }
 
 function jugar(){
@@ -26,11 +27,13 @@ function jugar(){
     menuDiv = document.getElementById('menuDiv');
     pantalla = document.getElementById('pantalla');
     menuSup = document.getElementById('menuSup');
+    imagenOvni = document.getElementById('imagen');
 
     menuDiv.style.visibility='hidden';//Ponemos en hidden el DivMenu y se pone en visible la pantalla
     pantalla.hidden = false;
     menuSup.style.visibility='visible'
     pantallaPausa.hidden = true;
+    imagenOvni.src="./media/ovni1.gif"
 
     var backgrounds = [// Se crea un array de los bg que se van a utilizar
         'url('+nivel1.fondo+')', 
