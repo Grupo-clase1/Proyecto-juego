@@ -6,13 +6,17 @@ var pausa=true;
 var pantallaPausa;
 var intervalo;
 
+// esto pausa el juego
 function jugar1() {
+
     menuDiv = document.getElementById('menuDiv');
     pantallaPausa = document.getElementById('pantallaPausa');
     menuDiv.style.visibility = 'hidden';
     pantallaPausa.hidden = false;
-  }
+    
+}
 
+// esto inicia el juego
 function jugar(){
 
     efectoDeSonido()
