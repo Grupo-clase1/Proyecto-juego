@@ -1,8 +1,6 @@
 // esto se ejecuta en bucle y genera el efecto de animación
 function animacion(){
 
-  console.log(pausa)
-
     document.getElementById("rana").style.top=Pepe.positionY
     
     Pepe.actualizarPosicion()
@@ -24,7 +22,7 @@ var posicion=5
 function moverFondo(){
     fondos = document.getElementById('pantalla');
 
-        posicion -= 5;
+        posicion -= 2;
         fondos.style.backgroundPosition=posicion+'vh'
 }
 
