@@ -184,3 +184,10 @@ user-select: none;
     animation-duration: 1s;
     /* animation-delay: 4s; */
 }
+
+#divTienda{
+    width: 800px;
+    height: 400px;
+    background-color: aliceblue;
+    z-index: 1;
+}
