@@ -1,11 +1,17 @@
 
 function tienda() {
-    let botonTienda = document.getElementById('tiendaBoton');
-    let divTienda = document.getElementById('divTienda');
+  let botonTienda = document.getElementById('tiendaBoton');
+  let divTienda = document.getElementById('divTienda');
 
-    divTienda.hidden=false;
-    pausa=true;
+  if (divTienda.hidden) {
+      divTienda.hidden = false; // mostrar el div de la tienda
+      pausa = true; // pausar el juego
+  } else {
+      divTienda.hidden = true; // ocultar el div de la tienda
+      pausa = false; // reanudar el juego
+      animacion(); // reiniciar el bucle de animación
   }
+}
   
 function ajustesSup() {
   let botonAjustes = document.getElementById('ajustesBoton');
