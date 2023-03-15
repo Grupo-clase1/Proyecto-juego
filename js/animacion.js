@@ -1,5 +1,7 @@
 function animacion(){
 
+  console.log(".")
+
     document.getElementById("rana").style.top=Pepe.positionY
     
     Pepe.actualizarPosicion()
@@ -8,7 +10,6 @@ function animacion(){
   
     // esto al final siempre
     setTimeout(animacion, 50)
-
     
   }
 
