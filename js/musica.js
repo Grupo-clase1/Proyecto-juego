@@ -23,15 +23,21 @@ function iniciarMusicaJuego(){
     musicaJuego.loop=true;
 }
 
-function pausarMusicaJuego(){
+function botonMusicaJuego(){
     //con esto evito que se solapen las dos canciones, "desactivando" la reproduccion de la del menú
     musicaMenuActiva=false
     var musicaJuego = document.getElementById("musicaJuego")
-    
-    document.getElementById("musicaMenu").pause()
-    
-    //pausar la música del juego
-    musicaJuego.pause();
+    var sonido=document.getElementById('sonido').innerHTML
+
+    if (sonido=='🔊'){
+        document.getElementById('sonido').innerHTML='🔈'
+        musicaJuego.pause();
+        }else{
+        document.getElementById('sonido').innerHTML='🔊'
+        musicaJuego.volume = 0.40;
+        musicaJuego.play();
+        musicaJuego.loop=true;
+        }   
 }
 
 function efectoDeSonido(){

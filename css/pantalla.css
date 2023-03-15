@@ -223,4 +223,15 @@ user-select: none;
     align-items: center;
     justify-content: center;
     gap: 5%;
+    color: #d0dbdf;
+  }
+
+  #sonido{
+    background-color: #d0dbdf;
+    width: 4%;
+    height: 6%;
+    display: flex;
+    justify-content: center;
+    border-radius: 29%;
+    font-size: 138%;
   }
