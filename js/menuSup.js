@@ -17,8 +17,14 @@ function ajustesSup() {
   let botonAjustes = document.getElementById('ajustesBoton');
   let divAjustes = document.getElementById('divAjustes');
 
-  divAjustes.hidden=false;
-  pausa=true;
+  if (divAjustes.hidden) {
+    divAjustes.hidden = false; // mostrar el menú de ajustes
+    pausa = true; // pausar el juego
+  } else {
+    divAjustes.hidden = true; // ocultar el menú de ajustes
+    pausa = false; // reanudar el juego
+    animacion(); // reiniciar el bucle de animación
+  }
 }
 
 function mueve1(){
