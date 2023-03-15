@@ -1,10 +1,10 @@
 class Obstaculo {
-  constructor(carril, imagen) {
+  constructor(carril, imagen, velocidad) {
     this.carril = carril;
     this.imagen = imagen;
     this.posicionX = 0;
     this.posicionY = -100; // posición inicial fuera de la pantalla
-    this.velocidad = 5; // velocidad del obstáculo
+    this.velocidad = velocidad; // velocidad del obstáculo
   }
 
   // Método para actualizar la posición del obstáculo
