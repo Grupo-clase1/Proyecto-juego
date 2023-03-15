@@ -235,3 +235,9 @@ user-select: none;
     border-radius: 29%;
     font-size: 138%;
   }
+
+  #sonido:hover{
+    cursor: pointer;
+    scale: 1.1;
+    cursor: url("../media/cursor3.png"), auto;
+  }
