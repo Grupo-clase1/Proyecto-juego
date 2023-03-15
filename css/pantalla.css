@@ -20,7 +20,6 @@ user-select: none;
 .imagen{
     height: 100%;
     width: 100%;
-    
     /* para que no aparezca para seleccionar las imagenes y tal */
     pointer-events: none;
 }
