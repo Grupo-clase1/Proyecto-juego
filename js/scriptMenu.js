@@ -25,6 +25,7 @@ function jugar(){
         'url('+nivel1.fondo+')', 
         'url('+nivel2.fondo+')',
         'url('+nivel3.fondo+')',
+        'url('+nivel4.fondo+')',
     ];
 
     var inicioBackground = -1; 
@@ -34,7 +35,7 @@ function jugar(){
 
 
         // imágenes de fondo disponibles, se cambia la imagen de fondo mediante la propiedad 
-        if (inicioBackground == 2) {
+        if (inicioBackground == 3) {
             clearInterval(intervalo); 
         } else {
             Pepe.animacionOvni()
