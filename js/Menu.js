@@ -20,6 +20,7 @@ function jugar(){
     menuDiv.style.visibility='hidden';//Ponemos en hidden el DivMenu y se pone en visible la pantalla
     pantalla.style.visibility='visible'
     menuSup.style.visibility='visible'
+    
 
     var backgrounds = [// Se crea un array de los bg que se van a utilizar
         'url('+nivel1.fondo+')', 
