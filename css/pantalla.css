@@ -206,4 +206,38 @@ user-select: none;
     height: 25%;
   }
 
- 
+  #divAjustes {
+    height: 80%;
+    width: 80%;
+    margin: 0 auto;
+    position: absolute;
+    background-color: rgba(4, 4, 4, 0.581);
+    top: 18%;
+    z-index: 1; 
+  }
+
+  .dentroAjustes{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5%;
+    color: #d0dbdf;
+  }
+
+  #sonido{
+    background-color: #d0dbdf;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    border-radius: 29%;
+    font-size: 138%;
+  }
+
+  #sonido:hover{
+    cursor: pointer;
+    scale: 1.1;
+    cursor: url("../media/cursor3.png"), auto;
+  }

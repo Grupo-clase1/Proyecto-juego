@@ -44,11 +44,18 @@
      </div>
      <div id="divTienda"  hidden >
         <div class="dentroTienda">
-        <img src="media/ovni1p.png" id="skins1" class="skin" onmouseover="cambioHover()">
-        <img src="media/ovni2P.png" id="skins2" class="skin">
-        <img src="media/nave1P.png" id="skins3" class="skin">
-        <img src="media/nave2P.png" id="skins4" class="skin">
-        <img src="media/nave4P.png" id="skins5"  class="skin">
+        <img src="media/ovni1p.png" class="skin" id="skin1" onmouseover="mueve1()" onmouseout="para()">
+        <img src="media/ovni2P.png" class="skin" id="skin2" onmouseover="mueve2()" onmouseout="para()">
+        <img src="media/nave1P.png"  class="skin" id="skin3" onmouseover="mueve3()" onmouseout="para()">
+        <img src="media/nave2P.png"  class="skin" id="skin4" onmouseover="mueve4()" onmouseout="para()">
+        <img src="media/nave4P.png"  class="skin" id="skin5" onmouseover="mueve5()" onmouseout="para()">
+        </div>
+        <input type="button" value="back" id="back" class="back">
+     </div>
+
+     <div id="divAjustes"  hidden >
+        <div class="dentroAjustes">
+        Desactivar/activar música <div id="sonido" onclick="botonMusicaJuego()">🔊</div>
         </div>
         <input type="button" value="back" id="back" class="back">
      </div>
