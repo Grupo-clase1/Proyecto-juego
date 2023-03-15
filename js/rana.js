@@ -61,7 +61,7 @@ class nave {
   }
 }
 
-let Pepe = new nave('Pepe','5%','33%','./media/ovni1p.png','./media/ovni1.gif','./media/muerto.gif', "rana");
+let Pepe = new nave('Pepe','5%','40%','./media/ovni1p.png','./media/ovni1.gif','./media/muerto.gif', "rana");
  //Creamos el objeto con los parametros que queremos meterle
 
 
