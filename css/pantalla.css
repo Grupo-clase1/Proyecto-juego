@@ -91,7 +91,7 @@ user-select: none;
     background-size: cover;
     background-position: 20%;
     background-repeat: repeat-x;
-    border: solid #d0dbdf 8px;
+    border: solid #d0dbdfc4 8px;
     transition: 0.2s;
     visibility: hidden;
     top: 16%
