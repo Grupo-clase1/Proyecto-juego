@@ -4,7 +4,7 @@ function tienda() {
     let divTienda = document.getElementById('divTienda');
 
     divTienda.hidden=false;
-    
+    pausa=true;
   }
   
   
