@@ -18,12 +18,12 @@ document.addEventListener("keydown", function(event) {
 
     } else if (event.key === " "){
       if (pausa){
-        jugar()
         pausa=false;
+        jugar()
       }else{
         // NO FUCIONA TODAVÍA
-        // jugar1()
-        // pausa=true;
+        pausa=true;
+        jugar1()
       }
 
     }
