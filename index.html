@@ -25,15 +25,21 @@
         <h1>SCRUUUUUUM!!</h1>
         <input type="button" value="Jugar" id="jugar" class="juegaBoton" onclick="jugar1()">
         <br>
-        <input type="button" value="Ajustes" id="ajustes" class="ajustesBoton" onclick="ajustes()">
+        <input type="button" value="Ajustes" id="ajustes" class="botonAjustes" onclick="ajustes()">
         <br>
         <input type="button" value="Salir" id="salir" class="salinBoton" onclick="salir()">
     </div>
 
      <div id="menuSup" class="menuSuperior">
         <input type="button" id="tiendaBoton" class="tiendaBoton" onclick="tienda()">
-        <div class="tituloNivel">Nivel 1</div>
-        <input type="button" id="ajustesBoton" class="ajustesBoton" onclick="ajustes()">
+        <div class="tituloNivel">
+            Nivel 1
+            <br>
+            <div id="vidas">
+                <img id="vida1" src="media/vidas.png"><img id="vida2" src="media/vidas.png"><img id="vida3" src="media/vidas.png">
+            </div>
+        </div>
+        <input type="button" id="ajustesBoton" class="ajustesSuperior" onclick="ajustesSup()">
      </div>
 
     <div id="pantalla" style="background-image: url(media/fondo.jpg);" class="pantalla"> 
@@ -45,6 +51,7 @@
         <div class="carrilInferior3"></div>
     </div>
 
+<<<<<<< HEAD
     <div id="pantallaPausa" style="background-image: url(media/fondo.jpg);" hidden>
         <div class="carrilSuperior"></div>
         <div class="carrilMedio"></div>
@@ -57,6 +64,9 @@
 
 
     <audio src="music/musicaMenu.wav" id="musicaMenu" loop></audio>
+=======
+    <audio src="music/musicaMenu.mp3" id="musicaMenu" loop></audio>
+>>>>>>> c083f8a63d2d58a02e9a7dfb3e6d88a40d0eebba
     <audio src="music/musicaJuego.mp3" id="musicaJuego"></audio>
     <audio src="music/click1.mp3" id="click"></audio>
     
