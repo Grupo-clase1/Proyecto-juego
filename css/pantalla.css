@@ -228,8 +228,8 @@ user-select: none;
 
   #sonido{
     background-color: #d0dbdf;
-    width: 4%;
-    height: 6%;
+    width: 35px;
+    height: 35px;
     display: flex;
     justify-content: center;
     border-radius: 29%;
