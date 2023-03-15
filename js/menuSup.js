@@ -6,5 +6,12 @@ function tienda() {
     divTienda.hidden=false;
     pausa=true;
   }
+
+  function cambioHover(){
+    let skin1 = document.getElementById('skins1');
+    skin1.Image.src ='/media/ovni1.gif' 
+
+
+  }
   
   
