@@ -1,10 +1,15 @@
 function animacion(){
 
-  console.log(".")
+  console.log(pausa)
 
     document.getElementById("rana").style.top=Pepe.positionY
     
     Pepe.actualizarPosicion()
+
+    if(pausa==true){
+      clearInterval(intervalo); 
+      return
+    }
 
     moverFondo()
   

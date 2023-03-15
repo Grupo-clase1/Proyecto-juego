@@ -4,6 +4,7 @@ var menuSup;
 var activarOvni;
 var pausa=true;
 var pantallaPausa;
+var intervalo;
 
 function jugar1() {
     menuDiv = document.getElementById('menuDiv');
@@ -28,9 +29,8 @@ function jugar(){
 
     menuDiv.style.visibility='hidden';//Ponemos en hidden el DivMenu y se pone en visible la pantalla
     pantalla.hidden = false;
-    console.log(pantalla.hidden)
     menuSup.style.visibility='visible'
-    pantallaPausa.style.visibility = 'hidden';
+    pantallaPausa.hidden = true;
 
     var backgrounds = [// Se crea un array de los bg que se van a utilizar
         'url('+nivel1.fondo+')', 
@@ -40,7 +40,7 @@ function jugar(){
     ];
 
     var inicioBackground = -1; 
-    var intervalo = setInterval(cambiarBackground, 4000);// Se crea un setInterval para saber cada cuanto tiempo se van a cambiar los bg
+    intervalo = setInterval(cambiarBackground, 4000);// Se crea un setInterval para saber cada cuanto tiempo se van a cambiar los bg
 
     function cambiarBackground() {//La función comprueba si se han mostrado todas las imágenes de fondo definidas en la matriz backgrounds. Si todas las imágenes de fondo se han mostrado, la función clearInterval() se utiliza para detener el intervalo de tiempo. Si todavía hay 
 
