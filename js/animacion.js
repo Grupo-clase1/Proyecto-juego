@@ -1,6 +1,5 @@
+// esto se ejecuta en bucle y genera el efecto de animación
 function animacion(){
-
-  console.log(pausa)
 
     document.getElementById("rana").style.top=Pepe.positionY
     
@@ -18,12 +17,12 @@ function animacion(){
     
   }
 
-  //Movimiento del fondo, se mueve 20px cada 50ms
+  //Movimiento del fondo, se mueve 20px cada 50ms (se ejecuta en la función "animación")
 var posicion=5 
 function moverFondo(){
     fondos = document.getElementById('pantalla');
 
-        posicion -= 20;
-        fondos.style.backgroundPosition=posicion+'px'
+        posicion -= 2;
+        fondos.style.backgroundPosition=posicion+'vh'
 }
 
