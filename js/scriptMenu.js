@@ -1,7 +1,9 @@
 var menuDiv;
 var pantalla;
 var menuSup;
-var activarOvni
+var activarOvni;
+var pausa=true;
+var pantallaPausa;
 
 function jugar1() {
     menuDiv = document.getElementById('menuDiv');
@@ -26,6 +28,7 @@ function jugar(){
 
     menuDiv.style.visibility='hidden';//Ponemos en hidden el DivMenu y se pone en visible la pantalla
     pantalla.hidden = false;
+    console.log(pantalla.hidden)
     menuSup.style.visibility='visible'
     pantallaPausa.style.visibility = 'hidden';
 

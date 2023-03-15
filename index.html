@@ -11,7 +11,7 @@
     <script type="text/javaScript" src="js/rana.js"></script>
     <script type="text/javaScript" src="js/scriptMenu.js"></script>
     <script type="text/javaScript" src="js/scriptniveles.js"></script>
-    <script type="text/javaScript" src="js/cambioPantalla.js"></script>
+    <!-- <script type="text/javaScript" src="js/cambioPantalla.js"></script> -->
     <script type="text/javaScript" src="js/animacion.js"></script>
     <script type="text/javaScript" src="js/musica.js"></script>
     <script type="text/javaScript" src="js/teclas.js"></script>
@@ -42,7 +42,7 @@
         <input type="button" id="ajustesBoton" class="ajustesSuperior" onclick="ajustesSup()">
      </div>
 
-    <div id="pantalla" style="background-image: url(media/fondo.jpg);" class="pantalla"> 
+    <div id="pantalla" style="background-image: url(media/fondo.jpg);" hidden="true" class="pantalla"> 
         <div class="carrilSuperior"></div>
         <div class="carrilMedio"></div>
         <div id="rana" class="rana"><img class="imagen" src="./media/ovni1p.png"></div>
@@ -51,11 +51,11 @@
         <div class="carrilInferior3"></div>
     </div>
 
-    <div id="pantallaPausa" style="background-image: url(media/fondo.jpg);" hidden>
-        <div class="carrilSuperior"></div>
+    <div  class="pantalla" id="pantallaPausa" style="background-image: url(media/fondo.jpg);" hidden>
+        <!-- <div class="carrilSuperior"></div>
         <div class="carrilMedio"></div>
-        <div id="rana" class="rana"><img class="imagen" src="./media/ovni1p.png"></div>
-        <div class="carrilInferior"></div>
+        <div id="rana2" class="rana"><img class="imagen" src="./media/ovni1p.png"></div>
+        <div class="carrilInferior"></div> -->
         <div class="capaPausa">
           <div class="letrasPausa">Pulsa espacio para empezar</div>
         </div>

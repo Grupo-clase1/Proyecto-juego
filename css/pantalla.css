@@ -94,8 +94,8 @@ user-select: none;
     background-repeat: repeat-x;
     border: solid #d0dbdfc4 8px;
     transition: 0.2s;
-    visibility: hidden;
-    top: 16%
+    top: 16%;
+    z-index: 900;
 }
 
 #pantallaPausa {
