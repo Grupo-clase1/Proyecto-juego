@@ -1,10 +1,19 @@
 var menuDiv;
 var pantalla;
 var menuSup;
+<<<<<<< HEAD
+//funcion para que aparezca la pantalla pausada primero, con todo parado
+function jugar1() {
+    menuDiv = document.getElementById('menuDiv');
+    pantallaPausa = document.getElementById('pantallaPausa');
+    menuDiv.style.visibility = 'hidden';
+    pantallaPausa.hidden = false;
+}
+=======
 var activarOvni
+>>>>>>> c083f8a63d2d58a02e9a7dfb3e6d88a40d0eebba
 
-
-function jugar(){
+function jugar() {
 
     efectoDeSonido()
 
@@ -16,12 +25,22 @@ function jugar(){
     menuDiv = document.getElementById('menuDiv');
     pantalla = document.getElementById('pantalla');
     menuSup = document.getElementById('menuSup');
+    pantallaPausa = document.getElementById('pantallaPausa');
 
-    menuDiv.style.visibility='hidden';//Ponemos en hidden el DivMenu y se pone en visible la pantalla
-    pantalla.style.visibility='visible'
-    menuSup.style.visibility='visible'
+    pantallaPausa.style.visibility = 'hidden';//Ponemos en hidden el DivMenu y se pone en visible la pantalla
+    pantalla.hidden = false;
+    menuSup.style.visibility = 'visible'
 
     var backgrounds = [// Se crea un array de los bg que se van a utilizar
+<<<<<<< HEAD
+        'url(media/fondo1.jpg)',
+        'url(media/fondo2.jpg)',
+        'url(media/fondo3.jpg)',
+    ];
+
+    var inicioBackground = -1;
+    var intervalo = setInterval(cambiarBackground, 5000);// Se crea un setInterval para saber cada cuanto tiempo se van a cambiar los bg
+=======
         'url('+nivel1.fondo+')', 
         'url('+nivel2.fondo+')',
         'url('+nivel3.fondo+')',
@@ -30,13 +49,19 @@ function jugar(){
 
     var inicioBackground = -1; 
     var intervalo = setInterval(cambiarBackground, 4000);// Se crea un setInterval para saber cada cuanto tiempo se van a cambiar los bg
+>>>>>>> c083f8a63d2d58a02e9a7dfb3e6d88a40d0eebba
 
     function cambiarBackground() {//La función comprueba si se han mostrado todas las imágenes de fondo definidas en la matriz backgrounds. Si todas las imágenes de fondo se han mostrado, la función clearInterval() se utiliza para detener el intervalo de tiempo. Si todavía hay 
 
 
         // imágenes de fondo disponibles, se cambia la imagen de fondo mediante la propiedad 
+<<<<<<< HEAD
+        if (inicioBackground == 2) {
+            clearInterval(intervalo);
+=======
         if (inicioBackground == 3) {
             clearInterval(intervalo); 
+>>>>>>> c083f8a63d2d58a02e9a7dfb3e6d88a40d0eebba
         } else {
             Pepe.animacionOvni()
             setTimeout(() => {
@@ -49,31 +74,39 @@ function jugar(){
 
 }
 
-function ajustes(){
+
+
+document.addEventListener('keydown', function(event) {  
+     if (event.key === 32) {   
+       jugar();
+     }
+   });
+
+function ajustes() {
 
     efectoDeSonido()
 
     var inAjustes = document.getElementById('inAjustes');
     menuDiv = document.getElementById('menuDiv');
 
-    menuDiv.style.visibility='hidden';
-    inAjustes.hidden=false;
+    menuDiv.style.visibility = 'hidden';
+    inAjustes.hidden = false;
 }
 
-function salir(){
+function salir() {
 
     efectoDeSonido()
 
     window.close();
 }
 
-function back(){
+function back() {
 
     efectoDeSonido()
 
     var inAjustes = document.getElementById('inAjustes');
 
-    inAjustes.hidden=true;
-    menuDiv.style='hidden=false';
+    inAjustes.hidden = true;
+    menuDiv.style = 'hidden=false';
 }
 
