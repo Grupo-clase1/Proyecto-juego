@@ -2,8 +2,13 @@
 function tienda() {
   let botonTienda = document.getElementById('tiendaBoton');
   let divTienda = document.getElementById('divTienda');
+  let divAjustes = document.getElementById('divAjustes');
 
-  if (divTienda.hidden) {
+  if (divAjustes.hidden == false) { // si el menú de ajustes está abierto, ciérralo
+    divAjustes.hidden = true;
+  }
+
+  if (divTienda.hidden == true) {
       divTienda.hidden = false; // mostrar el div de la tienda
       pausa = true; // pausar el juego
   } else {
@@ -16,8 +21,13 @@ function tienda() {
 function ajustesSup() {
   let botonAjustes = document.getElementById('ajustesBoton');
   let divAjustes = document.getElementById('divAjustes');
+  let divTienda = document.getElementById('divTienda');
 
-  if (divAjustes.hidden) {
+  if (divTienda.hidden == false) { // si el menú de la tienda está abierto, ciérralo
+    divTienda.hidden = true;
+  }
+
+  if (divAjustes.hidden == true) {
     divAjustes.hidden = false; // mostrar el menú de ajustes
     pausa = true; // pausar el juego
   } else {
