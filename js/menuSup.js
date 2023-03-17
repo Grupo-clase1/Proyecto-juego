@@ -1,5 +1,12 @@
 
 function tienda() {
+
+  if(jugando){
+    jugando=false;
+  }else{
+    jugando=true;
+  }
+
   let botonTienda = document.getElementById('tiendaBoton');
   let divTienda = document.getElementById('divTienda');
   let divAjustes = document.getElementById('divAjustes');
@@ -19,6 +26,12 @@ function tienda() {
 }
   
 function ajustesSup() {
+
+  if(jugando){
+    jugando=false;
+  }else{
+    jugando=true;
+  }
   let botonAjustes = document.getElementById('ajustesBoton');
   let divAjustes = document.getElementById('divAjustes');
   let divTienda = document.getElementById('divTienda');

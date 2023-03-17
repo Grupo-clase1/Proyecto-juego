@@ -5,9 +5,12 @@ var activarOvni;
 var pausa=true;
 var pantallaPausa;
 var intervalo;
+var jugando=false;
 
 // esto pausa el juego
 function jugar1() {
+
+    jugando=true
 
     menuDiv = document.getElementById('menuDiv');
     pantallaPausa = document.getElementById('pantallaPausa');
