@@ -46,7 +46,7 @@ function jugar(){
     ];
 
     var inicioBackground = -1; 
-    intervalo = setInterval(cambiarBackground, 4000);// Se crea un setInterval para saber cada cuanto tiempo se van a cambiar los bg
+    intervalo = setInterval(cambiarBackground, 10000);// Se crea un setInterval para saber cada cuanto tiempo se van a cambiar los bg
 
     function cambiarBackground() {//La función comprueba si se han mostrado todas las imágenes de fondo definidas en la matriz backgrounds. Si todas las imágenes de fondo se han mostrado, la función clearInterval() se utiliza para detener el intervalo de tiempo. Si todavía hay 
 
