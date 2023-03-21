@@ -193,9 +193,20 @@ user-select: none;
     z-index: 1; 
   }
 
-  .dentroTienda{
-    height: 100%;
+  .linea1{
+    height: 50%;
     width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5%;
+  }
+
+  .linea2{
+    height: 50%;
+    width: 100%;
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -203,7 +214,29 @@ user-select: none;
   }
   
   .skin{
-    height: 25%;
+    height: 100%;
+  }
+
+  .espacioSkin{
+    height: 50%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .precios{
+    color: aliceblue;  
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5%;
+  }
+
+  .billetes{
+    width: 40px;
   }
 
   #divAjustes {
