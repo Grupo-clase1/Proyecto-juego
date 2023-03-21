@@ -50,30 +50,29 @@ function ajustesSup() {
   }
 }
 
-function mueve1(){
- var skin1 = document.getElementById('skin1')
- skin1.src='media/ovni1.gif'
+
+function hoverSkin(num) {
+  var skin = document.getElementById('skin' + num);
+  switch(num) {
+    case 1:
+      skin.src = 'media/ovni1.gif';
+      break;
+    case 2:
+      skin.src = 'media/ovni2.gif';
+      break;
+    case 3:
+      skin.src = 'media/nave1.gif';
+      break;
+    case 4:
+      skin.src = 'media/nave2.gif';
+      break;
+    case 5:
+      skin.src = 'media/nave4.gif';
+      break;
+    default:
+      break;
+  }
 }
-
-function mueve2(){
-  var skin2 = document.getElementById('skin2')
-  skin2.src='media/ovni2.gif'
- }
-
- function mueve3(){
-  var skin3 = document.getElementById('skin3')
-  skin3.src='media/nave1.gif'
- }
-
- function mueve4(){
-  var skin4 = document.getElementById('skin4')
-  skin4.src='media/nave2.gif'
- }
-
- function mueve5(){
-  var skin5 = document.getElementById('skin5')
-  skin5.src='media/nave4.gif'
- }
 
 function para(){
   var skin1 = document.getElementById('skin1')
