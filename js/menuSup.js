@@ -1,40 +1,32 @@
+var enAjustesOTienda = false;
 
 function tienda() {
-
-  if(jugando){
-    jugando=false;
-  }else{
-    jugando=true;
-  }
-
   let botonTienda = document.getElementById('tiendaBoton');
   let divTienda = document.getElementById('divTienda');
   let divAjustes = document.getElementById('divAjustes');
+  let pantallaPausa = document.getElementById('pantallaPausa');
 
   if (divAjustes.hidden == false) { // si el menú de ajustes está abierto, ciérralo
     divAjustes.hidden = true;
   }
 
   if (divTienda.hidden == true) {
-      divTienda.hidden = false; // mostrar el div de la tienda
-      pausa = true; // pausar el juego
+    divTienda.hidden = false; // mostrar el div de la tienda
+    jugando = false; // pausar el juego
+    pantallaPausa.hidden = true; // ocultar la pantalla de pausa
   } else {
-      divTienda.hidden = true; // ocultar el div de la tienda
-      pausa = false; // reanudar el juego
-      animacion(); // reiniciar el bucle de animación
+    divTienda.hidden = true; // ocultar el div de la tienda
+    jugando = true; // reanudar el juego
+    pantallaPausa.hidden = false; // mostrar la pantalla de pausa
+    animacion(); // reiniciar el bucle de animación
   }
 }
-  
-function ajustesSup() {
 
-  if(jugando){
-    jugando=false;
-  }else{
-    jugando=true;
-  }
+function ajustesSup() {
   let botonAjustes = document.getElementById('ajustesBoton');
   let divAjustes = document.getElementById('divAjustes');
   let divTienda = document.getElementById('divTienda');
+  let pantallaPausa = document.getElementById('pantallaPausa');
 
   if (divTienda.hidden == false) { // si el menú de la tienda está abierto, ciérralo
     divTienda.hidden = true;
@@ -42,14 +34,15 @@ function ajustesSup() {
 
   if (divAjustes.hidden == true) {
     divAjustes.hidden = false; // mostrar el menú de ajustes
-    pausa = true; // pausar el juego
+    jugando = false; // pausar el juego
+    pantallaPausa.hidden = true; // ocultar la pantalla de pausa
   } else {
     divAjustes.hidden = true; // ocultar el menú de ajustes
-    pausa = false; // reanudar el juego
+    jugando = true; // reanudar el juego
+    pantallaPausa.hidden = false; // mostrar la pantalla de pausa
     animacion(); // reiniciar el bucle de animación
   }
 }
-
 
 function hoverSkin(num) {
   var skin = document.getElementById('skin' + num);

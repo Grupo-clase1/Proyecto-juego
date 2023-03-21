@@ -1,5 +1,6 @@
 // Agregar un evento "keydown" al documento
 document.addEventListener("keydown", function(event) {
+  if (jugando && !enAjustesOTienda) { 
 
   // si "jugando" es == a "true"
   if(jugando){
@@ -31,6 +32,5 @@ document.addEventListener("keydown", function(event) {
       }
 
     }
-  });
-  
+  }});
   
