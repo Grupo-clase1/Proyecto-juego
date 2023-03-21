@@ -11,14 +11,18 @@ function tienda() {
   }
 
   if (divTienda.hidden == true) {
+    pantallaPausa.hidden = true; // ocultar la pantalla de pausa
     divTienda.hidden = false; // mostrar el div de la tienda
     jugando = false; // pausar el juego
-    pantallaPausa.hidden = true; // ocultar la pantalla de pausa
+    enAjustesOTienda = true; // Indicar que estamos en la tienda
+    pausa=true;
+    jugar1()
   } else {
     divTienda.hidden = true; // ocultar el div de la tienda
     jugando = true; // reanudar el juego
-    pantallaPausa.hidden = false; // mostrar la pantalla de pausa
-    animacion(); // reiniciar el bucle de animación
+    enAjustesOTienda = false; // Indicar que ya no estamos en la tienda
+    pausa=false;
+    jugar(); // reiniciar el bucle de animación
   }
 }
 
@@ -33,14 +37,18 @@ function ajustesSup() {
   }
 
   if (divAjustes.hidden == true) {
+    pantallaPausa.hidden = true; // ocultar la pantalla de pausa
     divAjustes.hidden = false; // mostrar el menú de ajustes
     jugando = false; // pausar el juego
-    pantallaPausa.hidden = true; // ocultar la pantalla de pausa
+    enAjustesOTienda = true; // Indicar que estamos en el menú de ajustes
+    pausa=true;
+    jugar1()
   } else {
     divAjustes.hidden = true; // ocultar el menú de ajustes
     jugando = true; // reanudar el juego
-    pantallaPausa.hidden = false; // mostrar la pantalla de pausa
-    animacion(); // reiniciar el bucle de animación
+    enAjustesOTienda = false; // Indicar que ya no estamos en el menú de ajustes
+    pausa=false;
+    jugar(); // reiniciar el bucle de animación
   }
 }
 
