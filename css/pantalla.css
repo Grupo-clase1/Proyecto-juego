@@ -36,7 +36,6 @@ user-select: none;
     justify-content:space-around;
 }
 
-
 #tiendaBoton{
     width: 60px;
     height: 60px;
@@ -58,13 +57,19 @@ user-select: none;
 .tituloNivel{
     color:#d0dbdf;
     font-size: 170%;
-    width: 130px;
+    width: 165px;
     height: 60px;
     position: relative;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     align-content: center;
+}
+
+.tituloNivel img{
+    width: 26px;
+    height: 26px;
+    gap: 10%;
 }
 
 #vidas{
@@ -78,10 +83,33 @@ user-select: none;
     gap: 5%
 }
 
+#contadorDinero{
+  width: 100%;
+  height: auto;
+  font-size: 20px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-content: center;
+  gap: 5px;
+  align-items: center;
+}
+
+#billetes{
+  width: 25px;
+  height: 25px;
+}
+
+#monedas{
+  width: 25px;
+  height: 25px;
+}
+
 .tituloNivel img{
-    width: 26px;
-    height: 26px;
-    gap: 10%;
+  width: 26px;
+  height: 26px;
+  gap: 10%;
 }
 
 .pantalla{
@@ -193,9 +221,20 @@ user-select: none;
     z-index: 1; 
   }
 
-  .dentroTienda{
-    height: 100%;
+  .linea1{
+    height: 50%;
     width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5%;
+  }
+
+  .linea2{
+    height: 50%;
+    width: 100%;
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -203,7 +242,29 @@ user-select: none;
   }
   
   .skin{
-    height: 25%;
+    height: 100%;
+  }
+
+  .espacioSkin{
+    height: 50%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .precios{
+    color: aliceblue;  
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5%;
+  }
+
+  .billetes{
+    width: 40px;
   }
 
   #divAjustes {
