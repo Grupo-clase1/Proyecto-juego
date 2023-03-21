@@ -28,7 +28,7 @@ function jugar(){
 
     //ejecuta el bucle para "animar" la nave
     animacion()
-
+    
     pantallaPausa = document.getElementById('pantallaPausa');
     menuDiv = document.getElementById('menuDiv');
     pantalla = document.getElementById('pantalla');
@@ -47,12 +47,11 @@ function jugar(){
         'url('+nivel3.fondo+')',
         'url('+nivel4.fondo+')',
     ];
-
+    let contadorBackground = 1;
     var inicioBackground = -1; 
     intervalo = setInterval(cambiarBackground, 10000);// Se crea un setInterval para saber cada cuanto tiempo se van a cambiar los bg
 
     function cambiarBackground() {//La función comprueba si se han mostrado todas las imágenes de fondo definidas en la matriz backgrounds. Si todas las imágenes de fondo se han mostrado, la función clearInterval() se utiliza para detener el intervalo de tiempo. Si todavía hay 
-
 
         // imágenes de fondo disponibles, se cambia la imagen de fondo mediante la propiedad 
         if (inicioBackground == 3) {
@@ -64,7 +63,12 @@ function jugar(){
                 document.getElementById('pantalla').style.backgroundImage = backgrounds[inicioBackground];
             }, 1000);
         }
+        contadorBackground++;
     }
+    // actualizar el contador en la pantalla
+    setInterval(() => {
+        document.getElementById('contadorBackground').textContent = contadorBackground;
+    }, 1000);
 
 
 }
@@ -96,4 +100,6 @@ function back(){
     inAjustes.hidden=true;
     menuDiv.style='hidden=false';
 }
+
+
 

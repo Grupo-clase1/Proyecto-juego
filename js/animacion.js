@@ -1,7 +1,7 @@
 // esto se ejecuta en bucle y genera el efecto de animación
 function animacion(){
 
-    document.getElementById("rana").style.top=Pepe.positionY
+    document.getElementById("rana").style.top=Pepe.positionY;
     
     Pepe.actualizarPosicion()
 
