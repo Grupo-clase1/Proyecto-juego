@@ -87,3 +87,5 @@ function para(){
   skin4.src='media/nave2P.png'
   skin5.src='media/nave4P.png'
 }
+
+
