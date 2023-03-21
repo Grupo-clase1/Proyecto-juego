@@ -36,7 +36,6 @@ user-select: none;
     justify-content:space-around;
 }
 
-
 #tiendaBoton{
     width: 60px;
     height: 60px;
@@ -58,13 +57,19 @@ user-select: none;
 .tituloNivel{
     color:#d0dbdf;
     font-size: 170%;
-    width: 130px;
+    width: 165px;
     height: 60px;
     position: relative;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     align-content: center;
+}
+
+.tituloNivel img{
+    width: 26px;
+    height: 26px;
+    gap: 10%;
 }
 
 #vidas{
@@ -78,10 +83,32 @@ user-select: none;
     gap: 5%
 }
 
+#contadorDinero{
+  width: 100%;
+  height: auto;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-content: center;
+  gap: 5px;
+  align-items: center;
+}
+
+#billetes{
+  width: 25px;
+  height: 25px;
+}
+
+#monedas{
+  width: 25px;
+  height: 25px;
+}
+
 .tituloNivel img{
-    width: 26px;
-    height: 26px;
-    gap: 10%;
+  width: 26px;
+  height: 26px;
+  gap: 10%;
 }
 
 .pantalla{
