@@ -33,21 +33,26 @@
 
      <div id="menuSup" class="menuSuperior">
         <input type="button" id="tiendaBoton" class="tiendaBoton" onclick="tienda()">
+
         <div class="tituloNivel">
           <a>Nivel <span id="contadorBackground">1</span></a>
             <div id="vidas">
                 <img id="vida1" src="media/vidas.png"><img id="vida2" src="media/vidas.png"><img id="vida3" src="media/vidas.png">
             </div>
+            <div id="contadorDinero"><img src="media/monedas.png" id="monedas">100<img src="media/billetes.png" id="billetes"></div>
         </div>
         <input type="button" id="ajustesBoton" class="ajustesSuperior" onclick="ajustesSup()">
      </div>
      <div id="divTienda"  hidden >
-        <div class="dentroTienda">
-        <img src="media/ovni1p.png" class="skin" id="skin1" onmouseover="mueve1()" onmouseout="para()">
-        <img src="media/ovni2P.png" class="skin" id="skin2" onmouseover="mueve2()" onmouseout="para()">
-        <img src="media/nave1P.png"  class="skin" id="skin3" onmouseover="mueve3()" onmouseout="para()">
-        <img src="media/nave2P.png"  class="skin" id="skin4" onmouseover="mueve4()" onmouseout="para()">
-        <img src="media/nave4P.png"  class="skin" id="skin5" onmouseover="mueve5()" onmouseout="para()">
+            <div class="linea1">
+            <div class="espacioSkin"><div class="precios">COMPRADO</div><img src="media/ovni1p.png" class="skin" id="skin1" onmouseover="mueve1()" onmouseout="para()"></div>
+            <div class="espacioSkin"><div class="precios">400<img src="media/billetes.png" class="billetes"></div><img src="media/ovni2P.png" class="skin" id="skin2" onmouseover="mueve2()" onmouseout="para()"></div>
+            <div class="espacioSkin"><div class="precios">600<img src="media/billetes.png" class="billetes"></div><img src="media/nave1P.png"  class="skin" id="skin3" onmouseover="mueve3()" onmouseout="para()"></div>
+            </div>
+            <div class="linea2">
+            <div class="espacioSkin"><div class="precios">800<img src="media/billetes.png" class="billetes"></div><img src="media/nave2P.png"  class="skin" id="skin4" onmouseover="mueve4()" onmouseout="para()"></div>
+            <div class="espacioSkin"><div class="precios">1000<img src="media/billetes.png" class="billetes"></div><img src="media/nave4P.png"  class="skin" id="skin5" onmouseover="mueve5()" onmouseout="para()"></div>
+            </div>
         </div>
      </div>
 
