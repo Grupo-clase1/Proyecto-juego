@@ -2,25 +2,27 @@ var menuDiv;
 var pantalla;
 var menuSup;
 var activarOvni;
-var pausa=true;
+var pausa = true;
 var pantallaPausa;
 var intervalo;
-var jugando=false;
+var jugando = false;
+var imagenOvni;
 
-// esto pausa el juego
 function jugar1() {
-
-    jugando=true
+    jugando = true
 
     menuDiv = document.getElementById('menuDiv');
     pantallaPausa = document.getElementById('pantallaPausa');
+    imagenOvni = document.getElementById('imagen'); // Obtén la referencia a imagenOvni aquí
     menuDiv.style.visibility = 'hidden';
     pantallaPausa.hidden = false;
-    imagenOvni.src="./media/ovni1p.png"
-  }
-
+    imagenOvni.src = "./media/ovni1p.png"
+}
 // esto inicia el juego
 function jugar(){
+
+    imagenOvni = document.getElementById('imagen');
+
 
     efectoDeSonido()
 
