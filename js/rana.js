@@ -32,17 +32,14 @@ class nave {
  
       var ovni = document.getElementById(this.id)
 
-      // setInterval(() => {
         ovni.classList.add('animacion');
-        setTimeout(() => {
-          ovni.classList.remove('animacion');
-        }, 1000); 
-      // }, 5000);
+        // setTimeout(() => {
+        //   ovni.classList.remove('animacion');
+        // }, 1000); 
     
   }
 
   //esta funcion hay que unirla a las colisiones
-  
 restarVida(){
   vida3 = document.getElementById('vida3')
   vida2 = document.getElementById('vida2')
