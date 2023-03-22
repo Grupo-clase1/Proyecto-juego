@@ -41,7 +41,6 @@ function jugar(){
     pantalla.hidden = false;
     menuSup.style.visibility='visible'
     pantallaPausa.hidden = true;
-    imagenOvni.src="./media/ovni1.gif"
 
     var backgrounds = [// Se crea un array de los bg que se van a utilizar
         'url('+nivel1.fondo+')', 
