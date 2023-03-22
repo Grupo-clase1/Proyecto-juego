@@ -5,12 +5,20 @@ function animacion(){
     
     Pepe.actualizarPosicion()
 
+    // actualizar la posición de los enemigos
     for (let i = 0; i < arrayEnemigos.length; i++) {
       if (arrayEnemigos[i]) {
         arrayEnemigos[i].actualizarPosicion();
       }
     }
     
+
+    //crear enemigos al azar
+    let numeroAzar = parseInt(Math.floor((Math.random() * 100) + 1));
+
+    if(numeroAzar>98){
+      nuevoEnemigo()
+    }
 
 
     if(pausa==true){
@@ -35,3 +43,4 @@ function moverFondo(){
         posicion -= 2;
         fondos.style.backgroundPosition=posicion+'vh'
 }
+

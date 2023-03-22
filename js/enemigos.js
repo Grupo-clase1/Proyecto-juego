@@ -37,7 +37,7 @@ class enemigo {
 
     document.getElementById(`enemigo${this.id}`).style.top = `${this.positionY}%`;
 
-    console.log(`${this.positionX}%;`);
+    // console.log(`${this.positionX}%;`);
 
     document.getElementById(`enemigo${this.id}`).style.right = `${this.positionX}%`;
 
@@ -56,7 +56,7 @@ class enemigo {
 
 
   borrarEnemigo() {
-    arrayEnemigos.splice(this.id, 1);
+    arrayEnemigos[this.id]=undefined;
   }
 
 
