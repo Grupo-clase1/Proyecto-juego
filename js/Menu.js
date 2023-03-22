@@ -64,7 +64,7 @@ function jugar(){
             setTimeout(() => {
                 inicioBackground = (inicioBackground + 1) % backgrounds.length;
                 document.getElementById('pantalla').style.backgroundImage = backgrounds[nivelActual-2];
-            }, 1000);
+            },1000);
         }        // contadorBackground++;
     }
     // actualizar el contador en la pantalla

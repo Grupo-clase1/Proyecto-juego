@@ -12,7 +12,6 @@ function animacion(){
       }
     }
     
-
     //crear enemigos al azar
     let numeroAzar = parseInt(Math.floor((Math.random() * 100) + 1));
 
@@ -20,14 +19,10 @@ function animacion(){
       nuevoEnemigo()
     }
 
-
     if(pausa==true){
       clearInterval(intervalo); 
       return
     }
-
-
-
     moverFondo()
   
     // esto al final siempre
