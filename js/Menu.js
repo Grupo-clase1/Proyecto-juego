@@ -7,6 +7,8 @@ var pantallaPausa;
 var intervalo;
 var jugando = false;
 var imagenOvni;
+var nivelActual=1
+
 
 function jugar1() {
     jugando = true
@@ -16,12 +18,10 @@ function jugar1() {
     imagenOvni = document.getElementById('imagen'); // Obtén la referencia a imagenOvni aquí
     menuDiv.style.visibility = 'hidden';
     pantallaPausa.hidden = false;
-    imagenOvni.src = "./media/ovni1p.png"
 }
 // esto inicia el juego
 function jugar(){
 
-    imagenOvni = document.getElementById('imagen');
 
 
     efectoDeSonido()
@@ -49,30 +49,30 @@ function jugar(){
         'url('+nivel3.fondo+')',
         'url('+nivel4.fondo+')',
     ];
-    let contadorBackground = 0;
+    
     var inicioBackground = -1; 
     intervalo = setInterval(cambiarBackground, 10000);// Se crea un setInterval para saber cada cuanto tiempo se van a cambiar los bg
 
     function cambiarBackground() {//La función comprueba si se han mostrado todas las imágenes de fondo definidas en la matriz backgrounds. Si todas las imágenes de fondo se han mostrado, la función clearInterval() se utiliza para detener el intervalo de tiempo. Si todavía hay 
 
         // imágenes de fondo disponibles, se cambia la imagen de fondo mediante la propiedad 
-        if (inicioBackground == 3) {
+        if (nivelActual == 4) {
             clearInterval(intervalo); 
         } else {
+            nivelActual++
+            document.getElementById("contadorBackground").innerHTML ="Nivel" +nivelActual
             Pepe.animacionOvni()
             setTimeout(() => {
                 inicioBackground = (inicioBackground + 1) % backgrounds.length;
-                document.getElementById('pantalla').style.backgroundImage = backgrounds[inicioBackground];
+                document.getElementById('pantalla').style.backgroundImage = backgrounds[nivelActual-2];
             }, 1000);
-        }
-        contadorBackground++;
+        }        // contadorBackground++;
     }
     // actualizar el contador en la pantalla
-    setInterval(() => {
-        document.getElementById('contadorBackground').textContent = contadorBackground;
-    }, 1000);
-
-
+    // setInterval(() => {
+    //     document.getElementById('contadorBackground').textContent = contadorBackground;
+    // }, 1000);
+    
 }
 
 function ajustes(){
