@@ -14,7 +14,7 @@ class nave {
         this.imagenMuerto = imagenMuerto;
         this.id = id
         this.vidas=3
-        this.dinero=100
+        this.monedas=100
 
         // carril en el que está
         this.carril = 3;
@@ -63,6 +63,11 @@ restarVida(){
   }
 }
 
+// masMonedas(){ 
+//   monedas += 50;
+
+//   document.getElementById('contadorDinero').innerHTML='<img src="media/monedas.png" id="monedas">'+monedas+'<img src="media/billetes.png" id="billetes"></img>'
+// }
 
 }
 
