@@ -28,14 +28,14 @@ class nave {
     // metodo para cambiar de carril
 
 
-    animacionOvni(){
+    animacionOvni(){    //animacion que hace avanzar la nave en el cambio de nivel
  
-      var ovni = document.getElementById(this.id)
+      // var ovni = document.getElementById(this.id)
 
-        ovni.classList.add('animacion');
-        // setTimeout(() => {
-        //   ovni.classList.remove('animacion');
-        // }, 1000); 
+      //   ovni.classList.add('animacion');
+      //   setTimeout(() => {
+      //     ovni.classList.remove('animacion');
+      //   }, 1000); 
     
   }
 
