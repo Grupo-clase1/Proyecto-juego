@@ -20,7 +20,7 @@ document.addEventListener("keydown", function(event) {
 
         }
 
-      } else if (event.key === "Enter" || event.key === "p" || event.key === "P"){
+      } else if (event.key === "Escape" || event.key === "p" || event.key === "P"){
         if (pausa){
           pausa=false;
           jugar()
@@ -28,8 +28,8 @@ document.addEventListener("keydown", function(event) {
           pausa=true;
           jugar1()
         }
-
-      }
+    }
+    
 
     }
   }});
