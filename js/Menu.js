@@ -49,7 +49,7 @@ function jugar(){
         'url('+nivel3.fondo+')',
         'url('+nivel4.fondo+')',
     ];
-    let contadorBackground = 1;
+    let contadorBackground = 0;
     var inicioBackground = -1; 
     intervalo = setInterval(cambiarBackground, 10000);// Se crea un setInterval para saber cada cuanto tiempo se van a cambiar los bg
 
