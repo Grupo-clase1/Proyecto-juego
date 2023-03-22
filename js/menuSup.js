@@ -27,7 +27,6 @@ function tienda() {
 }
 
 function ajustesSup() {
-  let botonAjustes = document.getElementById('ajustesBoton');
   let divAjustes = document.getElementById('divAjustes');
   let divTienda = document.getElementById('divTienda');
   let pantallaPausa = document.getElementById('pantallaPausa');
@@ -87,6 +86,32 @@ function para(){
   skin4.src='media/nave2P.png'
   skin5.src='media/nave4P.png'
 }
+
+//esta funcion es para cambiar la skin desde la tienda
+function equipar(num){
+  var imagenOvni = document.getElementById("imagen")
+   switch(num) {
+     case 1:
+       imagenOvni.src = Pepe.imagenMovimiento;      
+       break;
+     case 2:
+       imagenOvni.src = Pepe1.imagenMovimiento;      
+       break;
+     case 3:
+       imagenOvni.src = Pepe2.imagenMovimiento;      
+       break;
+     case 4:
+       imagenOvni.src = Pepe3.imagenMovimiento;      
+       break;
+     case 5:
+       imagenOvni.src = Pepe4.imagenMovimiento;      
+       break;
+     default:
+       imagenOvni.src = Pepe.imagenMovimiento;      
+       break;
+   }
+ }
+
 function disableZoom() {
   document.addEventListener('wheel', function (e) {
       if (e.ctrlKey) {
