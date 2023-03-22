@@ -122,6 +122,7 @@ user-select: none;
     border: solid #d0dbdfc4 8px;
     transition: 0.2s;
     top: 16%;
+    cursor: none;
 }
 
 #pantallaPausa {
