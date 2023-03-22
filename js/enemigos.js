@@ -51,7 +51,7 @@ class enemigo {
   anadirEnemigo(){
     // Añadir el enemigo al DOM
     let pantalla = document.getElementById("pantalla");
-    pantalla.innerHTML += `<div class="enemigo" id="enemigo${this.id}"></div>`
+    pantalla.innerHTML += `<div class="enemigo" id="enemigo${this.id}"><img class="imagen" id="imagen${this.id}" src="./media/enemigo${parseInt(Math.floor((Math.random() * 6) + 0))}.gif"></div>`
   }
 
 
