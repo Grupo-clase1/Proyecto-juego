@@ -55,7 +55,7 @@ function jugar(){
     function cambiarBackground() {//La función comprueba si se han mostrado todas las imágenes de fondo definidas en la matriz backgrounds. Si todas las imágenes de fondo se han mostrado, la función clearInterval() se utiliza para detener el intervalo de tiempo. Si todavía hay 
 
         // imágenes de fondo disponibles, se cambia la imagen de fondo mediante la propiedad 
-        if (nivelActual == 4) {
+        if (nivelActual == 5) {
             clearInterval(intervalo); 
         } else {
             nivelActual++
@@ -64,7 +64,7 @@ function jugar(){
             setTimeout(() => {
                 inicioBackground = (inicioBackground + 1) % backgrounds.length;
                 document.getElementById('pantalla').style.backgroundImage = backgrounds[nivelActual-2];
-            }, 1000);
+            },1000);
         }        // contadorBackground++;
     }
     // actualizar el contador en la pantalla
