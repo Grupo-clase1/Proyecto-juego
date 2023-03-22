@@ -1,5 +1,5 @@
 class enemigo {
-    constructor(carril, imagen, velocidad) {
+    constructor(carril, imagen, velocidad, id) {
       this.carril = carril;
       this.imagen = imagen;
       switch(carril) {
@@ -23,14 +23,54 @@ class enemigo {
               this.positionY = "80%"
               break;
       }
-      this.posicionX = "-100%"; // posición inicial fuera de la pantalla
+      this.posicionX = "200%"; // posición inicial fuera de la pantalla
       this.velocidad = velocidad; // velocidad del enemigo
+      this.id = id
     }
   
-    // Método para actualizar la posición del enemigo
-    actualizar() {
-      this.posicionY += this.velocidad;
-    }
+
+  // Función para actualizar la posición del enemigo en cada frame
+  actualizarPosicion() {
+    // Actualizar la posición vertical del enemigo
+
+    this.posicionY += this.velocidad;
+
+    document.getElementById(`enemigo${this.id}`).style.top = `20%;`;
+    console.log(`${this.positionY}%`)
+
+    document.getElementById(`enemigo${this.id}`).style.right = `50%;`;
+
+    // Verificar si el enemigo ha llegado al final de la pantalla
+    // if (this.positionY < -10) {
+    //   document.getElementById(`enemigo${this.id}`).remove();
+    // }
   }
 
-var enemigo1 = new enemigo(3, "./media/enemigo.gif", 10);
+  anadirEnemigo(){
+    // Añadir el enemigo al DOM
+    let pantalla = document.getElementById("pantalla");
+    pantalla.innerHTML += `<div class="enemigo" id="enemigo${this.id}"></div>`
+  }
+}
+
+
+
+
+
+// -----------La wea de añadir enemigos
+
+
+var idEnemigos = 0
+var arrayEnemigos = []
+
+// crea el enemigo pero no lo muestra
+function nuevoEnemigo(){
+  let posicionAleatoria = parseInt(Math.floor((Math.random() * 5) + 1));
+  arrayEnemigos.push(new enemigo(posicionAleatoria, "../media/enemigo.gif", 2, idEnemigos));
+
+  // añade el enemigo
+  arrayEnemigos[idEnemigos].anadirEnemigo()
+
+  idEnemigos++;
+
+}
