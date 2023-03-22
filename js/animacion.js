@@ -5,20 +5,26 @@ function animacion(){
     
     Pepe.actualizarPosicion()
 
+    for (let i = 0; i < arrayEnemigos.length; i++) {
+      if (arrayEnemigos[i]) {
+        arrayEnemigos[i].actualizarPosicion();
+      }
+    }
+    
+
+
     if(pausa==true){
       clearInterval(intervalo); 
       return
     }
 
-    if(arrayEnemigos.length>0){
-      arrayEnemigos[0].actualizarPosicion()
-    }
+
 
     moverFondo()
   
     // esto al final siempre
     setTimeout(animacion, 50)
-    
+
   }
 
   //Movimiento del fondo, se mueve 20px cada 50ms (se ejecuta en la función "animación")
@@ -28,9 +34,4 @@ function moverFondo(){
 
         posicion -= 2;
         fondos.style.backgroundPosition=posicion+'vh'
-}
-
-
-function moverEnemigos(){
-
 }

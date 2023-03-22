@@ -4,26 +4,26 @@ class enemigo {
       this.imagen = imagen;
       switch(carril) {
         case 5:
-            this.positionY = "0%"
+            this.positionY = 0
             break;
 
           case 4:
-            this.positionY = "20%"
+            this.positionY = 20
             break;
 
           case 3:
-              this.positionY = "40%"
+              this.positionY = 40
               break;
 
           case 2:
-              this.positionY = "60%"
+              this.positionY = 60
               break;
 
           case 1:
-              this.positionY = "80%"
+              this.positionY = 80
               break;
       }
-      this.posicionX = "200%"; // posición inicial fuera de la pantalla
+      this.positionX = -10; // posición inicial fuera de la pantalla
       this.velocidad = velocidad; // velocidad del enemigo
       this.id = id
     }
@@ -33,17 +33,19 @@ class enemigo {
   actualizarPosicion() {
     // Actualizar la posición vertical del enemigo
 
-    this.posicionY += this.velocidad;
+    this.positionX += this.velocidad;
 
-    document.getElementById(`enemigo${this.id}`).style.top = `20%;`;
-    console.log(`${this.positionY}%`)
+    document.getElementById(`enemigo${this.id}`).style.top = `${this.positionY}%`;
 
-    document.getElementById(`enemigo${this.id}`).style.right = `50%;`;
+    console.log(`${this.positionX}%;`);
+
+    document.getElementById(`enemigo${this.id}`).style.right = `${this.positionX}%`;
 
     // Verificar si el enemigo ha llegado al final de la pantalla
-    // if (this.positionY < -10) {
-    //   document.getElementById(`enemigo${this.id}`).remove();
-    // }
+    if (this.positionX > 110) {
+      document.getElementById(`enemigo${this.id}`).remove();
+      this.borrarEnemigo()
+    }
   }
 
   anadirEnemigo(){
@@ -51,6 +53,13 @@ class enemigo {
     let pantalla = document.getElementById("pantalla");
     pantalla.innerHTML += `<div class="enemigo" id="enemigo${this.id}"></div>`
   }
+
+
+  borrarEnemigo() {
+    arrayEnemigos.splice(this.id, 1);
+  }
+
+
 }
 
 
@@ -65,7 +74,7 @@ var arrayEnemigos = []
 
 // crea el enemigo pero no lo muestra
 function nuevoEnemigo(){
-  let posicionAleatoria = parseInt(Math.floor((Math.random() * 5) + 1));
+  let posicionAleatoria = parseInt(Math.floor((Math.random() * 5) + 0.05));
   arrayEnemigos.push(new enemigo(posicionAleatoria, "../media/enemigo.gif", 2, idEnemigos));
 
   // añade el enemigo
