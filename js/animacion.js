@@ -10,6 +10,10 @@ function animacion(){
       return
     }
 
+    if(arrayEnemigos.length>0){
+      arrayEnemigos[0].actualizarPosicion()
+    }
+
     moverFondo()
   
     // esto al final siempre
@@ -26,3 +30,7 @@ function moverFondo(){
         fondos.style.backgroundPosition=posicion+'vh'
 }
 
+
+function moverEnemigos(){
+
+}
