@@ -87,5 +87,22 @@ function para(){
   skin4.src='media/nave2P.png'
   skin5.src='media/nave4P.png'
 }
+function disableZoom() {
+  document.addEventListener('wheel', function (e) {
+      if (e.ctrlKey) {
+          e.preventDefault();
+      }
+  }, { passive: false });
+
+  document.addEventListener('keydown', function (e) {
+      if (e.ctrlKey && (e.key === '+' || e.key === '=')) {
+          e.preventDefault();
+      }
+  });
+}
+
+window.addEventListener('load', function () {
+  disableZoom();
+});
 
 

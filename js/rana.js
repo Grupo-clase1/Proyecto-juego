@@ -15,32 +15,7 @@ class nave {
     }
 
     actualizarPosicion(){
-
-        switch (this.carril) {
-            case 5:
-              this.positionY = "0%"
-              break;
-
-            case 4:
-              this.positionY = "20%"
-              break;
-
-            case 3:
-                this.positionY = "40%"
-                break;
-
-            case 2:
-                this.positionY = "60%"
-                break;
-
-            case 1:
-                this.positionY = "80%"
-                break;
-        
-            default:
-                break;
-        }
-
+      this.positionY = `${(5 - this.carril) * 20}%`;
     }
     //Aqui meteriamos los métodos que queremos aplicar
 

@@ -77,3 +77,27 @@ input:hover{
 input:active{
    top: 2px;
 }
+/* Nuevos estilos para hacer que el título sea responsive */
+@media screen and (max-width: 1200px) {
+  h1 {
+      font-size: 100px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  h1 {
+      font-size: 80px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  h1 {
+      font-size: 60px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  h1 {
+      font-size: 40px;
+  }
+}
