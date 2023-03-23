@@ -113,16 +113,22 @@ var mapaEnemigos = [
   { posicion: 5, imagen: "../media/enemigo2.gif", velocidad: 20 },
 ], 
 [
-  { posicion: 4, imagen: "../media/enemigo.gif", velocidad: 70 },
-  { posicion: 5, imagen: "../media/enemigo2.gif", velocidad: 70 },
-  { posicion: 1, imagen: "../media/enemigo.gif", velocidad: 70 },
-  { posicion: 2, imagen: "../media/enemigo2.gif", velocidad: 70 },
+  { posicion: 4, imagen: "../media/enemigo.gif", velocidad: 50 },
+  { posicion: 5, imagen: "../media/enemigo2.gif", velocidad: 50 },
+  { posicion: 1, imagen: "../media/enemigo.gif", velocidad: 50 },
+  { posicion: 2, imagen: "../media/enemigo2.gif", velocidad: 50 },
 ],
 [
-  { posicion: 1, imagen: "../media/enemigo.gif", velocidad: 40 },
+  { posicion: 1, imagen: "../media/enemigo.gif", velocidad: 80 },
 
-  { posicion: 5, imagen: "../media/enemigo2.gif", velocidad: 40 },
+  { posicion: 5, imagen: "../media/enemigo2.gif", velocidad: 80 },
 ],
+[
+  { posicion: 2, imagen: "../media/enemigo.gif", velocidad: 20 },
+  { posicion: 4, imagen: "../media/enemigo2.gif", velocidad: 20 },
+  { posicion: 3, imagen: "../media/enemigo.gif", velocidad: 20 },
+  { posicion: 5, imagen: "../media/enemigo2.gif", velocidad: 20 },
+], 
 // Agrega más arrays de enemigos aquí
 ];
 
