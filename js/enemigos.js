@@ -23,7 +23,7 @@ class enemigo {
               this.positionY = 80
               break;
       }
-      this.positionX = -10; // posición inicial fuera de la pantalla
+      this.positionX = -1000; // posición inicial fuera de la pantalla
       this.velocidad = velocidad; // velocidad del enemigo
       this.id = id
     }
@@ -39,10 +39,10 @@ class enemigo {
 
     // console.log(`${this.positionX}%;`);
 
-    document.getElementById(`enemigo${this.id}`).style.right = `${this.positionX}%`;
+    document.getElementById(`enemigo${this.id}`).style.right = `${this.positionX}px`;
 
     // Verificar si el enemigo ha llegado al final de la pantalla
-    if (this.positionX > 110) {
+    if (this.positionX > 5000) {
       document.getElementById(`enemigo${this.id}`).remove();
       this.borrarEnemigo()
     }
@@ -75,7 +75,7 @@ var arrayEnemigos = []
 // crea el enemigo pero no lo muestra
 function nuevoEnemigo(){
   let posicionAleatoria = parseInt(Math.floor((Math.random() * 5) + 0.05));
-  arrayEnemigos.push(new enemigo(posicionAleatoria, "../media/enemigo.gif", 2, idEnemigos));
+  arrayEnemigos.push(new enemigo(posicionAleatoria, "../media/enemigo.gif", 20, idEnemigos));
 
   // añade el enemigo
   arrayEnemigos[idEnemigos].anadirEnemigo()

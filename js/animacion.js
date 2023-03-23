@@ -9,6 +9,7 @@ function animacion(){
     for (let i = 0; i < arrayEnemigos.length; i++) {
       if (arrayEnemigos[i]) {
         arrayEnemigos[i].actualizarPosicion();
+        // obstacles = Collision.updateObstacles('enemigo');
       }
     }
     
@@ -24,6 +25,10 @@ function animacion(){
       return
     }
     moverFondo()
+
+
+
+
   
     // esto al final siempre
     setTimeout(animacion, 50)
