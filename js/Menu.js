@@ -102,5 +102,9 @@ function back(){
     menuDiv.style='hidden=false';
 }
 
+function creditos(){
+    
+}
+
 
 
