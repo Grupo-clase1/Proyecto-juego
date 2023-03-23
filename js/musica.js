@@ -40,6 +40,21 @@ function botonMusicaJuego(){
         }   
 }
 
+function botonMusicaMenu(){
+    var musicaMenu = document.getElementById("musicaMenu")
+    var sonido=document.getElementById('sonido').innerHTML
+
+    if (sonido=='🔊'){
+        document.getElementById('sonido2').innerHTML='🔈'
+        musicaMenu.pause();
+        }else{
+        document.getElementById('sonido2').innerHTML='🔊'
+        musicaMenu.play();
+        musicaMenu.loop=true;
+        }   
+    //entra en conflicto con el mousemove del principio
+}
+
 function efectoDeSonido(){
     var SonidoClick = document.getElementById("click")
 
