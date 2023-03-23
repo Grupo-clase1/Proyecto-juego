@@ -82,7 +82,7 @@ function ajustes(){
     menuDiv = document.getElementById('menuDiv');
 
     menuDiv.style.visibility='hidden';
-    inAjustes.hidden=false;
+    inAjustes.style.visibility='visible';
 }
 
 function salir(){
