@@ -123,6 +123,7 @@ user-select: none;
     transition: 0.2s;
     top: 16%;
     cursor: none;
+    overflow: hidden;
 }
 
 #pantallaPausa {
@@ -348,3 +349,19 @@ user-select: none;
     align-items: center;
     justify-content: center;
   }
+
+  #mensaje{
+    position: absolute;
+    width:450px;
+    height: 250px;
+    left:50%;
+    top:50%;
+    transform: translate(-50%, -50%);
+    background-color:#ffffff;
+    z-index:50;
+    border:solid 1px;
+    text-align:center;
+    font-size:22px;
+  }
+
+ 
