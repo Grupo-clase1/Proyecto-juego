@@ -349,6 +349,7 @@ user-select: none;
     height: 250px;
     left:50%;
     top:50%;
+    transform: translate(-50%, -50%);
     background-color:#ffffff;
     z-index:50;
     border:solid 1px;

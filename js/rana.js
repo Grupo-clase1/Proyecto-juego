@@ -57,7 +57,7 @@ restarVida(){
     var texto=''
     texto+='<div id="mensaje">';
 		texto+='<br /><br /><br />GAME OVER';
-		texto+='<br /><br /><input type="button" value="Empezar de nuevo" onclick="reiniciar();" style="font-size: 25px;"/>';
+		texto+='<br /><br /><input type="button" value="Reiniciar" onclick="reiniciar();" style="font-size: 25px;"/>';
 		texto+='</div>';
 		document.getElementById('aviso').innerHTML+=texto;
   }
