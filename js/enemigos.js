@@ -23,7 +23,7 @@ class enemigo {
               this.positionY = 80
               break;
       }
-      this.positionX = -1000; // posición inicial fuera de la pantalla
+      this.positionX = 2000; // posición inicial fuera de la pantalla
       this.velocidad = velocidad; // velocidad del enemigo
       this.id = id
     }
@@ -33,16 +33,16 @@ class enemigo {
   actualizarPosicion() {
     // Actualizar la posición vertical del enemigo
 
-    this.positionX += this.velocidad;
+    this.positionX -= this.velocidad;
 
     document.getElementById(`enemigo${this.id}`).style.top = `${this.positionY}%`;
 
     // console.log(`${this.positionX}%;`);
 
-    document.getElementById(`enemigo${this.id}`).style.right = `${this.positionX}px`;
+    document.getElementById(`enemigo${this.id}`).style.left = `${this.positionX}px`;
 
     // Verificar si el enemigo ha llegado al final de la pantalla
-    if (this.positionX > 5000) {
+    if (this.positionX < -100) {
       document.getElementById(`enemigo${this.id}`).remove();
       this.borrarEnemigo()
     }

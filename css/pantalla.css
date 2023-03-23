@@ -313,6 +313,7 @@ user-select: none;
     /* background-color: red; */
     transition: 0.10s;
     overflow: hidden;
+    width: 10%;
   }
 
   #contadorBackground{
