@@ -130,4 +130,19 @@ window.addEventListener('load', function () {
   disableZoom();
 });
 
+//las dos funciones de las cruces para cerrar tienda y ajustes
+function cerrarDivTienda() {
+  divTienda.hidden = true; 
+    jugando = true; 
+    enAjustesOTienda = false; 
+    pausa=false;
+    jugar(); 
+}
 
+function cerrarDivAjustes() {
+  divAjustes.hidden = true; 
+    jugando = true; 
+    enAjustesOTienda = false;
+    pausa=false;
+    jugar(); 
+}

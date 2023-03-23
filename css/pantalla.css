@@ -370,4 +370,17 @@ user-select: none;
     font-size:22px;
   }
 
+  .cruzCerrar {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: transparent;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    outline: none;
+    color: #ffffff;
+  }
+  
+
  

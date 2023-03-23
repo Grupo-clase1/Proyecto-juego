@@ -71,7 +71,8 @@
         <input type="button" id="ajustesBoton" class="ajustesSuperior" onclick="ajustesSup()">
      </div>
      <div id="divTienda"  hidden >
-            <div class="linea1">
+        
+            <div class="linea1"><button class="cruzCerrar" onclick="cerrarDivTienda()">X</button>
             <div class="espacioSkin"><div class="precios">COMPRADO</div><img src="media/ovni1p.png" class="skin" id="skin1" onmouseover="hoverSkin(1)" onmouseout="para()" onclick="equipar(1)"></div>
             <div class="espacioSkin"><div class="precios">400<img src="media/billetes.png" class="billetes"></div><img src="media/ovni2P.png" class="skin" id="skin2" onmouseover="hoverSkin(2)" onmouseout="para()"  onclick="equipar(2)"></div>
             <div class="espacioSkin"><div class="precios">600<img src="media/billetes.png" class="billetes"></div><img src="media/nave1P.png"  class="skin" id="skin3" onmouseover="hoverSkin(3)" onmouseout="para()" onclick="equipar(3)"></div>
@@ -84,6 +85,7 @@
      </div>
 
      <div id="divAjustes"  hidden >
+        <button class="cruzCerrar" onclick="cerrarDivAjustes()">X</button>
         <div class="dentroAjustes">
 
             <div id="desacMusica">
