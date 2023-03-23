@@ -26,6 +26,7 @@ class enemigo {
       this.positionX = 2000; // posición inicial fuera de la pantalla
       this.velocidad = velocidad; // velocidad del enemigo
       this.id = id
+      this.fuera=false
     }
   
 
@@ -42,8 +43,8 @@ class enemigo {
     document.getElementById(`enemigo${this.id}`).style.left = `${this.positionX}px`;
 
     // Verificar si el enemigo ha llegado al final de la pantalla
-    if (this.positionX < -100) {
-      document.getElementById(`enemigo${this.id}`).remove();
+    if (this.positionX < -500) {
+      this.fuera=true
       this.borrarEnemigo()
     }
   }
@@ -57,8 +58,8 @@ class enemigo {
 
   borrarEnemigo() {
     arrayEnemigos[this.id]=undefined;
-  }
-
+    var divEnemigo = document.getElementById(`enemigo${this.id}`);
+    divEnemigo.remove();  }
 
 }
 

@@ -9,8 +9,9 @@ function animacion(){
     for (let i = 0; i < arrayEnemigos.length; i++) {
       if (arrayEnemigos[i]) {
         arrayEnemigos[i].actualizarPosicion();
-        // obstacles = Collision.updateObstacles('enemigo');
+        detectarColision(arrayEnemigos[i])
       }
+
     }
     
     //crear enemigos al azar
