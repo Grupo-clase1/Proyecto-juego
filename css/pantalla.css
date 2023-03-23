@@ -304,6 +304,24 @@ user-select: none;
     cursor: url("../media/cursor3.png"), auto;
   }
 
+  #controles{
+    display: flex;
+    flex-direction: column;
+  }
+
+  #esc img{
+    width: 100px;
+  }
+
+  #mov img{
+    width: 100px;
+  }
+
+  #esc{
+    display: flex;
+    flex-direction: row;
+  }
+
 
   .enemigo{
     top: 0%;
