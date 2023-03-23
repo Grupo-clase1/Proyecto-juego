@@ -98,8 +98,8 @@ function back(){
 
     var inAjustes = document.getElementById('inAjustes');
 
-    inAjustes.hidden=true;
-    menuDiv.style='hidden=false';
+    inAjustes.style.visibility='hidden'; 
+       menuDiv.style='hidden=false';
 }
 
 
