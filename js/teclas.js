@@ -20,7 +20,7 @@ document.addEventListener("keydown", function(event) {
 
         }
 
-      } else if (event.key === "Escape"){
+      } else if (event.key === " "){
         if (pausa){
           pausa=false;
           jugar()
