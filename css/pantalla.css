@@ -123,6 +123,7 @@ user-select: none;
     transition: 0.2s;
     top: 16%;
     cursor: none;
+    overflow: hidden;
 }
 
 #pantallaPausa {
