@@ -341,3 +341,18 @@ user-select: none;
     align-items: center;
     justify-content: center;
   }
+
+  #mensaje{
+    position: absolute;
+    width:450px;
+    height: 250px;
+    left:50%-225px;
+    top:50%-125px;
+    background-color:#ffffff;
+    z-index:50;
+    border:solid 1px;
+    text-align:center;
+    font-size:22px;
+  }
+
+ 

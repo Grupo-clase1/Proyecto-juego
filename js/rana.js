@@ -55,7 +55,7 @@ restarVida(){
   }else if (this.vidas <= 0){           //aviso cuando se gastan las vidas
     vida1.style.visibility = 'hidden';
     var texto=''
-    texto+='<div id="mensaje" style="position:absolute;width:450px;height:250px;left:200px;top:125px;background-color:#ffffff;z-index:1;border:solid 1px;text-align:center;font-size:22px;">';
+    texto+='<div id="mensaje">';
 		texto+='<br /><br /><br />GAME OVER';
 		texto+='<br /><br /><input type="button" value="Empezar de nuevo" onclick="reiniciar();" style="font-size: 25px;"/>';
 		texto+='</div>';
@@ -81,7 +81,7 @@ let Pepe4 = new nave('Pepe4','5%','40%','./media/nave4p.png','./media/nave4.gif'
 
 //Aquí ejecutariamos los metodos que hemos creado arriba
 
-function reiniciar(){
+function reiniciar(){  //boton dentro del game over (cuando pierdes todas las vidas)
   document.getElementById('aviso').innerHTML=''
   Pepe.vidas=3
   vida1.style.visibility = 'visible';
