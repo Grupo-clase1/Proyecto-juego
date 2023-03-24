@@ -111,7 +111,7 @@ var mapaEnemigos = [
 ], 
 [
   { posicion: 1, imagen: "../media/enemigo.gif", velocidad: 90},
-  { posicion: 5, imagen: "../media/enemigo2.gif", velocidad: 90},
+  { posicion: 3, imagen: "../media/enemigo2.gif", velocidad: 90},
 ], 
 //2
 [
@@ -122,7 +122,7 @@ var mapaEnemigos = [
 ],
 [
   { posicion: 2, imagen: "../media/enemigo.gif", velocidad: 40},
-  { posicion: 5, imagen: "../media/enemigo2.gif", velocidad: 40},
+  { posicion: 3, imagen: "../media/enemigo2.gif", velocidad: 40},
 ], 
 [
   { posicion: 2, imagen: "../media/enemigo.gif", velocidad: 50},
@@ -136,7 +136,7 @@ var mapaEnemigos = [
 ], 
 [
   { posicion: 4, imagen: "../media/enemigo.gif", velocidad: 50 },
-  { posicion: 5, imagen: "../media/enemigo2.gif", velocidad: 70 },
+  { posicion: 3, imagen: "../media/enemigo2.gif", velocidad: 70 },
   { posicion: 1, imagen: "../media/enemigo.gif", velocidad: 60 },
   { posicion: 2, imagen: "../media/enemigo2.gif", velocidad: 80 },
 ],
@@ -152,13 +152,13 @@ var mapaEnemigos = [
 ],
 [
   { posicion: 2, imagen: "../media/enemigo.gif", velocidad: 50},
-  { posicion: 5, imagen: "../media/enemigo2.gif", velocidad: 50},
+  { posicion: 3, imagen: "../media/enemigo2.gif", velocidad: 50},
 ], 
 [
   { posicion: 2, imagen: "../media/enemigo.gif", velocidad: 50},
   { posicion: 4, imagen: "../media/enemigo2.gif", velocidad: 70},
   { posicion: 3, imagen: "../media/enemigo.gif", velocidad: 60},
-  { posicion: 5, imagen: "../media/enemigo2.gif", velocidad: 50},
+  { posicion: 3, imagen: "../media/enemigo2.gif", velocidad: 50},
 ], 
 [
   { posicion: 2, imagen: "../media/enemigo.gif", velocidad: 90},
@@ -179,11 +179,11 @@ var mapaEnemigos = [
 { posicion: 2, imagen: "../media/enemigo.gif", velocidad: 50},
 { posicion: 4, imagen: "../media/enemigo2.gif", velocidad: 70},
 { posicion: 3, imagen: "../media/enemigo.gif", velocidad: 50},
-{ posicion: 5, imagen: "../media/enemigo2.gif", velocidad: 60},
+{ posicion: 3, imagen: "../media/enemigo2.gif", velocidad: 60},
 ], 
 [
 { posicion: 1, imagen: "../media/enemigo.gif", velocidad: 60},
-{ posicion: 5, imagen: "../media/enemigo2.gif", velocidad: 60},
+{ posicion: 3, imagen: "../media/enemigo2.gif", velocidad: 60},
 ], 
 [
 { posicion: 2, imagen: "../media/enemigo.gif", velocidad: 50},
@@ -232,11 +232,11 @@ var mapaEnemigos = [
   { posicion: 2, imagen: "../media/enemigo.gif", velocidad: 50},
   { posicion: 4, imagen: "../media/enemigo2.gif", velocidad: 60},
   { posicion: 1, imagen: "../media/enemigo.gif", velocidad: 40},
-  { posicion: 5, imagen: "../media/enemigo2.gif", velocidad: 50},
+  { posicion: 3, imagen: "../media/enemigo2.gif", velocidad: 50},
 ], 
 [
   { posicion: 1, imagen: "../media/enemigo.gif", velocidad: 60},
-  { posicion: 5, imagen: "../media/enemigo2.gif", velocidad: 60},
+  { posicion: 3, imagen: "../media/enemigo2.gif", velocidad: 60},
 ], 
 [
   { posicion: 4, imagen: "../media/enemigo.gif", velocidad: 50 },
@@ -266,7 +266,7 @@ var mapaEnemigos = [
 ], 
 [
   { posicion: 2, imagen: "../media/enemigo.gif", velocidad: 50},
-  { posicion: 5, imagen: "../media/enemigo2.gif", velocidad: 50},
+  { posicion: 3, imagen: "../media/enemigo2.gif", velocidad: 50},
 ], 
 //5
 [
@@ -277,7 +277,7 @@ var mapaEnemigos = [
 ],
 [
 { posicion: 2, imagen: "../media/enemigo.gif", velocidad: 50},
-{ posicion: 5, imagen: "../media/enemigo2.gif", velocidad: 50},
+{ posicion: 3, imagen: "../media/enemigo2.gif", velocidad: 50},
 ], 
 [
 { posicion: 2, imagen: "../media/enemigo.gif", velocidad: 50},
@@ -315,7 +315,7 @@ var mapaEnemigos = [
   { posicion: 2, imagen: "../media/enemigo.gif", velocidad: 40},
   { posicion: 4, imagen: "../media/enemigo2.gif", velocidad: 50},
   { posicion: 3, imagen: "../media/enemigo.gif", velocidad: 70},
-  { posicion: 5, imagen: "../media/enemigo2.gif", velocidad: 40},
+  { posicion: 3, imagen: "../media/enemigo2.gif", velocidad: 40},
 ], 
 [
   { posicion: 1, imagen: "../media/enemigo.gif", velocidad: 60},
@@ -344,14 +344,14 @@ var mapaEnemigos = [
 ], 
 [
   { posicion: 4, imagen: "../media/enemigo.gif", velocidad: 50 },
-  { posicion: 5, imagen: "../media/enemigo2.gif", velocidad: 40 },
+  { posicion: 3, imagen: "../media/enemigo2.gif", velocidad: 40 },
   { posicion: 1, imagen: "../media/enemigo.gif", velocidad: 60 },
   { posicion: 2, imagen: "../media/enemigo2.gif", velocidad: 50 },
 ],
 //3
 [
   { posicion: 2, imagen: "../media/enemigo.gif", velocidad: 50},
-  { posicion: 5, imagen: "../media/enemigo2.gif", velocidad: 50},
+  { posicion: 3, imagen: "../media/enemigo2.gif", velocidad: 50},
 ], 
 [
   { posicion: 1, imagen: "../media/enemigo.gif", velocidad: 70 },
@@ -387,7 +387,7 @@ var mapaEnemigos = [
 { posicion: 2, imagen: "../media/enemigo.gif", velocidad: 50},
 { posicion: 4, imagen: "../media/enemigo2.gif", velocidad: 80},
 { posicion: 3, imagen: "../media/enemigo.gif", velocidad: 50},
-{ posicion: 5, imagen: "../media/enemigo2.gif", velocidad: 60},
+{ posicion: 3, imagen: "../media/enemigo2.gif", velocidad: 60},
 ], 
 [
 { posicion: 1, imagen: "../media/enemigo.gif", velocidad: 60},
