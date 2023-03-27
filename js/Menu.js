@@ -71,11 +71,6 @@ function jugar(){
             },1000);
         }        // contadorBackground++;
     }
-    // actualizar el contador en la pantalla
-    // setInterval(() => {
-    //     document.getElementById('contadorBackground').textContent = contadorBackground;
-    // }, 1000);
-    
 }
 
 

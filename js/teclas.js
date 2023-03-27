@@ -33,4 +33,22 @@ document.addEventListener("keydown", function(event) {
 
     }
   }});
+
+  function disableZoom() {
+    document.addEventListener('wheel', function (e) {
+        if (e.ctrlKey) {
+            e.preventDefault();
+        }
+    }, { passive: false });
+  
+    document.addEventListener('keydown', function (e) {
+        if (e.ctrlKey && (e.key === '+' || e.key === '-')) {
+            e.preventDefault();
+        }
+    });
+  }
+  
+  window.addEventListener('load', function () {
+    disableZoom();
+  });
   

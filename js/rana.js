@@ -30,12 +30,6 @@ class nave {
 
     animacionOvni(){    //animacion que hace avanzar la nave en el cambio de nivel
  
-      // var ovni = document.getElementById(this.id)
-
-      //   ovni.classList.add('animacion');
-      //   setTimeout(() => {
-      //     ovni.classList.remove('animacion');
-      //   }, 1000); 
     
   }
 
@@ -63,14 +57,10 @@ restarVida(){
   }
 }
 
-// masMonedas(){ 
-//   monedas += 50;
 
-//   document.getElementById('contadorDinero').innerHTML='<img src="media/monedas.png" id="monedas">'+monedas+'<img src="media/billetes.png" id="billetes"></img>'
-// }
 
 }
-
+//Solo puede haber una class nave.
 let Pepe = new nave('Pepe','5%','40%','./media/ovni1p.png','./media/ovni1.gif','./media/muerto.gif', "rana");
 let Pepe1 = new nave('Pepe1','5%','40%','./media/ovni2p.png','./media/ovni2.gif','./media/muerto.gif', "rana");
 let Pepe2 = new nave('Pepe2','5%','40%','./media/nave1p.png','./media/nave1.gif','./media/muerto.gif', "rana");

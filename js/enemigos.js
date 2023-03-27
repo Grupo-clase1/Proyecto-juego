@@ -64,9 +64,6 @@ borrarEnemigo() {
 }
 
 
-
-
-
 // -----------La wea de añadir enemigos
 
 
@@ -82,20 +79,3 @@ arrayEnemigos[idEnemigos].anadirEnemigo()
 
 idEnemigos++;
 }
-
-
-
-/*var idEnemigos = 0
-var arrayEnemigos = []
-
-// crea el enemigo pero no lo muestra
-function nuevoEnemigo(){
-  let posicionAleatoria = parseInt(Math.floor((Math.random() * 5) + 0.05));
-  arrayEnemigos.push(new enemigo(posicionAleatoria, "../media/enemigo.gif", 20, idEnemigos));
-
-  // añade el enemigo
-  arrayEnemigos[idEnemigos].anadirEnemigo()
-
-  idEnemigos++;
-
-}*/

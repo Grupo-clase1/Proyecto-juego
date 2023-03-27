@@ -1,7 +1,6 @@
 var enAjustesOTienda = false;
 
 function tienda() {
-  let botonTienda = document.getElementById('tiendaBoton');
   let divTienda = document.getElementById('divTienda');
   let divAjustes = document.getElementById('divAjustes');
   let pantallaPausa = document.getElementById('pantallaPausa');
@@ -112,23 +111,7 @@ function equipar(num){
    }
  }
 
-function disableZoom() {
-  document.addEventListener('wheel', function (e) {
-      if (e.ctrlKey) {
-          e.preventDefault();
-      }
-  }, { passive: false });
 
-  document.addEventListener('keydown', function (e) {
-      if (e.ctrlKey && (e.key === '+' || e.key === '=')) {
-          e.preventDefault();
-      }
-  });
-}
-
-window.addEventListener('load', function () {
-  disableZoom();
-});
 
 //las dos funciones de las cruces para cerrar tienda y ajustes
 function cerrarDivTienda() {

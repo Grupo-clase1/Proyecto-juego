@@ -27,10 +27,6 @@ function animacion(){
     }
     moverFondo()
 
-
-
-
-  
     // esto al final siempre
     setTimeout(animacion, 50)
 
