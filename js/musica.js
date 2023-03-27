@@ -63,3 +63,9 @@ function efectoDeSonido(){
     SonidoClick.play();
     SonidoClick.loop=false;
 }
+
+
+function sumarVelocidadMusica(){
+    velodidadMusica += 0.05
+    document.getElementById("musicaJuego").playbackRate = velodidadMusica;
+}

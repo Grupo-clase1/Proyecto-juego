@@ -8,6 +8,8 @@ var intervalo;
 var jugando = false;
 var imagenOvni;
 var nivelActual=1
+var velodidadMusica=1.0
+
 
 
 function jugar1() {
@@ -61,7 +63,9 @@ function jugar(){
             nivelActual++
             document.getElementById("contadorBackground").innerHTML ="Nivel" +nivelActual
             Pepe.animacionOvni()
+
             setTimeout(() => {
+                sumarVelocidadMusica()
                 inicioBackground = (inicioBackground + 1) % backgrounds.length;
                 document.getElementById('pantalla').style.backgroundImage = backgrounds[nivelActual-2];
             },1000);
@@ -73,6 +77,7 @@ function jugar(){
     // }, 1000);
     
 }
+
 
 function ajustes(){
 
