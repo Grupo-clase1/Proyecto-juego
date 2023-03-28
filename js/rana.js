@@ -60,7 +60,7 @@ restarVida(){
 
 
 }
-//Solo puede haber una class nave.
+//Solo puede haber un objeto nave y desde este cambiar las propiedades.
 let Pepe = new nave('Pepe','5%','40%','./media/ovni1p.png','./media/ovni1.gif','./media/muerto.gif', "rana");
 let Pepe1 = new nave('Pepe1','5%','40%','./media/ovni2p.png','./media/ovni2.gif','./media/muerto.gif', "rana");
 let Pepe2 = new nave('Pepe2','5%','40%','./media/nave1p.png','./media/nave1.gif','./media/muerto.gif', "rana");
