@@ -48,6 +48,7 @@ restarVida(){
     vida2.style.visibility = 'hidden';
   }else if (this.vidas <= 0){           //aviso cuando se gastan las vidas
     vida1.style.visibility = 'hidden';
+    pausa=true;
     var texto=''
     texto+='<div id="mensaje">';
 		texto+='<br /><br /><br />GAME OVER';
@@ -73,6 +74,8 @@ let Pepe4 = new nave('Pepe4','5%','40%','./media/nave4p.png','./media/nave4.gif'
 
 function reiniciar(){  //boton dentro del game over (cuando pierdes todas las vidas)
   document.getElementById('aviso').innerHTML=''
+  pausa=false;
+  jugar()
   Pepe.vidas=3
   vida1.style.visibility = 'visible';
   vida2.style.visibility = 'visible';
