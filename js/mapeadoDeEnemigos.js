@@ -324,16 +324,19 @@ function generarEnemigos() {
     let enemigosActuales = mapaEnemigos[indiceEnemigo];
 
     // Crea todos los enemigos en el array de enemigosActuales
-    for (let i = 0; i < enemigosActuales.length; i++) {
+    if(contadorEnemigos%30==0){
+          for (let i = 0; i < enemigosActuales.length; i++) {
         let enemigoActual = enemigosActuales[i];
         nuevoEnemigo(enemigoActual.posicion, enemigoActual.imagen, enemigoActual.velocidad);
+        }
+
+        indiceEnemigo++;
     }
 
-    indiceEnemigo++;
     } else {
-    clearInterval(temporizadorEnemigos);
+    // clearInterval(temporizadorEnemigos);
     }
 }
 
 // Establece un temporizador para llamar a la función generarEnemigos() cada 1000 milisegundos (1 segundo)
-var temporizadorEnemigos = setInterval(generarEnemigos, 2000);
+// var temporizadorEnemigos = setInterval(generarEnemigos, 2000);
