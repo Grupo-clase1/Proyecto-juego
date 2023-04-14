@@ -14,7 +14,6 @@ var velodidadMusica=1.0
 
 function jugar1() {
     jugando = true
-
     menuDiv = document.getElementById('menuDiv');
     pantallaPausa = document.getElementById('pantallaPausa');
     imagenOvni = document.getElementById('imagen'); // Obtén la referencia a imagenOvni aquí
@@ -23,8 +22,6 @@ function jugar1() {
 }
 // esto inicia el juego
 function jugar(){
-
-
 
     efectoDeSonido()
 
