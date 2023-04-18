@@ -58,12 +58,13 @@ class nave {
       texto+='</div>';
       document.getElementById('aviso').innerHTML+=texto;
     }
-}
+  }
 
-function masDinero(){
-  //  var dinero = document.getElementById('contadorDinero')
+function masDinero(){//no funcina todavia
+  var dinero = document.getElementById('contadorDinero');
 
-  this.monedas +=50
+  nave.monedas += 50;
+  dinero.innerHTML= '<img src="media/monedas.png" id="monedas">'+ nave.monedas +'<img src="media/billetes.png" id="billetes"></img>'
   
 }
 
