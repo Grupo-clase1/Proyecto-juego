@@ -218,8 +218,10 @@ user-select: none;
     width: 80%;
     margin: 0 auto;
     position: absolute;
-    background-color: rgba(4, 4, 4, 0.581);
-    top: 18%;
+    background-image: url('../media/fondotienda.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    top: 17%;
     z-index: 1; 
   }
 
@@ -274,8 +276,10 @@ user-select: none;
     width: 80%;
     margin: 0 auto;
     position: absolute;
-    background-color: rgba(4, 4, 4, 0.581);
-    top: 18%;
+    background-image: url('../media/fondotienda.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    top: 17%;
     z-index: 1; 
   }
 
@@ -333,7 +337,20 @@ user-select: none;
     gap: 59px;
   }
 
-  #esc, #mov{
+  #esc{
+    width: 200px;
+
+  }
+  
+  #mov2{
+    width: 200px;
+    display: flex;
+    gap: 59px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #mov{
     width: 100px;
   }
 
