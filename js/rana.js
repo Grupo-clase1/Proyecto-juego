@@ -49,14 +49,16 @@ class nave {
       vida3.style.visibility = 'hidden';
       vida2.style.visibility = 'hidden';
     }else if (this.vidas == 0){           //aviso cuando se gastan las vidas
-      pausa=true;
       vida1.style.visibility = 'hidden';
+      var imagenOvni = document.getElementById("imagen")
+      imagenOvni.src = Pepe.imagenMuerto;      
       var texto=''
       texto+='<div id="mensaje">';
       texto+='GAME OVER';
       texto+='<br /><br /><input id="botonmensaje" type="button" value="Reiniciar" onclick="reiniciar();" />';
       texto+='</div>';
       document.getElementById('aviso').innerHTML+=texto;
+      pausa=true;
     }
   }
 
@@ -82,9 +84,10 @@ let Pepe4 = new nave('Pepe4','5%','40%','./media/nave4p.png','./media/nave4.gif'
 
 function reiniciar(){  //boton dentro del game over (cuando pierdes todas las vidas)
   document.getElementById('aviso').innerHTML=''
-  pausa=false;
   jugar()
   Pepe.vidas=3
+  var imagenOvni = document.getElementById("imagen")
+      imagenOvni.src = Pepe.imagenMovimiento;  
   vida1.style.visibility = 'visible';
   vida2.style.visibility = 'visible';
   vida3.style.visibility = 'visible';

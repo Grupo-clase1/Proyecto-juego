@@ -23,7 +23,7 @@ function jugar1() {
 }
 // esto inicia el juego
 function jugar(){
-
+    pausa=false
     efectoDeSonido()
 
     iniciarMusicaJuego()
