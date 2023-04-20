@@ -41,15 +41,17 @@ function botonMusicaJuego(){
 }
 
 function botonMusicaMenu(){
+    musicaJuegoActiva=false
     var musicaMenu = document.getElementById("musicaMenu")
-    var sonido=document.getElementById('sonido').innerHTML
+    var sonido2=document.getElementById('sonido2').innerHTML
 
-    if (sonido=='🔊'){
+    if (sonido2=='🔊'){
         document.getElementById('sonido2').innerHTML='🔈'
         musicaMenu.pause();
         }else{
         document.getElementById('sonido2').innerHTML='🔊'
         musicaMenu.play();
+        musicaMenu.volume = 0.10;
         musicaMenu.loop=true;
         }   
     //entra en conflicto con el mousemove del principio
