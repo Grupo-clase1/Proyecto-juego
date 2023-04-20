@@ -91,24 +91,27 @@ function equipar(num){
   var imagenOvni = document.getElementById("imagen")
    switch(num) {
      case 1:
-       imagenOvni.src = Pepe.imagenMovimiento;      
+      Pepe.imagenMovimiento = skin1.src;
        break;
      case 2:
-       imagenOvni.src = Pepe1.imagenMovimiento;      
+      Pepe.imagenMovimiento = skin2.src;
        break;
      case 3:
-       imagenOvni.src = Pepe2.imagenMovimiento;      
+      Pepe.imagenMovimiento = skin3.src;
        break;
      case 4:
-       imagenOvni.src = Pepe3.imagenMovimiento;      
+      Pepe.imagenMovimiento = skin4.src;
        break;
      case 5:
-       imagenOvni.src = Pepe4.imagenMovimiento;      
+      Pepe.imagenMovimiento = skin5.src;
        break;
      default:
-       imagenOvni.src = Pepe.imagenMovimiento;      
+      Pepe.imagenMovimiento = skin1.src;
        break;
    }
+
+   imagenOvni.src = Pepe.imagenMovimiento;      
+
  }
 
 
