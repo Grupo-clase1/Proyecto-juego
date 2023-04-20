@@ -419,5 +419,18 @@ user-select: none;
     color: #ffffff;
   }
   
+  #skin4:hover{
+    transform: translateY(-5px) rotate(-2deg);
+    animation: oscilar 0.2s ease-in-out infinite alternate;
+  }
+  
+  #skin5:hover{
+    transform: translateY(-5px) rotate(-2deg);
+    animation: oscilar 0.2s ease-in-out infinite alternate;
+  }
 
+  @keyframes oscilar {
+    from { transform: translateY(-5px) rotate(-2deg); }
+    to { transform: translateY(5px) rotate(2deg); }
+  }
  
