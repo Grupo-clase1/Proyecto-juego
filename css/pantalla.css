@@ -218,8 +218,10 @@ user-select: none;
     width: 80%;
     margin: 0 auto;
     position: absolute;
-    background-color: rgba(4, 4, 4, 0.581);
-    top: 18%;
+    background-image: url('../media/fondotienda.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    top: 17%;
     z-index: 1; 
   }
 
@@ -274,8 +276,10 @@ user-select: none;
     width: 80%;
     margin: 0 auto;
     position: absolute;
-    background-color: rgba(4, 4, 4, 0.581);
-    top: 18%;
+    background-image: url('../media/fondotienda.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    top: 17%;
     z-index: 1; 
   }
 
@@ -333,7 +337,20 @@ user-select: none;
     gap: 59px;
   }
 
-  #esc, #mov{
+  #esc{
+    width: 200px;
+
+  }
+  
+  #mov2{
+    width: 200px;
+    display: flex;
+    gap: 59px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #mov{
     width: 100px;
   }
 
@@ -362,12 +379,32 @@ user-select: none;
     height: 250px;
     left:50%;
     top:50%;
+    color:aliceblue;
     transform: translate(-50%, -50%);
-    background-color:#ffffff;
+    background-image:url(../media/fondotienda.gif);
+    background-size: cover;
+    background-repeat: no-repeat;
     z-index:50;
-    border:solid 1px;
+    border:solid 3px;
+    border-color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     text-align:center;
-    font-size:22px;
+    font-family: fuente1;
+    font-size:35px;
+    opacity: 0.8;
+  }
+
+  #botonmensaje{
+    color:aliceblue;
+    background-color: #2c2c2c;
+    border:solid 3px;
+    border-color: aliceblue;
+    text-align:center;
+    font-family: fuente1;
+    font-size:25px;
   }
 
   .cruzCerrar {
