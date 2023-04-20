@@ -73,10 +73,10 @@ function masDinero(){//no funcina todavia
 
 //Solo puede haber un objeto nave y desde este cambiar las propiedades.
 let Pepe = new nave('Pepe','5%','40%','./media/ovni1p.png','./media/ovni1.gif','./media/muerto.gif', "rana");
-let Pepe1 = new nave('Pepe1','5%','40%','./media/ovni2p.png','./media/ovni2.gif','./media/muerto.gif', "rana");
-let Pepe2 = new nave('Pepe2','5%','40%','./media/nave1p.png','./media/nave1.gif','./media/muerto.gif', "rana");
-let Pepe3 = new nave('Pepe3','5%','40%','./media/naave2p.png','./media/nave2.gif','./media/muerto.gif', "rana");
-let Pepe4 = new nave('Pepe4','5%','40%','./media/nave4p.png','./media/nave4.gif','./media/muerto.gif', "rana");
+// let Pepe1 = new nave('Pepe1','5%','40%','./media/ovni2p.png','./media/ovni2.gif','./media/muerto.gif', "rana");
+// let Pepe2 = new nave('Pepe2','5%','40%','./media/nave1p.png','./media/nave1.gif','./media/muerto.gif', "rana");
+// let Pepe3 = new nave('Pepe3','5%','40%','./media/naave2p.png','./media/nave2.gif','./media/muerto.gif', "rana");
+// let Pepe4 = new nave('Pepe4','5%','40%','./media/nave4p.png','./media/nave4.gif','./media/muerto.gif', "rana");
 
  //Creamos el objeto con los parametros que queremos meterle
 
@@ -84,7 +84,7 @@ let Pepe4 = new nave('Pepe4','5%','40%','./media/nave4p.png','./media/nave4.gif'
 
 function reiniciar(){  //boton dentro del game over (cuando pierdes todas las vidas)
   document.getElementById('aviso').innerHTML=''
-  jugar()
+  cuentaAtras()
   Pepe.vidas=3
   var imagenOvni = document.getElementById("imagen")
       imagenOvni.src = Pepe.imagenMovimiento;  

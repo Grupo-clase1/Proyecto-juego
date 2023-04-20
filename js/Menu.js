@@ -20,6 +20,7 @@ function jugar1() {
     menuDiv.style.visibility = 'hidden';
     pantallaPausa.hidden = false;
     clearTimeout(juegoAnimacion)
+
 }
 // esto inicia el juego
 function jugar(){
@@ -41,9 +42,22 @@ function jugar(){
     pantalla.hidden = false;
     menuSup.style.visibility='visible'
     pantallaPausa.hidden = true;
-
 }
 
+function cuentaAtras() {
+    var pantallaCuentaAtras = document.getElementById('pantallaCuentaAtras');
+    pantallaCuentaAtras.style.visibility= "visible";
+    var cuenta = 3;
+    var intervalo = setInterval(function() {
+      pantallaCuentaAtras.innerHTML = cuenta;
+      cuenta--;
+      if (cuenta < 0) {
+        clearInterval(intervalo);
+        pantallaCuentaAtras.style.visibility= "hidden";
+        jugar();
+      }
+    }, 1000);
+  }
 
 function ajustes(){
 

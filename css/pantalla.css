@@ -418,6 +418,31 @@ user-select: none;
     outline: none;
     color: #ffffff;
   }
+
+  .pantallaCuenta {
+    position: absolute;
+    width:450px;
+    height: 250px;
+    left:50%;
+    top:50%;
+    color:aliceblue;
+    transform: translate(-50%, -50%);
+    background-image:url(../media/fondotienda.gif);
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index:99;
+    border:solid 3px;
+    border-color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align:center;
+    font-family: fuente1;
+    font-size:35px;
+    opacity: 0.8;
+    visibility: hidden;
+  }
   
   #skin4:hover{
     transform: translateY(-5px) rotate(-2deg);
