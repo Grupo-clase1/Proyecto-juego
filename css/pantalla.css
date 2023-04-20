@@ -386,6 +386,7 @@ user-select: none;
     transform: translateY(-5px) rotate(-2deg);
     animation: oscilar 0.2s ease-in-out infinite alternate;
   }
+  
   #skin5:hover{
     transform: translateY(-5px) rotate(-2deg);
     animation: oscilar 0.2s ease-in-out infinite alternate;
