@@ -340,3 +340,83 @@ function generarEnemigos() {
 
 // Establece un temporizador para llamar a la función generarEnemigos() cada 1000 milisegundos (1 segundo)
 // var temporizadorEnemigos = setInterval(generarEnemigos, 2000);
+
+class PowerUp {
+  constructor(carril, imagen, velocidad, tipo, id) {
+    this.carril = carril;
+    this.imagen = imagen;
+    this.velocidad = velocidad;
+    this.tipo = tipo;
+    this.positionY = `${(5 - carril) * 20}%`;
+    this.positionX = 2000;
+    this.id = id;
+  }
+  actualizarPosicion() {
+    this.positionX -= this.velocidad;
+
+    document.getElementById(`power-up${this.id}`).style.top = `${this.positionY}%`;
+    document.getElementById(`power-up${this.id}`).style.left = `${this.positionX}px`;
+
+    if (this.positionX < -500) {
+      this.borrarPowerUp();
+    }
+  }
+  anadirPowerUp() {
+    let pantalla = document.getElementById("pantalla");
+    pantalla.innerHTML += `<div class="power-up" id="power-up${this.id}"><img class="imagen" id="imagen${this.id}" src="${this.imagen}"></div>`
+  }
+
+  borrarPowerUp() {
+    arrayPowerUps.splice(this.id, 1);
+    var divPowerUp = document.getElementById(`power-up${this.id}`);
+    divPowerUp.remove();
+  }
+}
+
+var arrayPowerUps = [];
+var contadorPowerUps = 0;
+var powerUpsData = [
+  { carril: 2, imagen: "../media/dinero.gif", velocidad: 40, tipo: "dinero" },
+  { carril: 5, imagen: "../media/vida.gif", velocidad: 40, tipo: "vida" },
+  { carril: 2, imagen: "../media/dinero.gif", velocidad: 40, tipo: "dinero" },
+  { carril: 5, imagen: "../media/vida.gif", velocidad: 40, tipo: "vida" },  { carril: 2, imagen: "../media/dinero.gif", velocidad: 40, tipo: "dinero" },
+  { carril: 5, imagen: "../media/vida.gif", velocidad: 40, tipo: "vida" },  { carril: 2, imagen: "../media/dinero.gif", velocidad: 40, tipo: "dinero" },
+  { carril: 5, imagen: "../media/vida.gif", velocidad: 40, tipo: "vida" },  { carril: 2, imagen: "../media/dinero.gif", velocidad: 40, tipo: "dinero" },
+  { carril: 5, imagen: "../media/vida.gif", velocidad: 40, tipo: "vida" },  { carril: 2, imagen: "../media/dinero.gif", velocidad: 40, tipo: "dinero" },
+  { carril: 5, imagen: "../media/vida.gif", velocidad: 40, tipo: "vida" },  { carril: 2, imagen: "../media/dinero.gif", velocidad: 40, tipo: "dinero" },
+  { carril: 5, imagen: "../media/vida.gif", velocidad: 40, tipo: "vida" },  { carril: 2, imagen: "../media/dinero.gif", velocidad: 40, tipo: "dinero" },
+  { carril: 5, imagen: "../media/vida.gif", velocidad: 40, tipo: "vida" },  { carril: 2, imagen: "../media/dinero.gif", velocidad: 40, tipo: "dinero" },
+  { carril: 5, imagen: "../media/vida.gif", velocidad: 40, tipo: "vida" },  { carril: 2, imagen: "../media/dinero.gif", velocidad: 40, tipo: "dinero" },
+  { carril: 5, imagen: "../media/vida.gif", velocidad: 40, tipo: "vida" },  { carril: 2, imagen: "../media/dinero.gif", velocidad: 40, tipo: "dinero" },
+  { carril: 5, imagen: "../media/vida.gif", velocidad: 40, tipo: "vida" },  { carril: 2, imagen: "../media/dinero.gif", velocidad: 40, tipo: "dinero" },
+  { carril: 5, imagen: "../media/vida.gif", velocidad: 40, tipo: "vida" },  { carril: 2, imagen: "../media/dinero.gif", velocidad: 40, tipo: "dinero" },
+  { carril: 5, imagen: "../media/vida.gif", velocidad: 40, tipo: "vida" },
+];
+function generarpowerup() {
+  contadorPowerUps++;
+  console.log('Contador de power-ups:', contadorPowerUps, contadorPowerUps % 20);
+
+  if (arrayPowerUps.length < powerUpsData.length) {
+    let powerUpActual = powerUpsData[arrayPowerUps.length];
+
+    if ((contadorPowerUps % 40 ) == 0) {
+      
+      console.log('Generando nuevo power-up:', powerUpActual);
+      nuevoPowerUp(
+        powerUpActual.carril,
+        powerUpActual.imagen,
+        powerUpActual.velocidad,
+        powerUpActual.tipo
+      );
+    }
+  } else {
+    // Haz algo aquí o simplemente elimina este comentario.
+  }
+}
+
+function nuevoPowerUp(carril, imagen, velocidad, tipo) {
+  console.log('Añadiendo power-up:', carril, imagen, velocidad, tipo);
+  const powerUp = new PowerUp(carril, imagen, velocidad, tipo, arrayPowerUps.length);
+  arrayPowerUps.push(powerUp);
+  powerUp.anadirPowerUp();
+}
