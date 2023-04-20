@@ -4,6 +4,11 @@ var contadorEnemigos=0
 
 function animacion(){
 
+  if(pausa){
+    return
+  }
+
+console.log("animacion")
     document.getElementById("rana").style.top=Pepe.positionY;
     
     Pepe.actualizarPosicion()
@@ -37,6 +42,8 @@ function animacion(){
     // console.log(contadorEnemigos)
 
     contadorEnemigos++
+
+
 
     // esto al final siempre
     juegoAnimacion = setTimeout(animacion, 50)
