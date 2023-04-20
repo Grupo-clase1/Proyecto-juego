@@ -46,7 +46,7 @@ console.log("animacion")
 
 
     generarEnemigos()
-    generarpowerup()
+    //generarpowerup()
     moverFondo()
 
     // console.log(contadorEnemigos)
