@@ -73,7 +73,9 @@ function back(){
        menuDiv.style='hidden=false';
 }
 
-
+function creditos(){
+    document.getElementById('pantallacreditos').hidden = false;
+}
 
 
 
