@@ -1,6 +1,8 @@
 // esto se ejecuta en bucle y genera el efecto de animación
 var juegoAnimacion
-var contadorEnemigos=0
+var contadorEnemigos=0;
+var contadorPowerUps=0;
+
 
 function animacion(){
 
@@ -22,6 +24,14 @@ console.log("animacion")
 
     }
     
+    for (let i = 0; i < arrayPowerUps.length; i++) {
+      if (arrayPowerUps[i]) {
+        arrayPowerUps[i].actualizarPosicion();
+        detectarColision(arrayPowerUps[i])
+      }
+
+    }
+
     // //crear enemigos al azar
     // let numeroAzar = parseInt(Math.floor((Math.random() * 100) + 1));
 
@@ -36,12 +46,13 @@ console.log("animacion")
 
 
     generarEnemigos()
-
+    generarpowerup()
     moverFondo()
 
     // console.log(contadorEnemigos)
 
     contadorEnemigos++
+
 
 
 

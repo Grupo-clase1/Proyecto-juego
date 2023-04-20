@@ -354,7 +354,7 @@ user-select: none;
     width: 100px;
   }
 
-  .enemigo{
+  .enemigo, .power-up{
     top: 0%;
     right: -100%;
     position: absolute;
