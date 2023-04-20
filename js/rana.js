@@ -48,7 +48,7 @@ class nave {
     }else if (this.vidas == 1){
       vida3.style.visibility = 'hidden';
       vida2.style.visibility = 'hidden';
-    }else if (this.vidas <= 0){           //aviso cuando se gastan las vidas
+    }else if (this.vidas == 0){           //aviso cuando se gastan las vidas
       pausa=true;
       vida1.style.visibility = 'hidden';
       var texto=''
