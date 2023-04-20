@@ -65,8 +65,8 @@ class nave {
 function masDinero(){//no funcina todavia
   var dinero = document.getElementById('contadorDinero');
 
-  nave.monedas += 50;
-  dinero.innerHTML= '<img src="media/monedas.png" id="monedas">'+ nave.monedas +'<img src="media/billetes.png" id="billetes"></img>'
+  this.monedas += contadorDeNiveles;
+  dinero.innerHTML= '<img src="media/monedas.png" id="monedas">'+ this.monedas +'<img src="media/billetes.png" id="billetes"></img>'
   
 }
 
@@ -84,7 +84,7 @@ let Pepe = new nave('Pepe','5%','40%','./media/ovni1p.png','./media/ovni1.gif','
 
 function reiniciar(){  //boton dentro del game over (cuando pierdes todas las vidas)
   document.getElementById('aviso').innerHTML=''
-  cuentaAtras()
+  jugar()
   Pepe.vidas=3
   var imagenOvni = document.getElementById("imagen")
       imagenOvni.src = Pepe.imagenMovimiento;  

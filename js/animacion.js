@@ -49,6 +49,8 @@ function animacion(){
       } 
     }
 
+    sumarMonedas()
+
     // esto al final siempre
     juegoAnimacion = setTimeout(animacion, 50)
 
@@ -61,4 +63,10 @@ function moverFondo(){
 
         posicion -= 2;
         fondos.style.backgroundPosition=posicion+'vh';
+}
+
+function sumarMonedas(){
+  if(contadorEnemigos % 20 == 0){
+    Pepe.masDinero()
+  }
 }
