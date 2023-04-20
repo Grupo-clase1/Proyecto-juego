@@ -10,7 +10,7 @@ function animacion(){
     return
   }
 
-console.log("animacion")
+// console.log("animacion")
     document.getElementById("rana").style.top=Pepe.positionY;
     
     Pepe.actualizarPosicion()
