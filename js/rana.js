@@ -84,7 +84,7 @@ let Pepe = new nave('Pepe','5%','40%','./media/ovni1p.png','./media/ovni1.gif','
 
 function reiniciar(){  //boton dentro del game over (cuando pierdes todas las vidas)
   document.getElementById('aviso').innerHTML=''
-  jugar()
+  cuentaAtras()
   Pepe.vidas=3
   var imagenOvni = document.getElementById("imagen")
       imagenOvni.src = Pepe.imagenMovimiento;  
