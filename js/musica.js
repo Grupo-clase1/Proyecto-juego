@@ -1,6 +1,6 @@
 var musicaMenuActiva=true
 // Para poner la música al iniciar la página, escucha cuando el ratón se mueve y comprueba si "musicaMenuActiva" es "true"
-document.addEventListener('mousemove', function() {
+document.addEventListener('click', function() {
     if(musicaMenuActiva==true){
         var musicaMenu = document.getElementById("musicaMenu");
         musicaMenu.play();
