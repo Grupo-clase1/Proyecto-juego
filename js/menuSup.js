@@ -21,7 +21,7 @@ function tienda() {
     jugando = true; // reanudar el juego
     enAjustesOTienda = false; // Indicar que ya no estamos en la tienda
     pausa=false;
-    jugar(); // reiniciar el bucle de animación
+    cuentaAtras() ; // reiniciar el bucle de animación
   }
 }
 
@@ -46,7 +46,7 @@ function ajustesSup() {
     jugando = true; // reanudar el juego
     enAjustesOTienda = false; // Indicar que ya no estamos en el menú de ajustes
     pausa=false;
-    jugar(); // reiniciar el bucle de animación
+    cuentaAtras() ; // reiniciar el bucle de animación
   }
 }
 
@@ -122,7 +122,7 @@ function cerrarDivTienda() {
     jugando = true; 
     enAjustesOTienda = false; 
     pausa=false;
-    jugar(); 
+    cuentaAtras() ; 
 }
 
 function cerrarDivAjustes() {
@@ -130,5 +130,5 @@ function cerrarDivAjustes() {
     jugando = true; 
     enAjustesOTienda = false;
     pausa=false;
-    jugar(); 
+    cuentaAtras() ; 
 }
