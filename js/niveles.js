@@ -13,6 +13,14 @@ var nivel2 = new Nivel(2, 15, "media/fondo2.jpg");
 var nivel3 = new Nivel(3, 20, "media/fondo3.jpg");
 var nivel4 = new Nivel(4, 25, "media/fondo2.gif");
 
+
+var backgrounds = [// Se crea un array de los bg que se van a utilizar
+'url('+nivel1.fondo+')', 
+'url('+nivel2.fondo+')',
+'url('+nivel3.fondo+')',
+'url('+nivel4.fondo+')',
+];
+
 var contador = document.getElementById('contadorBackground').innerHTML;
 
 function getPuntuacion() {
