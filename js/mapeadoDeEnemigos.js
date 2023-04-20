@@ -351,46 +351,62 @@ class PowerUp {
     this.positionX = 2000;
     this.id = id;
   }
+  
   actualizarPosicion() {
     this.positionX -= this.velocidad;
+    const powerUpElement = document.getElementById(`power-up${this.id}`);
+    
+    if (powerUpElement) {
+      powerUpElement.style.top = `${this.positionY}%`;
+      powerUpElement.style.left = `${this.positionX}px`;
 
-    document.getElementById(`power-up${this.id}`).style.top = `${this.positionY}%`;
-    document.getElementById(`power-up${this.id}`).style.left = `${this.positionX}px`;
-
-    if (this.positionX < -500) {
-      this.borrarPowerUp();
+      if (this.positionX < -500) {
+        this.borrarPowerUp();
+      }
+    } else {
+      console.error('Power-up element not found or not initialized');
     }
   }
+
   anadirPowerUp() {
     let pantalla = document.getElementById("pantalla");
-    pantalla.innerHTML += `<div class="power-up" id="power-up${this.id}"><img class="imagen" id="imagen${this.id}" src="${this.imagen}"></div>`
+    if (pantalla) {
+      pantalla.innerHTML += `<div class="power-up" id="power-up${this.id}"><img class="imagen" id="imagen${this.id}" src="${this.imagen}"></div>`;
+    } else {
+      console.error('Pantalla element not found or not initialized');
+    }
   }
 
   borrarPowerUp() {
     arrayPowerUps.splice(this.id, 1);
     var divPowerUp = document.getElementById(`power-up${this.id}`);
-    divPowerUp.remove();
+    if (divPowerUp) {
+      divPowerUp.remove();
+    } else {
+      console.error('Power-up element not found or not initialized');
+    }
   }
 }
 
 var arrayPowerUps = [];
 var contadorPowerUps = 0;
 var powerUpsData = [
-  { carril: 2, imagen: "../media/dinero.gif", velocidad: 40, tipo: "dinero" },
+  { carril: 4, imagen: "../media/dinero.gif", velocidad: 40, tipo: "dinero" },
   { carril: 5, imagen: "../media/vida.gif", velocidad: 40, tipo: "vida" },
   { carril: 2, imagen: "../media/dinero.gif", velocidad: 40, tipo: "dinero" },
-  { carril: 5, imagen: "../media/vida.gif", velocidad: 40, tipo: "vida" },  { carril: 2, imagen: "../media/dinero.gif", velocidad: 40, tipo: "dinero" },
-  { carril: 5, imagen: "../media/vida.gif", velocidad: 40, tipo: "vida" },  { carril: 2, imagen: "../media/dinero.gif", velocidad: 40, tipo: "dinero" },
-  { carril: 5, imagen: "../media/vida.gif", velocidad: 40, tipo: "vida" },  { carril: 2, imagen: "../media/dinero.gif", velocidad: 40, tipo: "dinero" },
-  { carril: 5, imagen: "../media/vida.gif", velocidad: 40, tipo: "vida" },  { carril: 2, imagen: "../media/dinero.gif", velocidad: 40, tipo: "dinero" },
-  { carril: 5, imagen: "../media/vida.gif", velocidad: 40, tipo: "vida" },  { carril: 2, imagen: "../media/dinero.gif", velocidad: 40, tipo: "dinero" },
-  { carril: 5, imagen: "../media/vida.gif", velocidad: 40, tipo: "vida" },  { carril: 2, imagen: "../media/dinero.gif", velocidad: 40, tipo: "dinero" },
-  { carril: 5, imagen: "../media/vida.gif", velocidad: 40, tipo: "vida" },  { carril: 2, imagen: "../media/dinero.gif", velocidad: 40, tipo: "dinero" },
-  { carril: 5, imagen: "../media/vida.gif", velocidad: 40, tipo: "vida" },  { carril: 2, imagen: "../media/dinero.gif", velocidad: 40, tipo: "dinero" },
-  { carril: 5, imagen: "../media/vida.gif", velocidad: 40, tipo: "vida" },  { carril: 2, imagen: "../media/dinero.gif", velocidad: 40, tipo: "dinero" },
-  { carril: 5, imagen: "../media/vida.gif", velocidad: 40, tipo: "vida" },  { carril: 2, imagen: "../media/dinero.gif", velocidad: 40, tipo: "dinero" },
-  { carril: 5, imagen: "../media/vida.gif", velocidad: 40, tipo: "vida" },  { carril: 2, imagen: "../media/dinero.gif", velocidad: 40, tipo: "dinero" },
+  { carril: 1, imagen: "../media/vida.gif", velocidad: 40, tipo: "vida" },
+  { carril: 4, imagen: "../media/dinero.gif", velocidad: 40, tipo: "dinero" },
   { carril: 5, imagen: "../media/vida.gif", velocidad: 40, tipo: "vida" },
+  { carril: 2, imagen: "../media/dinero.gif", velocidad: 40, tipo: "dinero" },
+  { carril: 3, imagen: "../media/vida.gif", velocidad: 40, tipo: "vida" },
+  { carril: 4, imagen: "../media/dinero.gif", velocidad: 40, tipo: "dinero" },
+  { carril: 1, imagen: "../media/vida.gif", velocidad: 40, tipo: "vida" },
+  { carril: 2, imagen: "../media/dinero.gif", velocidad: 40, tipo: "dinero" },
+  { carril: 3, imagen: "../media/vida.gif", velocidad: 40, tipo: "vida" },
+  { carril: 4, imagen: "../media/dinero.gif", velocidad: 40, tipo: "dinero" },
+  { carril: 1, imagen: "../media/vida.gif", velocidad: 40, tipo: "vida" },
+  { carril: 2, imagen: "../media/dinero.gif", velocidad: 40, tipo: "dinero" },
+  { carril: 1, imagen: "../media/vida.gif", velocidad: 40, tipo: "vida" },
 ];
 function generarpowerup() {
   contadorPowerUps++;
