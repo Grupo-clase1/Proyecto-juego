@@ -102,6 +102,8 @@ function creditos(){
 
 function creditos2(){
   document.getElementById('pantallacreditos').hidden = true;
+  inAjustes.style.visibility='hidden'; 
+       menuDiv.style='hidden=false'
 }
 
 
