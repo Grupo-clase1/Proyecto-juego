@@ -28,7 +28,15 @@ document.addEventListener("keydown", function(event) {
           pausa=true;
           jugar1()
         }
-    }
+      } else if (event.key === "g" || event.key === "G"){
+        if(godMode){
+          godMode = false;
+          document.getElementById("imagen").style.opacity = 1;
+        }else{
+          godMode = true;
+          document.getElementById("imagen").style.opacity = 0.5;
+        }
+      }
     
 
     }
