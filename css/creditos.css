@@ -3,6 +3,10 @@
   height: 600px;
 }
 
+.saboteur{
+  color: red !important;
+}
+
 .victor-impostor{
   color: red;
 }
