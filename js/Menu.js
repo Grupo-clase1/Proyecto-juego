@@ -100,5 +100,9 @@ function creditos(){
     document.getElementById('pantallacreditos').hidden = false;
 }
 
+function creditos2(){
+  document.getElementById('pantallacreditos').hidden = true;
+}
+
 
 
