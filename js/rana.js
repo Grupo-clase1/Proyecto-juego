@@ -49,6 +49,11 @@ class nave {
       vida3.style.visibility = 'hidden';
       vida2.style.visibility = 'hidden';
     }else if (this.vidas == 0){           //aviso cuando se gastan las vidas
+      enAjustesOTienda=true;
+      var tiendaBoton = document.getElementById('tiendaBoton');
+      var ajustesBoton = document.getElementById('ajustesBoton');
+      tiendaBoton.disabled = true;
+      ajustesBoton.disabled = true;
       vida1.style.visibility = 'hidden';
       var imagenOvni = document.getElementById("imagen")
       imagenOvni.src = Pepe.imagenMuerto;      
@@ -65,8 +70,8 @@ class nave {
 function masDinero(){//no funcina todavia
   var dinero = document.getElementById('contadorDinero');
 
-  nave.monedas += 50;
-  dinero.innerHTML= '<img src="media/monedas.png" id="monedas">'+ nave.monedas +'<img src="media/billetes.png" id="billetes"></img>'
+  this.monedas += contadorDeNiveles;
+  dinero.innerHTML= '<img src="media/monedas.png" id="monedas">'+ this.monedas +'<img src="media/billetes.png" id="billetes"></img>'
   
 }
 
@@ -84,7 +89,7 @@ let Pepe = new nave('Pepe','5%','40%','./media/ovni1p.png','./media/ovni1.gif','
 
 function reiniciar(){  //boton dentro del game over (cuando pierdes todas las vidas)
   document.getElementById('aviso').innerHTML=''
-  cuentaAtras()
+  cuentaAtras() 
   Pepe.vidas=3
   var imagenOvni = document.getElementById("imagen")
       imagenOvni.src = Pepe.imagenMovimiento;  

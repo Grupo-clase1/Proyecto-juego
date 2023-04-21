@@ -40,20 +40,21 @@ function botonMusicaJuego(){
         }   
 }
 
-function botonMusicaMenu(){
-    var musicaMenu = document.getElementById("musicaMenu")
-    var sonido=document.getElementById('sonido').innerHTML
+// function botonMusicaMenu(){
+//     musicaJuegoActiva=false
+//     var musicaMenu = document.getElementById("musicaMenu")
+//     var sonido2=document.getElementById('sonido2').innerHTML
 
-    if (sonido=='🔊'){
-        document.getElementById('sonido2').innerHTML='🔈'
-        musicaMenu.pause();
-        }else{
-        document.getElementById('sonido2').innerHTML='🔊'
-        musicaMenu.play();
-        musicaMenu.loop=true;
-        }   
-    //entra en conflicto con el mousemove del principio
-}
+//     if (sonido2=='🔊'){
+//         document.getElementById('sonido2').innerHTML='🔈'
+//         musicaMenu.pause();
+//         }else{
+//         document.getElementById('sonido2').innerHTML='🔊'
+//         musicaMenu.play();
+//         musicaMenu.volume = 0.10;
+//         musicaMenu.loop=true;
+//         }   
+//}
 
 function efectoDeSonido(){
     var SonidoClick = document.getElementById("click")

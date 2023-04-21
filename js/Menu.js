@@ -31,7 +31,7 @@ function jugar(){
 
     //ejecuta el bucle para "animar" la nave
     animacion()
-    
+    enAjustesOTienda=false
     pantallaPausa = document.getElementById('pantallaPausa');
     menuDiv = document.getElementById('menuDiv');
     pantalla = document.getElementById('pantalla');
@@ -42,9 +42,18 @@ function jugar(){
     pantalla.hidden = false;
     menuSup.style.visibility='visible'
     pantallaPausa.hidden = true;
+    var tiendaBoton = document.getElementById('tiendaBoton');
+    var ajustesBoton = document.getElementById('ajustesBoton');
+    tiendaBoton.disabled = false;
+    ajustesBoton.disabled = false;
 }
 
 function cuentaAtras() {
+    enAjustesOTienda=true;
+    var tiendaBoton = document.getElementById('tiendaBoton');
+    var ajustesBoton = document.getElementById('ajustesBoton');
+    tiendaBoton.disabled = true;
+    ajustesBoton.disabled = true;
     var pantallaCuentaAtras = document.getElementById('pantallaCuentaAtras');
     pantallaCuentaAtras.style.visibility= "visible";
     var cuenta = 3;
