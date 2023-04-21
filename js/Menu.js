@@ -100,5 +100,11 @@ function creditos(){
     document.getElementById('pantallacreditos').hidden = false;
 }
 
+function creditos2(){
+  document.getElementById('pantallacreditos').hidden = true;
+  inAjustes.style.visibility='hidden'; 
+       menuDiv.style='hidden=false'
+}
+
 
 
