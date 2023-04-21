@@ -27,29 +27,40 @@ function getPuntuacion() {
   return parseInt(document.getElementById('contadorBackground').innerText);
 }
 
-function cambiarNivel() {
-  const puntuacion = getPuntuacion();
-  let nivelActual;
+// function cambiarNivel() {
+//   const puntuacion = getPuntuacion();
+//   let nivelActual;
 
-  if (puntuacion >= 100) {
-    nivelActual = nivel3;
-  } else if (puntuacion >= 50) {
-    nivelActual = nivel2;
-  } else {
-    nivelActual = nivel1;
-  }
+//   if (puntuacion >= 100) {
+//     nivelActual = nivel3;
+//   } else if (puntuacion >= 50) {
+//     nivelActual = nivel2;
+//   } else {
+//     nivelActual = nivel1;
+//   }
 
-  // Cambiar la velocidad del juego según el nivel
-  velocidad = nivelActual.velocidad;
+//   // Cambiar la velocidad del juego según el nivel
+//   velocidad = nivelActual.velocidad;
 
-  // Cambiar el fondo del juego según el nivel
-  document.getElementById("pantalla").style.backgroundImage = `url(${nivelActual.fondo})`;
+//   // Cambiar el fondo del juego según el nivel
+//   document.getElementById("pantalla").style.backgroundImage = `url(${nivelActual.fondo})`;
 
-  // Actualiza el texto del nivel en el menú superior
-  document.querySelector(".tituloNivel").innerHTML = `Nivel ${nivelActual.numero}<br><div id="vidas"><img id="vida1" src="media/vidas.png"><img id="vida2" src="media/vidas.png"><img id="vida3" src="media/vidas.png"></div><div id="contadorDinero"><img src="media/monedas.png" id="monedas">100<img src="media/billetes.png" id="billetes"></div>`;
+//   // Actualiza el texto del nivel en el menú superior
+//   document.querySelector(".tituloNivel").innerHTML = `Nivel ${nivelActual.numero}<br><div id="vidas"><img id="vida1" src="media/vidas.png"><img id="vida2" src="media/vidas.png"><img id="vida3" src="media/vidas.png"></div><div id="contadorDinero"><img src="media/monedas.png" id="monedas">100<img src="media/billetes.png" id="billetes"></div>`;
+// }
+
+
+function NuevoNivel() {
+  var textonivel = document.getElementById('textoNivel');
+
+    textonivel.style.visibility = "visible";
+    textonivel.classList.add= "nuevoNivel";
+
+  setTimeout(function() {
+    textonivel.classList.remove("nuevoNivel");
+    textonivel.style.visibility = 'hidden'
+  }, 1000); 
 }
-
-
 
 
 
