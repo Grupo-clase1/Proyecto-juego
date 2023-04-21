@@ -1,5 +1,11 @@
+.impostor{
+  width: 500px;
+  height: 600px;
+}
 
- 
+.victor-impostor{
+  color: red;
+}
   
   #pantallacreditos {
     background-color: black;
