@@ -39,7 +39,7 @@ function animacion(){
     contadorEnemigos++
 
 
-    if(contadorEnemigos % 200 == 0){
+    if(contadorEnemigos % 600 == 0){
       if (contadorDeNiveles==5){
         return
       } else {
