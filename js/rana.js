@@ -35,7 +35,15 @@ class nave {
     
   }
 }
-  //esta funcion hay que unirla a las colisiones
+
+//Solo puede haber un objeto nave y desde este cambiar las propiedades.
+let Pepe = new nave('Pepe','5%','40%','./media/ovni1p.png','./media/ovni1.gif','./media/muerto.gif', "rana");
+//Creamos el objeto con los parametros que queremos meterle
+
+
+//Aquí ejecutariamos los metodos que hemos creado arriba
+
+  //esta se une a las colisiones
   function restarVida(){
     vida3 = document.getElementById('vida3')
     vida2 = document.getElementById('vida2')
@@ -67,25 +75,13 @@ class nave {
     }
   }
 
-function masDinero(){//no funcina todavia
+function masDinero(){
   var dinero = document.getElementById('contadorDinero');
 
   this.monedas += contadorDeNiveles;
   dinero.innerHTML= '<img src="media/monedas.png" id="monedas">'+ this.monedas +'<img src="media/billetes.png" id="billetes"></img>'
   
 }
-
-
-//Solo puede haber un objeto nave y desde este cambiar las propiedades.
-let Pepe = new nave('Pepe','5%','40%','./media/ovni1p.png','./media/ovni1.gif','./media/muerto.gif', "rana");
-// let Pepe1 = new nave('Pepe1','5%','40%','./media/ovni2p.png','./media/ovni2.gif','./media/muerto.gif', "rana");
-// let Pepe2 = new nave('Pepe2','5%','40%','./media/nave1p.png','./media/nave1.gif','./media/muerto.gif', "rana");
-// let Pepe3 = new nave('Pepe3','5%','40%','./media/naave2p.png','./media/nave2.gif','./media/muerto.gif', "rana");
-// let Pepe4 = new nave('Pepe4','5%','40%','./media/nave4p.png','./media/nave4.gif','./media/muerto.gif', "rana");
-
- //Creamos el objeto con los parametros que queremos meterle
-
-//Aquí ejecutariamos los metodos que hemos creado arriba
 
 function reiniciar(){  //boton dentro del game over (cuando pierdes todas las vidas)
   document.getElementById('aviso').innerHTML=''
