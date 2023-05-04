@@ -22,6 +22,7 @@ function tienda() {
     enAjustesOTienda = false; // Indicar que ya no estamos en la tienda
     pausa=false;
     cuentaAtras() ; // reiniciar el bucle de animación
+    pantallaPausa.hidden=true
   }
 }
 
