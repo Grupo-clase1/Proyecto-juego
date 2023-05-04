@@ -59,13 +59,13 @@ function NuevoNivel() {
       godMode = true;
       setTimeout(() => {
         godMode=false;
-      }, 1500);
+      }, 2500);
     } 
 
   setTimeout(function() {
     textonivel.classList.remove("nuevoNivel");
     textonivel.style.visibility = 'hidden'
-  }, 1000); 
+  }, 2000); 
 }
 
 
