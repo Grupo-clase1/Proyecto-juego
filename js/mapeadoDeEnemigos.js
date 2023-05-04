@@ -346,23 +346,35 @@ var mapaEnemigos = [
 ];
 
 function generarEnemigos() {
-    if (indiceEnemigo < mapaEnemigos.length) {
-    let enemigosActuales = mapaEnemigos[indiceEnemigo];
-
-    // Crea todos los enemigos en el array de enemigosActuales
-    if(contadorEnemigos%25==0){
-          for (let i = 0; i < enemigosActuales.length; i++) {
-        let enemigoActual = enemigosActuales[i];
-        nuevoEnemigo(enemigoActual.posicion, enemigoActual.imagen, enemigoActual.velocidad);
-        }
-
-        indiceEnemigo++;
+  if (contadorEnemigos % 25 === 0) {
+    const enemigosActuales = mapaEnemigos[indiceEnemigo];
+    for (let i = 0; i < enemigosActuales.length; i++) {
+      const enemigoActual = enemigosActuales[i];
+      nuevoEnemigo(enemigoActual.posicion, enemigoActual.imagen, enemigoActual.velocidad);
     }
-
-    } else {
-    // clearInterval(temporizadorEnemigos);
-    }
+    indiceEnemigo = (indiceEnemigo + 1) % mapaEnemigos.length; // utiliza el operador módulo para asegurar que el índice no sobrepase el límite del array
+  }
+  contadorEnemigos++;
 }
+
+// function generarEnemigos() {
+//     if (indiceEnemigo < mapaEnemigos.length) {
+//     let enemigosActuales = mapaEnemigos[indiceEnemigo];
+
+//     // Crea todos los enemigos en el array de enemigosActuales
+//     if(contadorEnemigos%25==0){
+//           for (let i = 0; i < enemigosActuales.length; i++) {
+//         let enemigoActual = enemigosActuales[i];
+//         nuevoEnemigo(enemigoActual.posicion, enemigoActual.imagen, enemigoActual.velocidad);
+//         }
+
+//         indiceEnemigo++;
+//     }
+
+//     } else {
+//     // clearInterval(temporizadorEnemigos);
+//     }
+// }
 
 // Establece un temporizador para llamar a la función generarEnemigos() cada 1000 milisegundos (1 segundo)
 // var temporizadorEnemigos = setInterval(generarEnemigos, 2000);
