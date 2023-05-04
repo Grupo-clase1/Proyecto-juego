@@ -10,11 +10,11 @@ class Nivel {
 }
 
 var niveles = [
-  new Nivel(1, 15, "media/fondo1.jpg", "Galaxias Gemelas"),
-  new Nivel(2, 25, "media/fondo2.jpg", "Nebulosa Mantis"),
-  new Nivel(3, 30, "media/fondo3.jpg", "Gigante rosa"),
-  new Nivel(4, 35, "media/fondo2.gif", "Infinito tranquilo"),
-  new Nivel(5, 45, "media/fondo4.jpg", "Quasard intranquilo")
+  new Nivel(1, 10, "media/fondo1.jpg", "Galaxias Gemelas"),
+  new Nivel(2, 18, "media/fondo2.jpg", "Nebulosa Mantis"),
+  new Nivel(3, 26, "media/fondo3.jpg", "Gigante rosa"),
+  new Nivel(4, 34, "media/fondo2.gif", "Infinito tranquilo"),
+  new Nivel(5, 42, "media/fondo4.jpg", "Quasar nervioso")
 ]
 
 var backgrounds = [// Se crea un array de los bg que se van a utilizar
