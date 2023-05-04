@@ -127,7 +127,7 @@ function reiniciar(){  //boton dentro del game over (cuando pierdes todas las vi
   vida3.style.visibility = 'visible';
 
   document.getElementById("contadorBackground").innerHTML ="Nivel" + contadorDeNiveles;
-  document.getElementById('pantalla').style.backgroundImage = niveles[0].fondo;
+  document.getElementById('pantalla').style.backgroundImage = `url(${niveles[0].fondo})`;
 
 
   fondos = document.getElementById('pantalla');
@@ -135,9 +135,7 @@ function reiniciar(){  //boton dentro del game over (cuando pierdes todas las vi
   posicion = 0;
   fondos.style.backgroundPosition=posicion+'vh';
 
-
   pjActivo.actualizarPosicion();
-
 
 }
 
