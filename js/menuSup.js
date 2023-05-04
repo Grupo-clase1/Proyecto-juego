@@ -17,11 +17,7 @@ function tienda() {
     pausa=true;
     jugar1()
   } else {
-    divTienda.hidden = true; // ocultar el div de la tienda
-    jugando = true; // reanudar el juego
-    enAjustesOTienda = false; // Indicar que ya no estamos en la tienda
-    pausa=false;
-    cuentaAtras() ; // reiniciar el bucle de animación
+    
   }
 }
 
