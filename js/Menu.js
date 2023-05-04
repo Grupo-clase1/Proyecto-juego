@@ -50,6 +50,7 @@ function jugar(){
 }
 
 function cuentaAtras() {
+  
     enAjustesOTienda=true;
     var tiendaBoton = document.getElementById('tiendaBoton');
     var ajustesBoton = document.getElementById('ajustesBoton');

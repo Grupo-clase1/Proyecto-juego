@@ -107,7 +107,7 @@ function reiniciar(){  //boton dentro del game over (cuando pierdes todas las vi
   vida1 = document.getElementById('vida1')
 
   // borramos tods los enemigos
-  for(i=0; i!=arrayEnemigos.length-1; i++){
+  for(i=0; i!=arrayEnemigos.length; i++){
     if (arrayEnemigos[i]) arrayEnemigos[i].borrarEnemigo()
   }
 
