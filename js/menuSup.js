@@ -134,3 +134,5 @@ function cerrarDivAjustes() {
     pantallaPausa.hidden = true;
     cuentaAtras() ; 
 }
+
+

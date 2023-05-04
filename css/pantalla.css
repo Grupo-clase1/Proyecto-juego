@@ -249,6 +249,10 @@ user-select: none;
     height: 100%;
   }
 
+  #skin2, #skin3, #skin4, #skin5, #skin6{
+    opacity: 0.3;
+  }
+
   .espacioSkin{
     height: 50%;
     width: 50%;
