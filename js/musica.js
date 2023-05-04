@@ -74,3 +74,22 @@ function sumarVelocidadMusica(){
     velodidadMusica += 0.05
     document.getElementById("musicaJuego").playbackRate = velodidadMusica;
 }
+
+function hit(){
+    var hit = document.getElementById("hit")
+    hit.currentTime = 0;    //reproducir la música del juego y ponerla a la mitad de volumen
+    hit.volume = 0.75;
+    hit.play();
+    hit.loop=false;
+}
+
+
+function muerte(){
+    var muerte = document.getElementById("muerte")
+    muerte.currentTime = 0;    //reproducir la música del juego y ponerla a la mitad de volumen
+
+    //reproducir la música del juego y ponerla a la mitad de volumen
+    muerte.volume = 0.75;
+    muerte.play();
+    muerte.loop=false;
+}

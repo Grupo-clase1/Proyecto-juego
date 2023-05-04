@@ -55,10 +55,17 @@ function NuevoNivel() {
 
     textonivel.style.visibility = "visible";
     textonivel.classList.add= "nuevoNivel";
+    if (godMode == false) {
+      godMode = true;
+      setTimeout(() => {
+        godMode=false;
+      }, 1000);
+    } 
 
   setTimeout(function() {
     textonivel.classList.remove("nuevoNivel");
     textonivel.style.visibility = 'hidden'
+    // godMode = false
   }, 1000); 
 }
 
