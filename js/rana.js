@@ -93,15 +93,52 @@ function masDinero(){
 }
 
 function reiniciar(){  //boton dentro del game over (cuando pierdes todas las vidas)
-  document.getElementById('aviso').innerHTML=''
-  cuentaAtras() 
-  pjActivo.vidas=3
-  vidas = 3
+  document.getElementById('aviso').innerHTML='';
+  cuentaAtras() ;
+  pjActivo.vidas=3;
+  vidas = 3;
+  contadorDeNiveles=1;
+  contadorEnemigos=0;
+  contadorPowerUps=0;
+
+
+  vida3 = document.getElementById('vida3')
+  vida2 = document.getElementById('vida2')
+  vida1 = document.getElementById('vida1')
+
+  // borramos tods los enemigos
+  for(i=0; i!=arrayEnemigos.length-1; i++){
+    if (arrayEnemigos[i]) arrayEnemigos[i].borrarEnemigo()
+  }
+
+  idEnemigos = 0
+  arrayEnemigos = []
+
+  indiceEnemigo = 0
+
+  pjActivo.carril=3;
+
+  monedas=0;
+
   var imagenOvni = document.getElementById("imagen")
       imagenOvni.src = pjActivo.imagenMovimiento;  
   vida1.style.visibility = 'visible';
   vida2.style.visibility = 'visible';
   vida3.style.visibility = 'visible';
+
+  document.getElementById("contadorBackground").innerHTML ="Nivel" + contadorDeNiveles;
+  document.getElementById('pantalla').style.backgroundImage = niveles[0].fondo;
+
+
+  fondos = document.getElementById('pantalla');
+
+  posicion = 0;
+  fondos.style.backgroundPosition=posicion+'vh';
+
+
+  pjActivo.actualizarPosicion();
+
+
 }
 
 
