@@ -84,11 +84,20 @@ function ajustes(){
 function levels(){
   efectoDeSonido()
 
+    var texto =''; 
     var inNiveles = document.getElementById('inNiveles');
+    // var botonesMundos= document.getElementById('botonesMundos');
     menuDiv = document.getElementById('menuDiv');
 
     menuDiv.style.visibility='hidden';
     inNiveles.style.visibility='visible';
+
+    texto+='<input type="button" value="'+niveles[0].nombre+'" id="nivel1" class="nivelBoton" onclick="irMundo1()" onmouseover="escribir1()">'
+    texto+='<input type="button" value="'+niveles[1].nombre+'" id="nivel2" class="nivelBoton" onclick="irMundo2()" onmouseover="escribir2()">'
+    texto+='<input type="button" value="'+niveles[2].nombre+'" id="nivel3" class="nivelBoton" onclick="irMundo3()" onmouseover="escribir3()">'
+    texto+='<input type="button" value="'+niveles[3].nombre+'" id="nivel4" class="nivelBoton" onclick="irMundo4()" onmouseover="escribir4()">'
+    texto+='<input type="button" value="'+niveles[4].nombre+'" id="nivel5" class="nivelBoton" onclick="irMundo5()" onmouseover="escribir5()">'
+    document.getElementById('botonesMundos').innerHTML=texto
 }
 
 function salir(){
