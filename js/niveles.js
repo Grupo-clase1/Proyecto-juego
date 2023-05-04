@@ -8,18 +8,12 @@ class Nivel {
 
 }
 
-var nivel1 = new Nivel(1, 20, "media/fondo1.jpg");
-var nivel2 = new Nivel(2, 25, "media/fondo2.jpg");
-var nivel3 = new Nivel(3, 30, "media/fondo3.jpg");
-var nivel4 = new Nivel(4, 35, "media/fondo2.gif");
-var nivel5 = new Nivel(5, 45, "media/fondo4.jpg");
-
 var niveles = [
-  new Nivel(1, 10, "media/fondo1.jpg"),
-  new Nivel(2, 15, "media/fondo2.jpg"),
-  new Nivel(3, 20, "media/fondo3.jpg"),
-  new Nivel(4, 25, "media/fondo2.gif"),
-  new Nivel(5, 30, "media/fondo4.jpg")
+  new Nivel(1, 15, "media/fondo1.jpg"),
+  new Nivel(2, 25, "media/fondo2.jpg"),
+  new Nivel(3, 30, "media/fondo3.jpg"),
+  new Nivel(4, 35, "media/fondo2.gif"),
+  new Nivel(5, 45, "media/fondo4.jpg")
 ]
 
 var backgrounds = [// Se crea un array de los bg que se van a utilizar
