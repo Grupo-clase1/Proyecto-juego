@@ -9,7 +9,8 @@ var jugando = false;
 var imagenOvni;
 var nivelActual=1
 var velodidadMusica=1.0
-document.getElementById("infoMundos").innerHTML="";
+
+// document.getElementById("infoMundos").innerHTML="";
 
 
 // pausar
