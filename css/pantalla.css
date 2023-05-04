@@ -459,3 +459,80 @@ user-select: none;
     to { transform: translateY(5px) rotate(2deg); }
   }
  
+
+
+  /* animacion de cambio de nivel  */
+  #textoNivel{
+    position: absolute;
+    left:50%;
+    top:50%;
+    color:aliceblue;
+    transform: translate(-50%, -50%);
+    z-index:99;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align:center;
+    font-family: fuente1;
+    font-size:65px;
+    visibility: hidden;
+
+    animation-name: parpadeo;
+    animation-duration: 0.3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+  
+    -webkit-animation-name:parpadeo;
+    -webkit-animation-duration: 0.3s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+  }
+
+  .nuevoNivel {
+
+    color:aliceblue;
+    transform: translate(-50%, -50%);
+    background-image:url(../media/fondotienda.gif);
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index:99;
+    border:solid 3px;
+    border-color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align:center;
+    font-family: fuente1;
+    font-size:65px;
+    /* font-size:5em; */
+
+    /* animation-name: parpadeo;
+    animation-duration: 0.3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+  
+    -webkit-animation-name:parpadeo;
+    -webkit-animation-duration: 0.3s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite; */
+  }
+  
+  @-moz-keyframes parpadeo{  
+    0% { opacity: 1.0; }
+    50% { opacity: 0.0; }
+    100% { opacity: 1.0; }
+  }
+  
+  @-webkit-keyframes parpadeo {  
+    0% { opacity: 1.0; }
+    50% { opacity: 0.0; }
+     100% { opacity: 1.0; }
+  }
+  
+  @keyframes parpadeo {  
+    0% { opacity: 1.0; }
+     50% { opacity: 0.0; }
+    100% { opacity: 1.0; }
+  }

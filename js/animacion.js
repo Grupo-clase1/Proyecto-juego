@@ -46,6 +46,7 @@ function animacion(){
         contadorDeNiveles++
         document.getElementById("contadorBackground").innerHTML ="Nivel" + contadorDeNiveles
         document.getElementById('pantalla').style.backgroundImage = backgrounds[contadorDeNiveles-1];
+        NuevoNivel();
       } 
     }
 
