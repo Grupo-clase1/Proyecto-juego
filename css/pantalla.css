@@ -433,6 +433,12 @@ user-select: none;
     color: #ffffff;
   }
 
+  .cruzCerrar:hover{
+    cursor: pointer;
+    scale: 1.1;
+    cursor: url("../media/cursor3.png"), auto;
+  }
+
   .pantallaCuenta {
     position: absolute;
     width:450px;
