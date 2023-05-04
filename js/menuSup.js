@@ -91,21 +91,52 @@ function equipar(num){
   var imagenOvni = document.getElementById("imagen")
    switch(num) {
      case 1:
+      pjActivo = Pepe
       Pepe.imagenMovimiento = skin1.src;
        break;
+
      case 2:
-      Pepe.imagenMovimiento = skin2.src;
+      if (monedas>400){
+        Pepe.imagenMovimiento = skin2.src;
+        pjActivo = Pepe2
+        skin2.style.opacity=1
+        alert('aaaaa')
+        monedas-=400
+      }else{}
        break;
+
      case 3:
+      if (monedas>=600){
       Pepe.imagenMovimiento = skin3.src;
+      pjActivo = Pepe3
+      skin3.style.opacity=1
+      alert('aaaaa')
+      monedas-=600
+    }else{}
        break;
+
      case 4:
+      if (monedas>=800){
       Pepe.imagenMovimiento = skin4.src;
+      pjActivo = Pepe4
+      skin4.style.opacity=1
+      alert('aaaaa')
+      monedas-=800
+    }else{}
        break;
+
      case 5:
+      if (monedas>=1000){
       Pepe.imagenMovimiento = skin5.src;
+      pjActivo = Pepe5
+      skin5.style.opacity=1
+      alert('aaaaa')
+      monedas-=1000
+    }else{}
        break;
+
      default:
+      pjActivo = Pepe
       Pepe.imagenMovimiento = skin1.src;
        break;
    }

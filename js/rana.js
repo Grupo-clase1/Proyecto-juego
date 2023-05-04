@@ -15,7 +15,7 @@ class nave {
         this.id = id
         this.vidas=3
         this.restarVida=restarVida
-        this.monedas=100
+        this.monedas=500
         this.masDinero=masDinero
 
         // carril en el que está
