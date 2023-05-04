@@ -2,7 +2,9 @@ let vida3
 let vida2 
 let vida1
 
-var vidas = 3
+var vidas = 3;
+
+var monedas = 0;
 
 class nave {
     //Atributos
@@ -17,7 +19,6 @@ class nave {
         this.id = id
         this.vidas=vidas
         this.restarVida=restarVida
-        this.monedas=100
         this.masDinero=masDinero
 
         // carril en el que está
@@ -73,7 +74,7 @@ const Pepe5 = new nave('Pepe','5%','40%','./media/nave4p.png','./media/nave4.gif
       ajustesBoton.disabled = true;
       vida1.style.visibility = 'hidden';
       var imagenOvni = document.getElementById("imagen")
-      imagenOvni.src = Pepe.imagenMuerto;      
+      imagenOvni.src = pjActivo.imagenMuerto;      
       var texto=''
       texto+='<div id="mensaje">';
       texto+='GAME OVER';
@@ -86,19 +87,18 @@ const Pepe5 = new nave('Pepe','5%','40%','./media/nave4p.png','./media/nave4.gif
 
 function masDinero(){
   var dinero = document.getElementById('contadorDinero');
-
-  this.monedas += contadorDeNiveles;
-  dinero.innerHTML= '<img src="media/monedas.png" id="monedas">'+ this.monedas +'<img src="media/billetes.png" id="billetes"></img>'
+  monedas += contadorDeNiveles;
+  dinero.innerHTML= '<img src="media/monedas.png" id="monedas">'+ monedas +'<img src="media/billetes.png" id="billetes"></img>'
   
 }
 
 function reiniciar(){  //boton dentro del game over (cuando pierdes todas las vidas)
   document.getElementById('aviso').innerHTML=''
   cuentaAtras() 
-  Pepe.vidas=3
+  pjActivo.vidas=3
   vidas = 3
   var imagenOvni = document.getElementById("imagen")
-      imagenOvni.src = Pepe.imagenMovimiento;  
+      imagenOvni.src = pjActivo.imagenMovimiento;  
   vida1.style.visibility = 'visible';
   vida2.style.visibility = 'visible';
   vida3.style.visibility = 'visible';
