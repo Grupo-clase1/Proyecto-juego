@@ -80,7 +80,7 @@ function ajustes(){
     inAjustes.style.visibility='visible';
 }
 
-function niveles (){
+function levels(){
   efectoDeSonido()
 
     var inNiveles = document.getElementById('inNiveles');
