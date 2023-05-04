@@ -66,7 +66,7 @@ function cuentaAtras() {
         pantallaCuentaAtras.style.visibility= "hidden";
         jugar();
       }
-    }, 1000);
+    }, 600);
   }
 
 function ajustes(){
