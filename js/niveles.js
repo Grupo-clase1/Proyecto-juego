@@ -57,7 +57,7 @@ function getPuntuacion() {
 function NuevoNivel() {
   var textonivel = document.getElementById('textoNivel');
 
-    textonivel.innerHTML='<h1>'+Nivel.nombre+'</h1>'
+    textonivel.innerHTML='<h1>'+niveles[contadorDeNiveles-1].nombre+'</h1>'
     textonivel.style.visibility = "visible";
     textonivel.classList.add= "nuevoNivel";
     if (godMode == false) {
