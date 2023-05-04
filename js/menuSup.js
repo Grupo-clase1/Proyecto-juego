@@ -93,18 +93,43 @@ function equipar(num){
      case 1:
       pjActivo.imagenMovimiento = skin1.src;
        break;
+
      case 2:
-      pjActivo.imagenMovimiento = skin2.src;
+      if (monedas>400){
+        pjActivo.imagenMovimiento = skin2.src;
+        skin2.style.opacity=1
+        alert('aaaaa')
+        monedas-=400
+      }else{}
        break;
+
      case 3:
+      if (monedas>=600){
       pjActivo.imagenMovimiento = skin3.src;
+      skin3.style.opacity=1
+      alert('aaaaa')
+      monedas-=600
+    }else{}
        break;
+
      case 4:
+      if (monedas>=800){
       pjActivo.imagenMovimiento = skin4.src;
+      skin4.style.opacity=1
+      alert('aaaaa')
+      monedas-=800
+    }else{}
        break;
+
      case 5:
+      if (monedas>=1000){
       pjActivo.imagenMovimiento = skin5.src;
+      skin5.style.opacity=1
+      alert('aaaaa')
+      monedas-=1000
+    }else{}
        break;
+
      default:
       pjActivo.imagenMovimiento = skin1.src;
        break;
