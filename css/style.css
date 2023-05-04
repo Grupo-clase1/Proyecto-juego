@@ -56,9 +56,9 @@ body {
 
 
  #menuDiv input{
-    width: 300px;
-    height: 100px;
-    font-size: 50px;
+    width: 250px;
+    height: 60px;
+    font-size: 35px;
     /*font-family: ;*/
     background-image: url(../media/textura1.png);
     background-position: 24%;
