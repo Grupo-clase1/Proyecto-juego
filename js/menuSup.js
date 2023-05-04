@@ -48,6 +48,7 @@ function ajustesSup() {
     enAjustesOTienda = false; // Indicar que ya no estamos en el menú de ajustes
     pausa=false;
     cuentaAtras() ; // reiniciar el bucle de animación
+    pantallaPausa.hidden=true
   }
 }
 
