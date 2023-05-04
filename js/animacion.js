@@ -39,9 +39,9 @@ function animacion(){
     contadorEnemigos++
 
 
-    if(contadorEnemigos % 600 == 0){
+    if(contadorEnemigos % 800 == 0){
       if (contadorDeNiveles==5){
-        return
+        // return
       } else {
         contadorDeNiveles++
         document.getElementById("contadorBackground").innerHTML ="Nivel" + contadorDeNiveles
