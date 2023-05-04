@@ -53,11 +53,14 @@ let Pepe = new nave('Pepe','5%','40%','./media/ovni1p.png','./media/ovni1.gif','
 
     if (this.vidas==2){
       vida3.style.visibility = 'hidden';
+      hit()
     }else if (this.vidas == 1){
       vida3.style.visibility = 'hidden';
       vida2.style.visibility = 'hidden';
+      hit()
     }else if (this.vidas == 0){           //aviso cuando se gastan las vidas
       enAjustesOTienda=true;
+      muerte()
       var tiendaBoton = document.getElementById('tiendaBoton');
       var ajustesBoton = document.getElementById('ajustesBoton');
       tiendaBoton.disabled = true;

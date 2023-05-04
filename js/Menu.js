@@ -26,7 +26,6 @@ function jugar1() {
 function jugar(){
     pausa=false
     efectoDeSonido()
-
     iniciarMusicaJuego()
 
     //ejecuta el bucle para "animar" la nave
