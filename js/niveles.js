@@ -1,26 +1,28 @@
 class Nivel {
    //Atributos
-  constructor(numero, velocidad, fondo) {
+  constructor(numero, velocidad, fondo, nombre) {
     this.numero = numero;
     this.velocidad = velocidad;
     this.fondo = fondo;
+    this.nombre = nombre
   }
 
 }
 
-var nivel1 = new Nivel(1, 20, "media/fondo1.jpg");
-var nivel2 = new Nivel(2, 25, "media/fondo2.jpg");
-var nivel3 = new Nivel(3, 30, "media/fondo3.jpg");
-var nivel4 = new Nivel(4, 35, "media/fondo2.gif");
-var nivel5 = new Nivel(5, 45, "media/fondo4.jpg");
-
+var niveles = [
+  new Nivel(1, 15, "media/fondo1.jpg", "Galaxias Gemelas"),
+  new Nivel(2, 25, "media/fondo2.jpg", "Nebulosa Mantis"),
+  new Nivel(3, 30, "media/fondo3.jpg", "Gigante rosa"),
+  new Nivel(4, 35, "media/fondo2.gif", "Infinito tranquilo"),
+  new Nivel(5, 45, "media/fondo4.jpg", "Quasard intranquilo")
+]
 
 var backgrounds = [// Se crea un array de los bg que se van a utilizar
-'url('+nivel1.fondo+')', 
-'url('+nivel2.fondo+')',
-'url('+nivel3.fondo+')',
-'url('+nivel4.fondo+')',
-'url('+nivel5.fondo+')',
+'url('+niveles[0].fondo+')', 
+'url('+niveles[1].fondo+')',
+'url('+niveles[2].fondo+')',
+'url('+niveles[3].fondo+')',
+'url('+niveles[4].fondo+')',
 ];
 
 var contador = document.getElementById('contadorBackground').innerHTML;
@@ -55,6 +57,7 @@ function getPuntuacion() {
 function NuevoNivel() {
   var textonivel = document.getElementById('textoNivel');
 
+    textonivel.innerHTML='<h1>'+niveles[contadorDeNiveles-1].nombre+'</h1>'
     textonivel.style.visibility = "visible";
     textonivel.classList.add= "nuevoNivel";
     if (godMode == false) {
