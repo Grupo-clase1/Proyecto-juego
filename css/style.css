@@ -67,6 +67,18 @@ body {
     font-family: fuente1;
 }
 
+.nivelBoton {
+  width: 250px;
+    height: 60px;
+    font-size: 35px;
+    /*font-family: ;*/
+    background-image: url(../media/textura1.png);
+    background-position: 24%;
+    border-color: aliceblue;
+    color: aliceblue;
+    font-family: fuente1;
+}
+
 #credit, #back{
   font-family: fuente1;
   font-size: 20px;
