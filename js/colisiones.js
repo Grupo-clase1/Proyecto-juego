@@ -6,8 +6,8 @@ function detectarColision(enemigo){
 
     if(godMode != true){
         if(enemigo){
-            if(enemigo.positionX < rana.offsetWidth && enemigo.innerHTML!="" && enemigo.carril == Pepe.carril && enemigo.positionX > rana.offsetLeft){
-                Pepe.restarVida()
+            if(enemigo.positionX < rana.offsetWidth && enemigo.innerHTML!="" && enemigo.carril == pjActivo.carril && enemigo.positionX > rana.offsetLeft){
+                pjActivo.restarVida()
                 enemigo.borrarEnemigo()
                 golpeo()
             }    

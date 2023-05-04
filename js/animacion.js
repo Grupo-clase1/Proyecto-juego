@@ -2,7 +2,8 @@
 var juegoAnimacion
 var contadorEnemigos=0;
 var contadorPowerUps=0;
-var contadorDeNiveles = 1
+var contadorDeNiveles = 1;
+var pjActivo = Pepe;
 
 function animacion(){
 
@@ -10,10 +11,9 @@ function animacion(){
     return
   }
 
-// console.log("animacion")
-    document.getElementById("rana").style.top=Pepe.positionY;
-    
-    Pepe.actualizarPosicion()
+  document.getElementById("rana").style.top=pjActivo.positionY;
+  pjActivo.actualizarPosicion()
+
 
     // actualizar la posición de los enemigos
     for (let i = 0; i < arrayEnemigos.length; i++) {
@@ -68,6 +68,6 @@ function moverFondo(){
 
 function sumarMonedas(){
   if(contadorEnemigos % 20 == 0){
-    Pepe.masDinero()
+    pjActivo.masDinero()
   }
 }
