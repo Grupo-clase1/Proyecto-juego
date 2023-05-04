@@ -130,11 +130,31 @@ function escribir3(){
 function escribir4(){
   document.getElementById("infoMundos").innerHTML="informacion del mundo 4"
 }
+function escribir5(){
+  document.getElementById("infoMundos").innerHTML="informacion del mundo 5"
+}
 
 function irMundo1(){
-  inNiveles.style.visibility='hidden';
+  inNiveles.style.visibility='hidden';  
   jugar1()
 }
+function irMundo2(){
+  inNiveles.style.visibility='hidden';  
+  jugar1()
+}
+function irMundo3(){
+  inNiveles.style.visibility='hidden';  
+  jugar1()
+}
+function irMundo4(){
+  inNiveles.style.visibility='hidden';  
+  jugar1()
+}
+function irMundo5(){
+  inNiveles.style.visibility='hidden';  
+  jugar1()
+}
+
 
 
 
