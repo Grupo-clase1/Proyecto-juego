@@ -22,6 +22,7 @@ function tienda() {
     enAjustesOTienda = false; // Indicar que ya no estamos en la tienda
     pausa=false;
     cuentaAtras() ; // reiniciar el bucle de animación
+    pantallaPausa.hidden=true
   }
 }
 
@@ -88,65 +89,68 @@ function para(){
 
 //esta funcion es para cambiar la skin desde la tienda
 function equipar(num){
-  var imagenOvni = document.getElementById("imagen")
-  var skin1 = document.getElementById('skin1')
-  var skin2=document.getElementById("skin2")
-  var skin3 = document.getElementById('skin3')
-  var skin4 = document.getElementById('skin4')
-  var skin5 = document.getElementById('skin5')
   var precio2=document.getElementById("precio2")
   var precio3=document.getElementById("precio3")
   var precio4=document.getElementById("precio4")
   var precio5=document.getElementById("precio5")
    switch(num) {
      case 1:
-      pjActivo.imagenMovimiento = skin1.src;
-       break;
+      pjActivo = Pepe;
+      break;
 
      case 2:
       if (monedas>=400){
-        pjActivo.imagenMovimiento = skin2.src;
+        pjActivo = Pepe2;
         skin2.style.opacity=1
-        monedas-=400
+        if (precio2.innerHTML!="comprado"){
+          monedas-=400
+        }
         precio2.innerHTML="comprado"
-        skin2.onclick="none"
       }else{}
        break;
 
      case 3:
       if (monedas>=600){
-        pjActivo.imagenMovimiento = skin3.src;
+        pjActivo = Pepe3;
         skin3.style.opacity=1
+        if (precio2.innerHTML!="comprado"){
+
         monedas-=600
+        }
         precio3.innerHTML="comprado"
-        skin3.onclick="none"
       }else{}
        break;
 
      case 4:
       if (monedas>=800){
-        pjActivo.imagenMovimiento = skin4.src;
+        pjActivo = Pepe4;
         skin4.style.opacity=1
+        if (precio2.innerHTML!="comprado"){
+
         monedas-=800
+        }
         precio4.innerHTML="comprado"
-        skin4.onclick="none"
       }else{}
        break;
 
      case 5:
       if (monedas>=1000){
-        pjActivo.imagenMovimiento = skin5.src;
+        pjActivo = Pepe5;
         skin5.style.opacity=1
+        if (precio2.innerHTML!="comprado"){
+
         monedas-=1000
+        }
         precio5.innerHTML="comprado"
-        skin5.onclick="none"
       }else{}
        break;
 
      default:
-      pjActivo.imagenMovimiento = skin1.src;
+      pjActivo = Pepe;
        break;
    }
+
+   cambioDeImagen();
 
    imagenOvni.src = pjActivo.imagenMovimiento;      
    var dinero = document.getElementById('contadorDinero');
