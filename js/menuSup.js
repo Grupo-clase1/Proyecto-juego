@@ -89,45 +89,58 @@ function para(){
 //esta funcion es para cambiar la skin desde la tienda
 function equipar(num){
   var imagenOvni = document.getElementById("imagen")
+  var skin1 = document.getElementById('skin1')
+  var skin2=document.getElementById("skin2")
+  var skin3 = document.getElementById('skin3')
+  var skin4 = document.getElementById('skin4')
+  var skin5 = document.getElementById('skin5')
+  var precio2=document.getElementById("precio2")
+  var precio3=document.getElementById("precio3")
+  var precio4=document.getElementById("precio4")
+  var precio5=document.getElementById("precio5")
    switch(num) {
      case 1:
       pjActivo.imagenMovimiento = skin1.src;
        break;
 
      case 2:
-      if (monedas>400){
+      if (monedas>=400){
         pjActivo.imagenMovimiento = skin2.src;
         skin2.style.opacity=1
-        alert('aaaaa')
         monedas-=400
+        precio2.innerHTML="comprado"
+        skin2.onclick="none"
       }else{}
        break;
 
      case 3:
       if (monedas>=600){
-      pjActivo.imagenMovimiento = skin3.src;
-      skin3.style.opacity=1
-      alert('aaaaa')
-      monedas-=600
-    }else{}
+        pjActivo.imagenMovimiento = skin3.src;
+        skin3.style.opacity=1
+        monedas-=600
+        precio3.innerHTML="comprado"
+        skin3.onclick="none"
+      }else{}
        break;
 
      case 4:
       if (monedas>=800){
-      pjActivo.imagenMovimiento = skin4.src;
-      skin4.style.opacity=1
-      alert('aaaaa')
-      monedas-=800
-    }else{}
+        pjActivo.imagenMovimiento = skin4.src;
+        skin4.style.opacity=1
+        monedas-=800
+        precio4.innerHTML="comprado"
+        skin4.onclick="none"
+      }else{}
        break;
 
      case 5:
       if (monedas>=1000){
-      pjActivo.imagenMovimiento = skin5.src;
-      skin5.style.opacity=1
-      alert('aaaaa')
-      monedas-=1000
-    }else{}
+        pjActivo.imagenMovimiento = skin5.src;
+        skin5.style.opacity=1
+        monedas-=1000
+        precio5.innerHTML="comprado"
+        skin5.onclick="none"
+      }else{}
        break;
 
      default:
@@ -136,6 +149,8 @@ function equipar(num){
    }
 
    imagenOvni.src = pjActivo.imagenMovimiento;      
+   var dinero = document.getElementById('contadorDinero');
+   dinero.innerHTML= '<img src="media/monedas.png" id="monedas">'+ monedas +'<img src="media/billetes.png" id="billetes"></img>'
 
  }
 
