@@ -157,6 +157,21 @@ function irMundo5(){
   jugar1()
 }
 
+function salirP(){
+  efectoDeSonido()
+
+  menuDiv.style.visibility='visible';//Ponemos en hidden el DivMenu y se pone en visible la pantalla
+  pantalla.hidden = true;
+  menuSup.style.visibility='hidden'
+  pantallaPausa.hidden = false;
+  divAjustes.hidden = true; 
+  jugando = false; 
+  enAjustesOTienda = false;
+  pausa=false;
+  pantallaPausa.hidden = true;
+
+}
+
 
 
 
