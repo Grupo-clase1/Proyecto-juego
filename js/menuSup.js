@@ -122,6 +122,7 @@ function cerrarDivTienda() {
     jugando = true; 
     enAjustesOTienda = false; 
     pausa=false;
+    pantallaPausa.hidden = true;
     cuentaAtras() ; 
 }
 
@@ -130,5 +131,6 @@ function cerrarDivAjustes() {
     jugando = true; 
     enAjustesOTienda = false;
     pausa=false;
+    pantallaPausa.hidden = true;
     cuentaAtras() ; 
 }
