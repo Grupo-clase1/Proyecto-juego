@@ -13,19 +13,25 @@ document.addEventListener('click', function() {
 function iniciarMusicaJuego(){
     //con esto evito que se solapen las dos canciones, "desactivando" la reproduccion de la del menú
     musicaMenuActiva=false
-    var musicaJuego = document.getElementById("musicaJuego")
-    
     document.getElementById("musicaMenu").pause()
     
-    //reproducir la música del juego y ponerla a la mitad de volumen
-    musicaJuego.volume = 0.40;
-    musicaJuego.play();
-    musicaJuego.loop=true;
+    var musicaJuego = document.getElementById("musicaJuego")
+    var sonido=document.getElementById('sonido').innerHTML
+
+    if (sonido=='🔊'){
+        musicaJuego.volume = 0.40;
+        musicaJuego.play();
+        musicaJuego.loop=true;
+  
+        }else{
+        musicaJuego.pause();
+        }  
 }
 
 function botonMusicaJuego(){
-    //con esto evito que se solapen las dos canciones, "desactivando" la reproduccion de la del menú
     musicaMenuActiva=false
+    document.getElementById("musicaMenu").pause()
+
     var musicaJuego = document.getElementById("musicaJuego")
     var sonido=document.getElementById('sonido').innerHTML
 
@@ -58,8 +64,6 @@ function botonMusicaJuego(){
 
 function efectoDeSonido(){
     var SonidoClick = document.getElementById("click")
-
-    //reproducir la música del juego y ponerla a la mitad de volumen
     SonidoClick.volume = 0.25;
     SonidoClick.play();
     SonidoClick.loop=false;

@@ -26,7 +26,6 @@ function jugar1() {
 function jugar(){
     pausa=false
     efectoDeSonido()
-
     iniciarMusicaJuego()
 
     //ejecuta el bucle para "animar" la nave
@@ -79,6 +78,16 @@ function ajustes(){
     inAjustes.style.visibility='visible';
 }
 
+function niveles (){
+  efectoDeSonido()
+
+    var inNiveles = document.getElementById('inNiveles');
+    menuDiv = document.getElementById('menuDiv');
+
+    menuDiv.style.visibility='hidden';
+    inNiveles.style.visibility='visible';
+}
+
 function salir(){
 
     efectoDeSonido()
@@ -91,8 +100,10 @@ function back(){
     efectoDeSonido()
 
     var inAjustes = document.getElementById('inAjustes');
+    var inNiveles = document.getElementById('inNiveles');
 
     inAjustes.style.visibility='hidden'; 
+    inNiveles.style.visibility='hidden';
        menuDiv.style='hidden=false';
 }
 

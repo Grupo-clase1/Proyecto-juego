@@ -38,7 +38,7 @@
         <br>
         <input type="button" value="Ajustes" id="ajustes" class="botonAjustes" onclick="ajustes()">
         <br>
-        <input type="button" value="Salir" id="salir" class="salinBoton" onclick="salir()">
+        <input type="button" value="niveles" id="niveles" class="nivelesBoton" onclick="niveles()">
         <br>
         <input type="button" value="Salir" id="salir" class="salinBoton" onclick="salir()">
     </div>
@@ -64,6 +64,42 @@
         
         </div>
     </div>
+
+
+
+
+
+
+    <div id="inNiveles" class="inAjustes" style="visibility: hidden">
+        <div class="dentroAjustes">
+
+             <div id="desacMusica">
+                Explicación de algo de los mundos o cualquier vaina asi
+            </div> 
+      
+             <div id="controles">
+            Niveles: <br>  
+                <div class="controles">
+                    
+                </div>
+                <input type="button" value="Nivel 1" id="nivel1" class="backBoton" onclick=""><br>
+                    <input type="button" value="Nivel 2" id="nivel2" class="backBoton" onclick=""><br>
+                    <input type="button" value="Nivel 3" id="nivel3" class="backBoton" onclick=""><br>
+                    <input type="button" value="Nivel 4" id="nivel4" class="backBoton" onclick=""><br>
+
+            </div> 
+        
+        <input type="button" value="Back" id="back" class="backBoton" onclick="back()">
+        
+        </div>
+    </div>
+
+
+
+
+
+
+
 
     <div id="pantallacreditos" hidden><br>
         <input type="button" value="Atrás" id="credit" onclick="creditos2()">
@@ -106,7 +142,9 @@
         </div>
         <input type="button" id="ajustesBoton" class="ajustesSuperior" onclick="ajustesSup()">
      </div>
-     <div id="divTienda"  hidden >
+
+
+     <div id="divTienda" hidden >
         
             <div class="linea1"><button class="cruzCerrar" onclick="cerrarDivTienda()">X</button>
             <div class="espacioSkin"><div class="precios">COMPRADO</div><img src="media/ovni1p.png" class="skin" id="skin1" onmouseover="hoverSkin(1)" onmouseout="para()" onclick="equipar(1)"></div>
@@ -142,6 +180,7 @@
         </div>
         <input type="button" value="back" id="back" class="back">
      </div>
+
 
     <div id="pantalla" style="background-image: url(media/fondo.jpg);" hidden="true" class="pantalla"> 
         <div class="carrilSuperior"></div>
