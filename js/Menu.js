@@ -10,6 +10,8 @@ var imagenOvni;
 var nivelActual=1
 var velodidadMusica=1.0
 
+// document.getElementById("infoMundos").innerHTML="";
+
 
 // pausar
 function jugar1() {
@@ -116,6 +118,44 @@ function creditos2(){
   inAjustes.style.visibility='hidden'; 
        menuDiv.style='hidden=false'
 }
+
+function escribir1(){
+  document.getElementById("infoMundos").innerHTML="informacion del mundo 1"
+}
+function escribir2(){
+  document.getElementById("infoMundos").innerHTML="informacion del mundo 2"
+}
+function escribir3(){
+  document.getElementById("infoMundos").innerHTML="informacion del mundo 3"
+}
+function escribir4(){
+  document.getElementById("infoMundos").innerHTML="informacion del mundo 4"
+}
+function escribir5(){
+  document.getElementById("infoMundos").innerHTML="informacion del mundo 5"
+}
+
+function irMundo1(){
+  inNiveles.style.visibility='hidden';  
+  jugar1()
+}
+function irMundo2(){
+  inNiveles.style.visibility='hidden';  
+  jugar1()
+}
+function irMundo3(){
+  inNiveles.style.visibility='hidden';  
+  jugar1()
+}
+function irMundo4(){
+  inNiveles.style.visibility='hidden';  
+  jugar1()
+}
+function irMundo5(){
+  inNiveles.style.visibility='hidden';  
+  jugar1()
+}
+
 
 
 

@@ -350,7 +350,7 @@ function generarEnemigos() {
     const enemigosActuales = mapaEnemigos[indiceEnemigo];
     for (let i = 0; i < enemigosActuales.length; i++) {
       const enemigoActual = enemigosActuales[i];
-      nuevoEnemigo(enemigoActual.posicion, enemigoActual.imagen, enemigoActual.velocidad);
+      nuevoEnemigo(enemigoActual.posicion, enemigoActual.imagen, (enemigoActual.velocidad+niveles[contadorDeNiveles-1].velocidad));
     }
     indiceEnemigo = (indiceEnemigo + 1) % mapaEnemigos.length; // utiliza el operador módulo para asegurar que el índice no sobrepase el límite del array
   }
