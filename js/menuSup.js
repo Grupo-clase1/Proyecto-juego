@@ -91,14 +91,12 @@ function equipar(num){
   var imagenOvni = document.getElementById("imagen")
    switch(num) {
      case 1:
-      pjActivo = Pepe
-      Pepe.imagenMovimiento = skin1.src;
+      pjActivo.imagenMovimiento = skin1.src;
        break;
 
      case 2:
       if (monedas>400){
-        Pepe.imagenMovimiento = skin2.src;
-        pjActivo = Pepe2
+        pjActivo.imagenMovimiento = skin2.src;
         skin2.style.opacity=1
         alert('aaaaa')
         monedas-=400
@@ -107,8 +105,7 @@ function equipar(num){
 
      case 3:
       if (monedas>=600){
-      Pepe.imagenMovimiento = skin3.src;
-      pjActivo = Pepe3
+      pjActivo.imagenMovimiento = skin3.src;
       skin3.style.opacity=1
       alert('aaaaa')
       monedas-=600
@@ -117,8 +114,7 @@ function equipar(num){
 
      case 4:
       if (monedas>=800){
-      Pepe.imagenMovimiento = skin4.src;
-      pjActivo = Pepe4
+      pjActivo.imagenMovimiento = skin4.src;
       skin4.style.opacity=1
       alert('aaaaa')
       monedas-=800
@@ -127,8 +123,7 @@ function equipar(num){
 
      case 5:
       if (monedas>=1000){
-      Pepe.imagenMovimiento = skin5.src;
-      pjActivo = Pepe5
+      pjActivo.imagenMovimiento = skin5.src;
       skin5.style.opacity=1
       alert('aaaaa')
       monedas-=1000
@@ -136,12 +131,11 @@ function equipar(num){
        break;
 
      default:
-      pjActivo = Pepe
-      Pepe.imagenMovimiento = skin1.src;
+      pjActivo.imagenMovimiento = skin1.src;
        break;
    }
 
-   imagenOvni.src = Pepe.imagenMovimiento;      
+   imagenOvni.src = pjActivo.imagenMovimiento;      
 
  }
 

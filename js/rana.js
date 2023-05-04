@@ -2,6 +2,10 @@ let vida3
 let vida2 
 let vida1
 
+var vidas = 3;
+
+var monedas = 0;
+
 class nave {
     //Atributos
     constructor(nombre,postionX,positionY,imagenParado,imagenMovimiento,imagenMuerto, id) {
@@ -13,9 +17,8 @@ class nave {
         this.imagenMovimiento = imagenMovimiento;
         this.imagenMuerto = imagenMuerto;
         this.id = id
-        this.vidas=3
+        this.vidas=vidas
         this.restarVida=restarVida
-        this.monedas=500
         this.masDinero=masDinero
 
         // carril en el que está
@@ -37,8 +40,11 @@ class nave {
 }
 
 //Solo puede haber un objeto nave y desde este cambiar las propiedades.
-let Pepe = new nave('Pepe','5%','40%','./media/ovni1p.png','./media/ovni1.gif','./media/muerto.gif', "rana");
-//Creamos el objeto con los parametros que queremos meterle
+const Pepe = new nave('Pepe','5%','40%','./media/ovni1p.png','./media/ovni1.gif','./media/muerto.gif', "rana");
+const Pepe2 = new nave('Pepe','5%','40%','./media/ovni2p.png','./media/ovni2.gif','./media/muerto.gif', "rana");
+const Pepe3 = new nave('Pepe','5%','40%','./media/nave1p.png','./media/nave1.gif','./media/muerto.gif', "rana");
+const Pepe4 = new nave('Pepe','5%','40%','./media/nave2p.png','./media/nave2.gif','./media/muerto.gif', "rana");
+const Pepe5 = new nave('Pepe','5%','40%','./media/nave4p.png','./media/nave4.gif','./media/muerto.gif', "rana");
 
 
 //Aquí ejecutariamos los metodos que hemos creado arriba
@@ -50,6 +56,7 @@ let Pepe = new nave('Pepe','5%','40%','./media/ovni1p.png','./media/ovni1.gif','
     vida1 = document.getElementById('vida1')
 
     this.vidas --;
+    vidas--;
 
     if (this.vidas==2){
       vida3.style.visibility = 'hidden';
@@ -67,7 +74,7 @@ let Pepe = new nave('Pepe','5%','40%','./media/ovni1p.png','./media/ovni1.gif','
       ajustesBoton.disabled = true;
       vida1.style.visibility = 'hidden';
       var imagenOvni = document.getElementById("imagen")
-      imagenOvni.src = Pepe.imagenMuerto;      
+      imagenOvni.src = pjActivo.imagenMuerto;      
       var texto=''
       texto+='<div id="mensaje">';
       texto+='GAME OVER';
@@ -80,18 +87,18 @@ let Pepe = new nave('Pepe','5%','40%','./media/ovni1p.png','./media/ovni1.gif','
 
 function masDinero(){
   var dinero = document.getElementById('contadorDinero');
-
-  this.monedas += contadorDeNiveles;
-  dinero.innerHTML= '<img src="media/monedas.png" id="monedas">'+ this.monedas +'<img src="media/billetes.png" id="billetes"></img>'
+  monedas += contadorDeNiveles;
+  dinero.innerHTML= '<img src="media/monedas.png" id="monedas">'+ monedas +'<img src="media/billetes.png" id="billetes"></img>'
   
 }
 
 function reiniciar(){  //boton dentro del game over (cuando pierdes todas las vidas)
   document.getElementById('aviso').innerHTML=''
   cuentaAtras() 
-  Pepe.vidas=3
+  pjActivo.vidas=3
+  vidas = 3
   var imagenOvni = document.getElementById("imagen")
-      imagenOvni.src = Pepe.imagenMovimiento;  
+      imagenOvni.src = pjActivo.imagenMovimiento;  
   vida1.style.visibility = 'visible';
   vida2.style.visibility = 'visible';
   vida3.style.visibility = 'visible';

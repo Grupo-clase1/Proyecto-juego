@@ -12,6 +12,7 @@ var nivel1 = new Nivel(1, 10, "media/fondo1.jpg");
 var nivel2 = new Nivel(2, 15, "media/fondo2.jpg");
 var nivel3 = new Nivel(3, 20, "media/fondo3.jpg");
 var nivel4 = new Nivel(4, 25, "media/fondo2.gif");
+var nivel5 = new Nivel(5, 30, "media/fondo4.jpg");
 
 
 var backgrounds = [// Se crea un array de los bg que se van a utilizar
@@ -19,6 +20,7 @@ var backgrounds = [// Se crea un array de los bg que se van a utilizar
 'url('+nivel2.fondo+')',
 'url('+nivel3.fondo+')',
 'url('+nivel4.fondo+')',
+'url('+nivel5.fondo+')',
 ];
 
 var contador = document.getElementById('contadorBackground').innerHTML;
@@ -59,13 +61,13 @@ function NuevoNivel() {
       godMode = true;
       setTimeout(() => {
         godMode=false;
-      }, 1500);
+      }, 2500);
     } 
 
   setTimeout(function() {
     textonivel.classList.remove("nuevoNivel");
     textonivel.style.visibility = 'hidden'
-  }, 1000); 
+  }, 2000); 
 }
 
 
