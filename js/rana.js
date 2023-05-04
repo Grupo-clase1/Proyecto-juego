@@ -39,11 +39,11 @@ class nave {
 }
 
 //Solo puede haber un objeto nave y desde este cambiar las propiedades.
-let Pepe = new nave('Pepe','5%','40%','./media/ovni1p.png','./media/ovni1.gif','./media/muerto.gif', "rana");
-let Pepe2 = new nave('Pepe','5%','40%','./media/ovni2p.png','./media/ovni2.gif','./media/muerto.gif', "rana");
-let Pepe3 = new nave('Pepe','5%','40%','./media/nave1p.png','./media/nave1.gif','./media/muerto.gif', "rana");
-let Pepe4 = new nave('Pepe','5%','40%','./media/nave2p.png','./media/nave2.gif','./media/muerto.gif', "rana");
-let Pepe5 = new nave('Pepe','5%','40%','./media/nave4p.png','./media/nave4.gif','./media/muerto.gif', "rana");
+const Pepe = new nave('Pepe','5%','40%','./media/ovni1p.png','./media/ovni1.gif','./media/muerto.gif', "rana");
+const Pepe2 = new nave('Pepe','5%','40%','./media/ovni2p.png','./media/ovni2.gif','./media/muerto.gif', "rana");
+const Pepe3 = new nave('Pepe','5%','40%','./media/nave1p.png','./media/nave1.gif','./media/muerto.gif', "rana");
+const Pepe4 = new nave('Pepe','5%','40%','./media/nave2p.png','./media/nave2.gif','./media/muerto.gif', "rana");
+const Pepe5 = new nave('Pepe','5%','40%','./media/nave4p.png','./media/nave4.gif','./media/muerto.gif', "rana");
 
 
 //Aquí ejecutariamos los metodos que hemos creado arriba
