@@ -3,6 +3,8 @@ let vida3
 let vida2 
 let vida1
 
+var godModeDisponible = true
+
 var vidas = 3;
 
 var monedas = 0;
@@ -28,15 +30,50 @@ class nave {
     actualizarPosicion(){
       this.positionY = `${(5 - this.carril) * 20}%`;
     }
-    //Aqui meteriamos los métodos que queremos aplicar
-
-    // metodo para cambiar de carril
-
-
-    animacionOvni(){    //animacion que hace avanzar la nave en el cambio de nivel
- 
     
-  }
+    habilidadEspecial(){
+
+      switch (pjActivo) {
+
+        // no tiene habilidad especial
+        case Pepe:
+          break;
+      
+        // +vida
+        case Pepe2:
+          break;
+      
+        //oro x2
+        case Pepe3:
+          break;
+      
+        // godmode cada x segundos
+        case Pepe4:
+          if(godModeDisponible){
+            godModeTemporal()
+            godModeDisponible=false;
+            setTimeout(() => {
+              godModeDisponible=true;
+              console.log("GODMODE DISPONIBLE")
+            }, 5000);
+          }else{
+            console.log("GODMODE NO DISPONIBLE")
+          }
+          break;
+
+      
+        // esta dispara
+        case Pepe5:
+          
+          break;
+      
+
+        default:
+          break;
+      }
+
+    }
+
 }
 
 //Solo puede haber un objeto nave y desde este cambiar las propiedades.
@@ -112,7 +149,11 @@ var vidasHTML
 
 function masDinero(){
   var dinero = document.getElementById('contadorDinero');
-  monedas += contadorDeNiveles;
+  if(pjActivo==Pepe3){
+    monedas += (contadorDeNiveles*2);
+  }else{
+    monedas += contadorDeNiveles;
+  }
   dinero.innerHTML= '<img src="media/monedas.png" id="monedas">'+ monedas +'<img src="media/billetes.png" id="billetes"></img>'
   
 }
