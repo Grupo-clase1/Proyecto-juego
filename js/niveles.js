@@ -60,12 +60,7 @@ function NuevoNivel() {
     textonivel.innerHTML='<h1>'+niveles[contadorDeNiveles-1].nombre+'</h1>'
     textonivel.style.visibility = "visible";
     textonivel.classList.add= "nuevoNivel";
-    if (godMode == false) {
-      godMode = true;
-      setTimeout(() => {
-        godMode=false;
-      }, 2500);
-    } 
+    godModeTemporal()
 
   setTimeout(function() {
     textonivel.classList.remove("nuevoNivel");

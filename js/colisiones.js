@@ -23,3 +23,13 @@ function golpeo(){
       miDiv.style.animation = "";
     }, 500);
 }
+
+
+function godModeTemporal(){
+    if (godMode == false) {
+        godMode = true;
+        setTimeout(() => {
+          godMode=false;
+        }, 2500);
+      } 
+}
