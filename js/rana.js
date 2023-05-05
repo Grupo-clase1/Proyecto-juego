@@ -55,7 +55,7 @@ class nave {
             setTimeout(() => {
               godModeDisponible=true;
               console.log("GODMODE DISPONIBLE")
-            }, 5000);
+            }, 10000);
           }else{
             console.log("GODMODE NO DISPONIBLE")
           }

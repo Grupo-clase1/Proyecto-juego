@@ -10,7 +10,7 @@ class Nivel {
 }
 
 var niveles = [
-  new Nivel(1, 10, "media/fondo2.gif", "Infinito Tranquilo"),
+  new Nivel(1, 10, "media/fondo.jpg", "Infinito Tranquilo"),
   new Nivel(2, 18, "media/fondo2.jpg", "Nebulosa Mantis"),
   new Nivel(3, 26, "media/fondo1.jpg", "Galaxias Gemelas"),
   new Nivel(4, 34, "media/fondo3.jpg", "Gigante Rosa"),
