@@ -5,5 +5,6 @@ function cambioDeImagen(){
         document.getElementById('vida4').style.visibility = 'hidden';
     }else{
         document.getElementById('vida4').hidden=true;
+        if(vidas==4) vidas=3;
     }
 }
