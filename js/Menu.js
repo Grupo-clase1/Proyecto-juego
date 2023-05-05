@@ -133,7 +133,7 @@ function escribir1(){
   document.getElementById("infoMundos").innerHTML="Había una vez dos galaxias que nacieron en el infinito tranquilo. Eran pequeñas y solitarias, flotando en el vasto espacio lleno de puntos luminosos. "
 }
 function escribir2(){
-  document.getElementById("infoMundos").innerHTML="Un día, las dos galaxias se encontraron y comenzaron a acercarse. Al principio, se mantuvieron a distancia, pero pronto empezaron a orbitar juntas, bailando en el espacio y formando nuevas estrellas en su camino. Así se convirtieron en la nebulosa mantis"
+  document.getElementById("infoMundos").innerHTML="Un día, las dos galaxias se encontraron y comenzaron a acercarse. Al principio, se mantuvieron a distancia, pero pronto empezaron a orbitar juntas, bailando en el espacio y formando nuevas estrellas en su camino. Así se convirtieron en la nebulosa mantis."
 }
 function escribir3(){
   document.getElementById("infoMundos").innerHTML="A medida que crecían, las galaxias se acercaban cada vez más. Todo lo hacían juntas, explorando el universo y admirando la belleza de las nebulosas y los planetas. Eran inseparables y perfectas la una para la otra. Parecían Galaxias Gemelas."
