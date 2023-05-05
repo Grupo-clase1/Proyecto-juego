@@ -17,6 +17,7 @@ function detectarColision(enemigo){
 
 
 function golpeo(){
+    if (vidas!=0) godModeTemporal()
     var miDiv = document.getElementById("pantalla")
     miDiv.style.animation = "shake 0.5s";
     setTimeout(() => {
@@ -28,8 +29,10 @@ function golpeo(){
 function godModeTemporal(){
     if (godMode == false) {
         godMode = true;
+        document.getElementById("imagen").style.opacity = 0.5;
         setTimeout(() => {
           godMode=false;
-        }, 2500);
+          document.getElementById("imagen").style.opacity = 1;
+        }, 2000);
       } 
 }
