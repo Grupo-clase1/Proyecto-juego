@@ -130,19 +130,19 @@ function creditos2(){
 }
 
 function escribir1(){
-  document.getElementById("infoMundos").innerHTML="informacion del mundo 1"
+  document.getElementById("infoMundos").innerHTML="Había una vez dos galaxias que nacieron en el infinito tranquilo. Eran pequeñas y solitarias, flotando en el vasto espacio lleno de puntos luminosos. "
 }
 function escribir2(){
-  document.getElementById("infoMundos").innerHTML="informacion del mundo 2"
+  document.getElementById("infoMundos").innerHTML="Un día, las dos galaxias se encontraron y comenzaron a acercarse. Al principio, se mantuvieron a distancia, pero pronto empezaron a orbitar juntas, bailando en el espacio y formando nuevas estrellas en su camino. Así se convirtieron en la nebulosa mantis"
 }
 function escribir3(){
-  document.getElementById("infoMundos").innerHTML="informacion del mundo 3"
+  document.getElementById("infoMundos").innerHTML="A medida que crecían, las galaxias se acercaban cada vez más. Todo lo hacían juntas, explorando el universo y admirando la belleza de las nebulosas y los planetas. Eran inseparables y perfectas la una para la otra. Parecían Galaxias Gemelas."
 }
 function escribir4(){
-  document.getElementById("infoMundos").innerHTML="informacion del mundo 4"
+  document.getElementById("infoMundos").innerHTML="Un día, algo terrible sucedió. Una de las galaxias se desvaneció en una gigante rosa, muriendo en un brillo de estrellas. La otra galaxia cayó en una profunda depresión, sintiéndose sola y perdida en el vasto universo."
 }
 function escribir5(){
-  document.getElementById("infoMundos").innerHTML="informacion del mundo 5"
+  document.getElementById("infoMundos").innerHTML="La galaxia viva se sumió en la autodestrucción, convirtiendose en un quasar, perdiendo toda la esperanza y la luz que alguna vez había brillado en ella. <br> Pero incluso en su oscuridad, la galaxia nunca olvidó a su amor perdido. Recordaba los días felices en la nebulosa mantis y las noches acurrucadas de las galaxias gemelas.  Y así, incluso mientras caía en la oscuridad, la galaxia nunca dejó de brillar en el recuerdo de su amor eterno, esperando un día poder reunirse de nuevo en el infinito tranquilo del universo."
 }
 
 function irMundo1(){

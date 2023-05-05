@@ -312,6 +312,8 @@ user-select: none;
     align-items: center;
     flex-direction: row;
     gap: 15px;
+    width: 90%;
+    min-height: 145px ;
   }
 
   #sonido, #sonido2{
