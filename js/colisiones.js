@@ -15,6 +15,28 @@ function detectarColision(enemigo){
     };
 }
 
+function colisionBala(enemigo){
+    
+    if(arrayBalas.length>0){
+        for(i=0; i!=arrayBalas.length; i++){
+            balaAct=arrayBalas[i];
+            if (balaAct!=undefined){
+                if(document.getElementById("bala"+balaAct.id)){
+                    var bala = document.getElementById("bala"+balaAct.id);
+                    if(enemigo){
+                        if(enemigo.carril == arrayBalas[i].carril && enemigo.positionX < bala.offsetLeft){
+                            enemigo.borrarEnemigo()
+                            arrayBalas[i].borrarBala()
+                        }    
+                    }
+                }
+            }
+        }
+    }
+    
+
+}
+
 
 function golpeo(){
     if (vidas!=0) godModeTemporal()
