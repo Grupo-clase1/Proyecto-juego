@@ -8,7 +8,7 @@ var DisparoDisponible = true;
 
 var vidas = 3;
 
-var monedas = 9999999;
+var monedas = 0;
 
 class nave {
     //Atributos
