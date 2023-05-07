@@ -60,6 +60,13 @@ function animacion(){
 
     sumarMonedas()
 
+
+
+
+    coldDown()
+
+    coldDown2()
+
     // esto al final siempre
     juegoAnimacion = setTimeout(animacion, 50)
 
@@ -79,3 +86,6 @@ function sumarMonedas(){
     pjActivo.masDinero()
   }
 }
+
+
+

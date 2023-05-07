@@ -51,6 +51,9 @@ class nave {
         // godmode cada x segundos
         case Pepe4:
           if(godModeDisponible){
+            anchoActual2 = 0;
+            duracionColdDown2 = 10000;
+
             godModeTemporal()
             godModeDisponible=false;
             setTimeout(() => {
@@ -66,12 +69,15 @@ class nave {
         // esta dispara
         case Pepe5:
           if(DisparoDisponible){
+            anchoActual2 = 0;
+            duracionColdDown2 = 5000;
             if(godMode!=true) disparar()
             DisparoDisponible=false;
             setTimeout(() => {
               DisparoDisponible=true;
               console.log("DISPARO DISPONIBLE")
             }, 5000);
+            
           }else{
             console.log("DISPARO NO DISPONIBLE")
           }
@@ -212,12 +218,5 @@ function reiniciar(){  //boton dentro del game over (cuando pierdes todas las vi
   fondos.style.backgroundPosition=posicion+'vh';
 
   pjActivo.actualizarPosicion();
-
-}
-
-
-
-
-function disparar(){
 
 }

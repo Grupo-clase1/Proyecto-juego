@@ -49,6 +49,11 @@ function golpeo(){
 
 
 function godModeTemporal(){
+    // esto es de la barra de carga
+    anchoActual = 0;
+    duracionColdDown = 2000;
+
+    coldDown(2000);
     if (godMode == false) {
         godMode = true;
         document.getElementById("imagen").style.opacity = 0.5;
