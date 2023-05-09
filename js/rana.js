@@ -3,7 +3,8 @@ let vida3
 let vida2 
 let vida1
 
-var godModeDisponible = true
+var godModeDisponible = true;
+var DisparoDisponible = true;
 
 var vidas = 3;
 
@@ -50,12 +51,15 @@ class nave {
         // godmode cada x segundos
         case Pepe4:
           if(godModeDisponible){
+            anchoActual2 = 0;
+            duracionColdDown2 = 10000;
+
             godModeTemporal()
             godModeDisponible=false;
             setTimeout(() => {
               godModeDisponible=true;
               console.log("GODMODE DISPONIBLE")
-            }, 5000);
+            }, 10000);
           }else{
             console.log("GODMODE NO DISPONIBLE")
           }
@@ -64,7 +68,19 @@ class nave {
       
         // esta dispara
         case Pepe5:
-          
+          if(DisparoDisponible){
+            anchoActual2 = 0;
+            duracionColdDown2 = 5000;
+            if(godMode!=true) disparar()
+            DisparoDisponible=false;
+            setTimeout(() => {
+              DisparoDisponible=true;
+              console.log("DISPARO DISPONIBLE")
+            }, 5000);
+            
+          }else{
+            console.log("DISPARO NO DISPONIBLE")
+          }
           break;
       
 
@@ -82,7 +98,6 @@ const Pepe2 = new nave('Pepe','5%','40%','./media/ovni2p.png','./media/ovni2.gif
 const Pepe3 = new nave('Pepe','5%','40%','./media/nave1p.png','./media/nave1.gif','./media/muerto.gif', "rana");
 const Pepe4 = new nave('Pepe','5%','40%','./media/nave2p.png','./media/nave2.gif','./media/muerto.gif', "rana");
 const Pepe5 = new nave('Pepe','5%','40%','./media/nave4p.png','./media/nave4.gif','./media/muerto.gif', "rana");
-
 
 //Aquí ejecutariamos los metodos que hemos creado arriba
 var vidasHTML
@@ -150,7 +165,8 @@ var vidasHTML
 function masDinero(){
   var dinero = document.getElementById('contadorDinero');
   if(pjActivo==Pepe3){
-    monedas += (contadorDeNiveles*2);
+    monedas += contadorDeNiveles;
+    monedas += contadorDeNiveles;
   }else{
     monedas += contadorDeNiveles;
   }
@@ -204,5 +220,3 @@ function reiniciar(){  //boton dentro del game over (cuando pierdes todas las vi
   pjActivo.actualizarPosicion();
 
 }
-
-

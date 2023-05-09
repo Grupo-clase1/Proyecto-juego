@@ -12,6 +12,13 @@ function animacion(){
   }
 
   document.getElementById("rana").style.top=pjActivo.positionY;
+
+  for (let i = 0; i < arrayBalas.length; i++) {
+    if (arrayBalas[i]) {
+      arrayBalas[i].actualizarPosicion();
+    }
+  }
+
   pjActivo.actualizarPosicion()
 
 
@@ -19,7 +26,8 @@ function animacion(){
     for (let i = 0; i < arrayEnemigos.length; i++) {
       if (arrayEnemigos[i]) {
         arrayEnemigos[i].actualizarPosicion();
-        detectarColision(arrayEnemigos[i])
+        detectarColision(arrayEnemigos[i]);
+        colisionBala(arrayEnemigos[i]);
       }
 
     }
@@ -52,6 +60,13 @@ function animacion(){
 
     sumarMonedas()
 
+
+
+
+    coldDown()
+
+    coldDown2()
+
     // esto al final siempre
     juegoAnimacion = setTimeout(animacion, 50)
 
@@ -71,3 +86,6 @@ function sumarMonedas(){
     pjActivo.masDinero()
   }
 }
+
+
+

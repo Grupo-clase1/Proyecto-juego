@@ -566,3 +566,15 @@ user-select: none;
 
 
 
+  #barra {
+    width: 0%;
+    height: 10px;
+    background-color: #ddd;
+  }
+
+  
+  #barra2 {
+    width: 0%;
+    height: 10px;
+    background-color: #ff0000;
+  }
