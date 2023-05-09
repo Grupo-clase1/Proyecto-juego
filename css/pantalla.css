@@ -567,6 +567,8 @@ user-select: none;
 
 
   #barra {
+    position: absolute;
+    top: 4%;
     width: 0%;
     height: 10px;
     background-color: #ddd;
@@ -574,6 +576,8 @@ user-select: none;
 
   
   #barra2 {
+    position: absolute;
+    top: 10%;
     width: 0%;
     height: 10px;
     background-color: #ff0000;
