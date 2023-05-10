@@ -464,7 +464,6 @@ function generarpowerup() {
       );
     }
   } else {
-    // Haz algo aquí o simplemente elimina este comentario.
   }
 }
 
