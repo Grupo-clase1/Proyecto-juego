@@ -4,7 +4,7 @@ var arrayBalas = []
 class bala {
 
     constructor(id) {
-        this.image = "media/bala.png";
+        this.image = "media/bala.gif";
         this.carril = pjActivo.carril;
         this.positionX = 0;
         this.positionY = pjActivo.positionY;
