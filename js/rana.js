@@ -68,15 +68,16 @@ class nave {
       
         // esta dispara
         case Pepe5:
-          if(DisparoDisponible){
+          if(DisparoDisponible==true && godMode==false){
+            disparo()
             anchoActual2 = 0;
-            duracionColdDown2 = 5000;
+            duracionColdDown2 = 3000;
             if(godMode!=true) disparar()
             DisparoDisponible=false;
             setTimeout(() => {
               DisparoDisponible=true;
               console.log("DISPARO DISPONIBLE")
-            }, 5000);
+            }, duracionColdDown2);
             
           }else{
             console.log("DISPARO NO DISPONIBLE")

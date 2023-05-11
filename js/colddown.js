@@ -3,7 +3,7 @@ var barra=document.getElementById("barra")
 var incremento = 100 / (duracionColdDown / 50);
 var anchoActual = 100;
 
-var duracionColdDown2 = 5000
+var duracionColdDown2 = 3000
 var barra2=document.getElementById("barra2")
 var incremento2 = 100 / (duracionColdDown2 / 50);
 var anchoActual2 = 100;
