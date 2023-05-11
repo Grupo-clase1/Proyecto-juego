@@ -582,3 +582,19 @@ user-select: none;
     height: 10px;
     background-color: #ff0000;
   }
+
+  /* div de descripcion de lo que hace cada nave */
+  .descripcion{ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align:center;
+    position: absolute;
+    top: 50%;
+    right: 36%;
+    height: 34%;
+    width: 27%;
+    color: aliceblue;
+    font-family: fuente1;
+    font-size:35px;
+  }

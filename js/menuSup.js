@@ -52,23 +52,32 @@ function ajustesSup() {
   }
 }
 
+
+var descripcion
+
 function hoverSkin(num) {
+  descripcion = document.getElementById('descripcion');
   var skin = document.getElementById('skin' + num);
   switch(num) {
     case 1:
       skin.src = 'media/ovni1.gif';
+      descripcion.innerHTML='OG pepe'
       break;
     case 2:
       skin.src = 'media/ovni2.gif';
+      descripcion.innerHTML='Vida extra'
       break;
     case 3:
       skin.src = 'media/nave1.gif';
+      descripcion.innerHTML='Avaricia'
       break;
     case 4:
       skin.src = 'media/nave2.gif';
+      descripcion.innerHTML='Inmunidad'
       break;
     case 5:
       skin.src = 'media/nave4.gif';
+      descripcion.innerHTML='Pium Pium'
       break;
     default:
       break;
