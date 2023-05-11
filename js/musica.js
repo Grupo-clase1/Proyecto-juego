@@ -93,3 +93,12 @@ function muerte(){
     muerte.play();
     muerte.loop=false;
 }
+
+
+function disparo(){
+    var hit = document.getElementById("disparo")
+    hit.currentTime = 0;    //reproducir la música del juego y ponerla a la mitad de volumen
+    hit.volume = 0.75;
+    hit.play();
+    hit.loop=false;
+}

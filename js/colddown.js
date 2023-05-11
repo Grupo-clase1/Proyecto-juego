@@ -3,7 +3,7 @@ var barra=document.getElementById("barra")
 var incremento = 100 / (duracionColdDown / 50);
 var anchoActual = 100;
 
-var duracionColdDown2 = 5000
+var duracionColdDown2 = 3000
 var barra2=document.getElementById("barra2")
 var incremento2 = 100 / (duracionColdDown2 / 50);
 var anchoActual2 = 100;
@@ -36,3 +36,17 @@ function coldDown2(){
         barra2.style.width = `${anchoActual2 + incremento2}%`;}
     }
   }
+
+function cargarBarras(){
+  var barra2=document.getElementById("barra2")
+  var barra=document.getElementById("barra")
+  barra.style.top = 0+"px"
+  barra2.style.top = barra.clientHeight+"px";
+
+}
+
+  addEventListener("resize", (event) => {
+    barra2=document.getElementById("barra2")
+    barra=document.getElementById("barra")
+
+    barra2.style.top = barra.clientHeight+"px"  });

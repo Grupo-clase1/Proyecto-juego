@@ -29,7 +29,7 @@ function jugar(){
     pausa=false
     efectoDeSonido()
     iniciarMusicaJuego()
-
+    cargarBarras()
     //ejecuta el bucle para "animar" la nave
     animacion()
     enAjustesOTienda=false
