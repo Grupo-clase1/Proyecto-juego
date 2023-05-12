@@ -36,6 +36,8 @@ document.addEventListener("keydown", function(event) {
           godMode = true;
           document.getElementById("imagen").style.opacity = 0.5;
         }
+      } else if (event.key === "e" || event.key === "E"){
+        pjActivo.habilidadEspecial();
       }
     
 

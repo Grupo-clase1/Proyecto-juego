@@ -10,10 +10,10 @@ class Nivel {
 }
 
 var niveles = [
-  new Nivel(1, 10, "media/fondo1.jpg", "Galaxias Gemelas"),
+  new Nivel(1, 10, "media/fondo.jpg", "Infinito Tranquilo"),
   new Nivel(2, 18, "media/fondo2.jpg", "Nebulosa Mantis"),
-  new Nivel(3, 26, "media/fondo3.jpg", "Gigante Rosa"),
-  new Nivel(4, 34, "media/fondo2.gif", "Infinito Tranquilo"),
+  new Nivel(3, 26, "media/fondo1.jpg", "Galaxias Gemelas"),
+  new Nivel(4, 34, "media/fondo3.jpg", "Gigante Rosa"),
   new Nivel(5, 42, "media/fondo4.jpg", "Quasar Nervioso")
 ]
 
@@ -60,12 +60,7 @@ function NuevoNivel() {
     textonivel.innerHTML='<h1>'+niveles[contadorDeNiveles-1].nombre+'</h1>'
     textonivel.style.visibility = "visible";
     textonivel.classList.add= "nuevoNivel";
-    if (godMode == false) {
-      godMode = true;
-      setTimeout(() => {
-        godMode=false;
-      }, 2500);
-    } 
+    godModeTemporal()
 
   setTimeout(function() {
     textonivel.classList.remove("nuevoNivel");

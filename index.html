@@ -6,17 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Pepe in space</title>
 
-
-
-    <link rel="stylesheet" href="css/animacion.css">    
-
-    <link rel="stylesheet" href="css/style.css">  
-    <link rel="icon" type="image/x-icon" href="media/favicon.ico">  
+    <link rel="stylesheet" href="css/animacion.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/x-icon" href="media/favicon.ico">
     <link rel="stylesheet" href="css/pantalla.css"> 
-    <link rel="stylesheet" href="css/creditos.css">    
+    <link rel="stylesheet" href="css/creditos.css">
 
-
-    
     <script type="text/javaScript" src="js/rana.js"></script>
     <script type="text/javaScript" src="js/Menu.js"></script>
     <!-- <script type="text/javaScript" src="js/cambioPantalla.js"></script> -->
@@ -27,22 +22,25 @@
     <script type="text/javaScript" src="js/enemigos.js"></script>
     <script type="text/javaScript" src="js/mapeadoDeEnemigos.js"></script>
     <script type="text/javaScript" src="js/tienda.js"></script>
-
-
     <script type="text/javaScript" src="js/colisiones.js"></script>
-
+    <script type="text/javaScript" src="js/bala.js"></script>
+    <script type="text/javaScript" src="js/colddown.js"></script>
 
 </head>
 <body>
     <div id="menuDiv" class="menuPrincipal">
+        
         <h1>PEPE IN SPACE</h1>
-        <input type="button" value="Jugar" id="jugar" class="juegaBoton" onclick="jugar1()">
-        <br>
-        <input type="button" value="Ajustes" id="ajustes" class="botonAjustes" onclick="ajustes()">
-        <br>
-        <input type="button" value="niveles" id="niveles" class="nivelesBoton" onclick="levels()">
-        <br>
-        <input type="button" value="Salir" id="salir" class="salinBoton" onclick="salir()">
+        <div id="contenedorTitulo">
+            <input type="button" value="Jugar" id="jugar" class="juegaBoton" onclick="jugar1()">
+            <br>
+            <input type="button" value="Ajustes" id="ajustes" class="botonAjustes" onclick="ajustes()">
+            <br>
+            <input type="button" value="niveles" id="niveles" class="nivelesBoton" onclick="levels()">
+            <br>
+            <input type="button" value="Salir" id="salir" class="salinBoton" onclick="salir()">
+    
+        </div>
     </div>
 
     <div id="inAjustes" class="inAjustes" style="visibility: hidden">
@@ -68,28 +66,24 @@
     </div>
 
 
-
-
-
-
     <div id="inNiveles" class="inAjustes" style="visibility: hidden">
         <div class="dentroAjustes">
 
-             <div id="infoMundos">
-                 
-            </div> 
-      
+            Niveles: <br> 
+            <div id="botonesMundos" class="dentroAjustes">
+                <!-- los imput se crean en el script Menu.js en la funcion levels -->
+            </div>   
             <div id="controles">
-            Niveles: <br>  
+             
                 <div class="controles">
                     
                 </div>
-                <div id="botonesMundos" class="dentroAjustes">
-                    <!-- los imput se crean en el script Menu.js en la funcion levels -->
-                </div>    
+                <div id="infoMundos">
+                 
+                </div> 
             </div> 
         
-        <input type="button" value="Back" id="back" class="backBoton" onclick="back()">
+        <input type="button" value="Atrás" id="back" class="backBoton" onclick="back()">
         
         </div>
     </div>
@@ -129,7 +123,7 @@
         <div class="tituloNivel">
           <div id="contadorBackground">Mundo 1</div>
             <div id="vidas">
-                <img id="vida1" src="media/vidas.png"><img id="vida2" src="media/vidas.png"><img id="vida3" src="media/vidas.png">
+                <img id="vida1" src="media/vidas.png"><img id="vida2" src="media/vidas.png"><img id="vida3" src="media/vidas.png"><img id="vida4" hidden src="media/vidas.png">
             </div>
             <div id="contadorDinero"><img src="media/monedas.png" id="monedas"><img src="media/billetes.png" id="billetes"></div>
         </div>
@@ -148,6 +142,7 @@
             <div class="espacioSkin"><div class="precios" id="precio4">800<img src="media/billetes.png" class="billetes"></div><img src="media/nave2P.png"  class="skin" id="skin4" onmouseover="hoverSkin(4)" onmouseout="para()" onclick="equipar(4)"></div>
             <div class="espacioSkin"><div class="precios" id="precio5">1000<img src="media/billetes.png" class="billetes"></div><img src="media/nave4P.png"  class="skin" id="skin5" onmouseover="hoverSkin(5)" onmouseout="para()" onclick="equipar(5)"></div>
             </div>
+            <div id="descripcion" class="descripcion">hola</div>
         </div>
      </div>
 
@@ -176,10 +171,10 @@
      </div>
 
 
-    <div id="pantalla" style="background-image: url(media/fondo.jpg);" hidden="true" class="pantalla"> 
+    <div id="pantalla" style="background-image: url(media/fondo.jpg);" hidden="true" class="pantalla">
         <div class="carrilSuperior"></div>
         <div class="carrilMedio"></div>
-        <div id="rana" class="rana"><img class="imagen" id="imagen" src="./media/ovni1.gif"></div>
+        <div id="rana" class="rana"><img class="imagen" id="imagen" src="./media/ovni1.gif"><div id="barra"></div><div id="barra2"></div></div>
         <div class="carrilInferior"></div>
         <div class="carrilInferior2"></div>
         <div class="carrilInferior3"></div>
@@ -201,7 +196,7 @@
     <audio src="music/click1.mp3" id="click"></audio>
     <audio src="music/muerte.mp3" id="muerte"></audio>
     <audio src="music/hit.mp3" id="hit"></audio>
-
+    <audio src="music/disparo.mp3" id="disparo"></audio>
 
         <script type="text/javaScript" src="js/niveles.js"></script>  <!--dejar esto aquí -->
 </body>
