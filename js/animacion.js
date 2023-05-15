@@ -41,7 +41,7 @@ function animacion(){
     }
 
     generarEnemigos()
-    //generarpowerup()
+    generarpowerup()
     moverFondo()
 
     contadorEnemigos++

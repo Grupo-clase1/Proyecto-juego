@@ -1,15 +1,21 @@
 godMode = false;
 
-function detectarColision(enemigo){
+
+function detectarColision(objeto){
 
     var rana = document.getElementById("rana");
 
     if(godMode != true){
-        if(enemigo){
-            if(enemigo.positionX < rana.offsetWidth && enemigo.innerHTML!="" && enemigo.carril == pjActivo.carril && enemigo.positionX > rana.offsetLeft){
-                pjActivo.restarVida()
-                enemigo.borrarEnemigo()
-                golpeo()
+        if(objeto){
+            if(objeto.positionX < rana.offsetWidth && objeto.innerHTML!="" && objeto.carril == pjActivo.carril && objeto.positionX > rana.offsetLeft){
+                if (objeto instanceof enemigo) {
+                    objeto.borrarEnemigo()
+                    pjActivo.restarVida()
+                    golpeo()
+                } else if (objeto instanceof PowerUp) {
+                   objeto.borrarPowerUp()
+                   objeto.efecto()
+                }
             }    
         }
     };

@@ -395,14 +395,27 @@ class PowerUp {
     const powerUpElement = document.getElementById(`power-up${this.id}`);
     
     if (powerUpElement) {
-      powerUpElement.style.top = `${this.positionY}%`;
+      powerUpElement.style.top = `${this.positionY}`;
       powerUpElement.style.left = `${this.positionX}px`;
 
       if (this.positionX < -500) {
         this.borrarPowerUp();
       }
-    } else {
-      console.error('Power-up element not found or not initialized');
+    }
+  }
+
+  efecto(){
+    switch (this.tipo) {
+      case "vida":
+        sumarVida();
+        break;
+
+        case "dinero":
+          monedas+=5
+        break;
+    
+      default:
+        break;
     }
   }
 
@@ -416,7 +429,7 @@ class PowerUp {
   }
 
   borrarPowerUp() {
-    arrayPowerUps.splice(this.id, 1);
+    arrayEnemigos[this.id]=undefined;
     var divPowerUp = document.getElementById(`power-up${this.id}`);
     if (divPowerUp) {
       divPowerUp.remove();
