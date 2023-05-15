@@ -194,6 +194,11 @@ function reiniciar(){  //boton dentro del game over (cuando pierdes todas las vi
     if (arrayEnemigos[i]) arrayEnemigos[i].borrarEnemigo()
   }
 
+  // borramos todos los power-ups
+  for(i=0; i!=arrayPowerUps.length; i++){
+    if (arrayPowerUps[i]) arrayPowerUps[i].borrarPowerUp()
+  }
+
   idEnemigos = 0
   arrayEnemigos = []
 

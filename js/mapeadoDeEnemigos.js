@@ -411,7 +411,7 @@ class PowerUp {
         break;
 
         case "dinero":
-          monedas+=5
+          monedas+=10
         break;
     
       default:
@@ -429,34 +429,51 @@ class PowerUp {
   }
 
   borrarPowerUp() {
-    arrayEnemigos[this.id]=undefined;
+    arrayPowerUps[this.id] = undefined; // Cambiar arrayEnemigos a arrayPowerUps
     var divPowerUp = document.getElementById(`power-up${this.id}`);
     if (divPowerUp) {
-      divPowerUp.remove();
+        divPowerUp.remove();
     } else {
-      console.error('Power-up element not found or not initialized');
+        console.error('Power-up element not found or not initialized');
     }
-  }
+}
+
 }
 
 var arrayPowerUps = [];
 var contadorPowerUps = 0;
 var powerUpsData = [
   { carril: 4, imagen: "media/dinero.gif", velocidad: 40, tipo: "dinero" },
-  { carril: 5, imagen: "media/vida.gif", velocidad: 40, tipo: "vida" },
+  { carril: 5, imagen: "media/vida.gif", velocidad: 30, tipo: "vida" },
   { carril: 2, imagen: "media/dinero.gif", velocidad: 40, tipo: "dinero" },
-  { carril: 1, imagen: "media/vida.gif", velocidad: 40, tipo: "vida" },
+  { carril: 3, imagen: "media/vida.gif", velocidad: 40, tipo: "vida" },
+  { carril: 4, imagen: "media/dinero.gif", velocidad: 30, tipo: "dinero" },
+  { carril: 5, imagen: "media/vida.gif", velocidad: 40, tipo: "vida" },
+  { carril: 2, imagen: "media/dinero.gif", velocidad: 30, tipo: "dinero" },
+  { carril: 3, imagen: "media/vida.gif", velocidad: 40, tipo: "vida" },
   { carril: 4, imagen: "media/dinero.gif", velocidad: 40, tipo: "dinero" },
   { carril: 5, imagen: "media/vida.gif", velocidad: 40, tipo: "vida" },
+  { carril: 2, imagen: "media/dinero.gif", velocidad: 30, tipo: "dinero" },
+  { carril: 3, imagen: "media/vida.gif", velocidad: 40, tipo: "vida" },
+  { carril: 5, imagen: "media/dinero.gif", velocidad: 40, tipo: "dinero" },
+  { carril: 4, imagen: "media/vida.gif", velocidad: 40, tipo: "vida" },
+  { carril: 5, imagen: "media/dinero.gif", velocidad: 30, tipo: "dinero" },
+  { carril: 2, imagen: "media/vida.gif", velocidad: 40, tipo: "vida" },
+  { carril: 4, imagen: "media/dinero.gif", velocidad: 40, tipo: "dinero" },
+  { carril: 5, imagen: "media/vida.gif", velocidad: 30, tipo: "vida" },
   { carril: 2, imagen: "media/dinero.gif", velocidad: 40, tipo: "dinero" },
+  { carril: 3, imagen: "media/vida.gif", velocidad: 40, tipo: "vida" },
+  { carril: 4, imagen: "media/dinero.gif", velocidad: 30, tipo: "dinero" },
+  { carril: 5, imagen: "media/vida.gif", velocidad: 40, tipo: "vida" },
+  { carril: 1, imagen: "media/dinero.gif", velocidad: 30, tipo: "dinero" },
   { carril: 3, imagen: "media/vida.gif", velocidad: 40, tipo: "vida" },
   { carril: 4, imagen: "media/dinero.gif", velocidad: 40, tipo: "dinero" },
   { carril: 1, imagen: "media/vida.gif", velocidad: 40, tipo: "vida" },
-  { carril: 2, imagen: "media/dinero.gif", velocidad: 40, tipo: "dinero" },
+  { carril: 5, imagen: "media/dinero.gif", velocidad: 30, tipo: "dinero" },
   { carril: 3, imagen: "media/vida.gif", velocidad: 40, tipo: "vida" },
-  { carril: 4, imagen: "media/dinero.gif", velocidad: 40, tipo: "dinero" },
-  { carril: 1, imagen: "media/vida.gif", velocidad: 40, tipo: "vida" },
-  { carril: 2, imagen: "media/dinero.gif", velocidad: 40, tipo: "dinero" },
+  { carril: 1, imagen: "media/dinero.gif", velocidad: 40, tipo: "dinero" },
+  { carril: 4, imagen: "media/vida.gif", velocidad: 40, tipo: "vida" },
+  { carril: 2, imagen: "media/dinero.gif", velocidad: 30, tipo: "dinero" },
   { carril: 1, imagen: "media/vida.gif", velocidad: 40, tipo: "vida" },
 ];
 function generarpowerup() {
@@ -467,7 +484,6 @@ function generarpowerup() {
     let powerUpActual = powerUpsData[arrayPowerUps.length];
 
     if ((contadorPowerUps % 40 ) == 0) {
-      
       console.log('Generando nuevo power-up:', powerUpActual);
       nuevoPowerUp(
         powerUpActual.carril,
@@ -477,8 +493,15 @@ function generarpowerup() {
       );
     }
   } else {
+    // Comprobamos si todos los power-ups son undefined
+    if (arrayPowerUps.every(powerUp => powerUp === undefined)) {
+      // Si todos los power-ups son undefined, reiniciamos arrayPowerUps y contadorPowerUps
+      arrayPowerUps = [];
+      contadorPowerUps = 0;
+    }
   }
 }
+
 
 function nuevoPowerUp(carril, imagen, velocidad, tipo) {
   console.log('Añadiendo power-up:', carril, imagen, velocidad, tipo);
