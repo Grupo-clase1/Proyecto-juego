@@ -142,7 +142,7 @@ function escribir4(){
   document.getElementById("infoMundos").innerHTML="Un día, algo terrible sucedió. Una de las galaxias se desvaneció en una gigante rosa, muriendo en un brillo de estrellas. La otra galaxia cayó en una profunda depresión, sintiéndose sola y perdida en el vasto universo."
 }
 function escribir5(){
-  document.getElementById("infoMundos").innerHTML="La galaxia viva se sumió en la autodestrucción, convirtiendose en un quasar, perdiendo toda la esperanza y la luz que alguna vez había brillado en ella. <br> Pero incluso en su oscuridad, la galaxia nunca olvidó a su amor perdido. Recordaba los días felices en la nebulosa mantis y las noches acurrucadas de las galaxias gemelas.  Y así, incluso mientras caía en la oscuridad, la galaxia nunca dejó de brillar en el recuerdo de su amor eterno, esperando un día poder reunirse de nuevo en el infinito tranquilo del universo."
+  document.getElementById("infoMundos").innerHTML="La galaxia se sumió en la autodestrucción, convirtiendose en un quasar, perdiendo toda la esperanza y la luz que alguna vez había brillado en ella. <br> Pero incluso en su oscuridad, la galaxia nunca olvidó a su amor perdido. Recordaba los días felices en la nebulosa mantis y las noches acurrucadas de las galaxias gemelas.  Y así, incluso mientras caía en la oscuridad, la galaxia nunca dejó de brillar en el recuerdo de su amor eterno, esperando un día poder reunirse de nuevo en el infinito tranquilo del universo."
 }
 
 // function irMundo1(){
