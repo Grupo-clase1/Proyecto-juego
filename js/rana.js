@@ -183,7 +183,8 @@ function reiniciar(){  //boton dentro del game over (cuando pierdes todas las vi
   contadorDeNiveles=1;
   contadorEnemigos=0;
   contadorPowerUps=0;
-
+  noSpawn = false;
+  contadorDeMultiplos = 0;
 
   vida3 = document.getElementById('vida3')
   vida2 = document.getElementById('vida2')
