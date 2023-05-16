@@ -408,7 +408,7 @@ function generarpowerup() {
     let powerUpActual = powerUpsData[arrayPowerUps.length];
 
     if ((contadorPowerUps % 40 ) == 0) {
-      console.log('Generando nuevo power-up:', powerUpActual);
+      // console.log('Generando nuevo power-up:', powerUpActual);
       nuevoPowerUp(
         powerUpActual.carril,
         powerUpActual.imagen,
@@ -428,7 +428,7 @@ function generarpowerup() {
 
 
 function nuevoPowerUp(carril, imagen, velocidad, tipo) {
-  console.log('Añadiendo power-up:', carril, imagen, velocidad, tipo);
+  // console.log('Añadiendo power-up:', carril, imagen, velocidad, tipo);
   const powerUp = new PowerUp(carril, imagen, velocidad, tipo, arrayPowerUps.length);
   arrayPowerUps.push(powerUp);
   powerUp.anadirPowerUp();

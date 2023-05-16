@@ -111,6 +111,6 @@ function comprobarSpawn(){
   }
   if(contadorEnemigos > multiplosDe800[contadorDeMultiplos]+tiempoMultiplo){
     noSpawn = false;
-    contadorDeMultiplos++
+    if (contadorDeMultiplos!=multiplosDe800.length-1) contadorDeMultiplos++;
   }
 }
