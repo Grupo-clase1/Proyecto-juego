@@ -4,6 +4,7 @@ var contadorEnemigos=0;
 var contadorPowerUps=0;
 var contadorDeNiveles = 1;
 var pjActivo = Pepe;
+var noSpawn = false;
 
 function animacion(){
 
@@ -40,11 +41,17 @@ function animacion(){
 
     }
 
-    generarEnemigos()
-    generarpowerup()
+    comprobarSpawn()
+
+    if(noSpawn){
+      contadorEnemigos++;
+    }else{
+      generarEnemigos()
+      generarpowerup()
+    }
+
     moverFondo()
 
-    contadorEnemigos++
 
 
     if(contadorEnemigos % 800 == 0){
@@ -59,9 +66,6 @@ function animacion(){
     }
 
     sumarMonedas()
-
-
-
 
     coldDown()
 
@@ -89,3 +93,24 @@ function sumarMonedas(){
 
 
 
+var multiplosDe800=[
+  800,
+  800*2,
+  800*3,
+  800*4,
+  800*5
+]
+
+var contadorDeMultiplos = 0
+
+var tiempoMultiplo = 50
+
+function comprobarSpawn(){
+  if(contadorEnemigos > multiplosDe800[contadorDeMultiplos]-tiempoMultiplo-tiempoMultiplo){
+    noSpawn = true;
+  }
+  if(contadorEnemigos > multiplosDe800[contadorDeMultiplos]+tiempoMultiplo){
+    noSpawn = false;
+    contadorDeMultiplos++
+  }
+}

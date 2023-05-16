@@ -399,9 +399,10 @@ var powerUpsData = [
   { carril: 2, imagen: "media/dinero.gif", velocidad: 30, tipo: "dinero" },
   { carril: 1, imagen: "media/vida.gif", velocidad: 40, tipo: "vida" },
 ];
+
 function generarpowerup() {
   contadorPowerUps++;
-  console.log('Contador de power-ups:', contadorPowerUps, contadorPowerUps % 20);
+  // console.log('Contador de power-ups:', contadorPowerUps, contadorPowerUps % 20);
 
   if (arrayPowerUps.length < powerUpsData.length) {
     let powerUpActual = powerUpsData[arrayPowerUps.length];
