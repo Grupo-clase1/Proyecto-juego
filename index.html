@@ -25,6 +25,7 @@
     <script type="text/javaScript" src="js/colisiones.js"></script>
     <script type="text/javaScript" src="js/bala.js"></script>
     <script type="text/javaScript" src="js/colddown.js"></script>
+    <script type="text/javaScript" src="js/historia.js"></script>
 
 </head>
 <body>
@@ -32,7 +33,7 @@
         
         <h1>PEPE IN SPACE</h1>
         <div id="contenedorTitulo">
-            <input type="button" value="Jugar" id="jugar" class="juegaBoton" onclick="jugar1()">
+            <input type="button" value="Jugar" id="jugar" class="juegaBoton" onclick="escribir()">
             <br>
             <input type="button" value="Ajustes" id="ajustes" class="botonAjustes" onclick="ajustes()">
             <br>
@@ -179,7 +180,7 @@
         <div class="carrilInferior2"></div>
         <div class="carrilInferior3"></div>
     </div>
-
+    <div id="historia" class="historia" ></audio></div>
     <div  class="pantalla" id="pantallaPausa" hidden>
         <div class="capaPausa">
           <div class="letrasPausa">Pulsa ESPACIO para empezar</div>
