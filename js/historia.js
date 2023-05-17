@@ -1,13 +1,16 @@
+let sonidoEscribir
+let historiaTexto
 let historiaDiv
 function escribir() {
-    
+    historiaTexto = document.getElementById('historiaTexto');
     historiaDiv = document.getElementById('historia');
+    historiaTexto.style.visibility = 'visible';
     historiaDiv.style.visibility = 'visible';
     // menuDiv = document.getElementById('menuDiv');
     // menuDiv.style.visibility = 'hidden';
     clearTimeout(juegoAnimacion)
 
-    let sonidoEscribir = new Audio('music/maquina_de_escribir4.mp3');
+    sonidoEscribir = new Audio('music/maquina_de_escribir4.mp3');
   
     let escribiendo = (str, callback) => {
       let arrFromStr = str.split('');
@@ -73,16 +76,22 @@ function escribir() {
           });
         }, 1000);
       };
-
-      let detener = () => {
-        console.log('historia detenida');
-        historiaDiv.style.visibility = 'hidden';
-        jugar1();
-      };
       
   //primer texto
     escribiendo('+ ¿Qué...        Qué ha pasado?', escribirTexto1);
    
+  }
+
+  function detener(){
+    console.log('historia detenida');
+    if (sonidoEscribir) {
+      // sonidoEscribir.pause(); 
+    }
+  
+    historiaDiv.style.visibility = 'hidden';
+    historiaTexto.style.visibility = 'hidden';
+
+    jugar1();
   }
 
 
