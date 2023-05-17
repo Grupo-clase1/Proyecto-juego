@@ -93,5 +93,5 @@ function escribir() {
 
     jugar1();
   }
-
+//arreglar: pausa del sonido y la funcion 'historia'
 
