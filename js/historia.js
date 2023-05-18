@@ -83,6 +83,12 @@ function escribir() {
   //primer texto
     escribiendo('+ ¿Qué...        Qué ha pasado?', escribirTexto1);
    
+   
+    document.addEventListener('keydown', function(event) {
+      if (event.code === 'Space') {
+        event.preventDefault(); //con el de
+      }
+    });
   }
 
   function detener(){
@@ -94,4 +100,5 @@ function escribir() {
 
     jugar1();
   }
+  
 
