@@ -1,13 +1,15 @@
 let sonidoEscribir
 let historiaTexto
 let historiaDiv
+
+var bandera1 = false;
+
 function escribir() {
+
     historiaTexto = document.getElementById('historiaTexto');
     historiaDiv = document.getElementById('historia');
     historiaTexto.style.visibility = 'visible';
     historiaDiv.style.visibility = 'visible';
-    // menuDiv = document.getElementById('menuDiv');
-    // menuDiv.style.visibility = 'hidden';
     clearTimeout(juegoAnimacion)
 
     sonidoEscribir = new Audio('music/maquina_de_escribir4.mp3');
@@ -16,6 +18,7 @@ function escribir() {
       let arrFromStr = str.split('');
       let i = 0;
       let printStr = setInterval(function() {
+        if (bandera1) return //para la funcion cuando se pulsa skip
         historiaDiv.innerHTML += arrFromStr[i];
         sonidoEscribir.play(); //reproduce el sonido
         i++;
@@ -83,15 +86,12 @@ function escribir() {
   }
 
   function detener(){
+    bandera1 = true;
     console.log('historia detenida');
-    if (sonidoEscribir) {
-      // sonidoEscribir.pause(); 
-    }
-  
+    
     historiaDiv.style.visibility = 'hidden';
     historiaTexto.style.visibility = 'hidden';
 
     jugar1();
   }
-//arreglar: pausa del sonido y la funcion 'historia'
 
