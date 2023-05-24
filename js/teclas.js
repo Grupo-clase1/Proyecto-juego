@@ -1,3 +1,35 @@
+document.addEventListener("DOMContentLoaded", function(event) { 
+  var myElement = document.body;
+
+  var mc = new Hammer(myElement);
+
+  mc.get('swipe').set({ direction: Hammer.DIRECTION_VERTICAL });
+
+  mc.on("swipeup swipedown tap", function(ev) {
+    if (jugando && !enAjustesOTienda) { 
+        if(jugando){
+            if (ev.type == "swipeup") {
+                if (pjActivo.carril < 5) {
+                    pjActivo.carril++;
+                }
+            } else if (ev.type == "swipedown") {
+                if (pjActivo.carril > 1) {
+                    pjActivo.carril--;
+                }
+            } else if (ev.type == "tap"){
+                if (pausa){
+                    pausa=false;
+                    jugar()
+                }else{
+                    pausa=true;
+                    jugar1()
+                }
+            }
+        }
+    }
+  });
+});
+
 // Agregar un evento "keydown" al documento
 document.addEventListener("keydown", function(event) {
   if (jugando && !enAjustesOTienda) { 
