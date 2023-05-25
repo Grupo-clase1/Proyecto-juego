@@ -334,7 +334,7 @@ class PowerUp {
         break;
 
         case "dinero":
-          monedas+=10
+          monedas+=100
         break;
     
       default:
