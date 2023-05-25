@@ -594,7 +594,7 @@ user-select: none;
 
   /* div de descripcion de lo que hace cada nave */
   .descripcion{ 
-    display: flex;
+    /* display: flex; */
     justify-content: center;
     align-items: center;
     text-align:center;

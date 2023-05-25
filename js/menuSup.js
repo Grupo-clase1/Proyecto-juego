@@ -58,6 +58,7 @@ var descripcion
 function hoverSkin(num) {
   descripcion = document.getElementById('descripcion');
   var skin = document.getElementById('skin' + num);
+  
   switch(num) {
     case 1:
       skin.src = 'media/ovni1.gif';
@@ -73,11 +74,11 @@ function hoverSkin(num) {
       break;
     case 4:
       skin.src = 'media/nave2.gif';
-      descripcion.innerHTML='Inmunidad'
+      descripcion.innerHTML='Inmunidad <br> <div style="font-size:15px ">Pulsa E para activar</div>'
       break;
     case 5:
       skin.src = 'media/nave4.gif';
-      descripcion.innerHTML='Pium Pium'
+      descripcion.innerHTML='Pium Pium <br> <div style="font-size:15px ">Pulsa E para activar</div>'
       break;
     default:
       break;
